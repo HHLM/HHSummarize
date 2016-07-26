@@ -15,6 +15,11 @@
 		CB82964A1CEEBBB40013A120 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB8296481CEEBBB40013A120 /* LaunchScreen.storyboard */; };
 		CB8296551CEEBBB40013A120 /* HHSummarizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8296541CEEBBB40013A120 /* HHSummarizeTests.m */; };
 		CB8296601CEEBBB40013A120 /* HHSummarizeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB82965F1CEEBBB40013A120 /* HHSummarizeUITests.m */; };
+		F5060AB11D476A20006DF99C /* HHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5060AB01D476A20006DF99C /* HHAppDelegate.m */; };
+		F5060AB51D476BEF006DF99C /* HHRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5060AB41D476BEF006DF99C /* HHRootViewController.m */; };
+		F5060AB81D476D5C006DF99C /* HHFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5060AB71D476D5C006DF99C /* HHFirstVC.m */; };
+		F5060ABB1D476D6C006DF99C /* HHSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5060ABA1D476D6C006DF99C /* HHSecondVC.m */; };
+		F5060ABE1D477034006DF99C /* HHBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5060ABD1D477034006DF99C /* HHBaseVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,17 @@
 		CB82965B1CEEBBB40013A120 /* HHSummarizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HHSummarizeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB82965F1CEEBBB40013A120 /* HHSummarizeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHSummarizeUITests.m; sourceTree = "<group>"; };
 		CB8296611CEEBBB40013A120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5060AAF1D476A20006DF99C /* HHAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAppDelegate.h; sourceTree = "<group>"; };
+		F5060AB01D476A20006DF99C /* HHAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAppDelegate.m; sourceTree = "<group>"; };
+		F5060AB21D476B04006DF99C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F5060AB31D476BEF006DF99C /* HHRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHRootViewController.h; sourceTree = "<group>"; };
+		F5060AB41D476BEF006DF99C /* HHRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHRootViewController.m; sourceTree = "<group>"; };
+		F5060AB61D476D5C006DF99C /* HHFirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHFirstVC.h; sourceTree = "<group>"; };
+		F5060AB71D476D5C006DF99C /* HHFirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHFirstVC.m; sourceTree = "<group>"; };
+		F5060AB91D476D6C006DF99C /* HHSecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHSecondVC.h; sourceTree = "<group>"; };
+		F5060ABA1D476D6C006DF99C /* HHSecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHSecondVC.m; sourceTree = "<group>"; };
+		F5060ABC1D477034006DF99C /* HHBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHBaseVC.h; sourceTree = "<group>"; };
+		F5060ABD1D477034006DF99C /* HHBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHBaseVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +117,10 @@
 		CB8296391CEEBBB40013A120 /* HHSummarize */ = {
 			isa = PBXGroup;
 			children = (
+				F5060A951D47695C006DF99C /* UIKit */,
 				CB8296781CEEBC890013A120 /* Expand */,
 				CB8296731CEEBC3E0013A120 /* Foundation */,
 				CB8296741CEEBC3E0013A120 /* QuartzCore */,
-				CB8296751CEEBC3E0013A120 /* UIKit */,
 				CB8296761CEEBC600013A120 /* Other */,
 				CB82963A1CEEBBB40013A120 /* Supporting Files */,
 			);
@@ -114,11 +130,12 @@
 		CB82963A1CEEBBB40013A120 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CB8296431CEEBBB40013A120 /* Main.storyboard */,
 				CB8296461CEEBBB40013A120 /* Assets.xcassets */,
-				CB8296481CEEBBB40013A120 /* LaunchScreen.storyboard */,
 				CB82964B1CEEBBB40013A120 /* Info.plist */,
 				CB82963B1CEEBBB40013A120 /* main.m */,
+				F5060AB21D476B04006DF99C /* PrefixHeader.pch */,
+				CB8296431CEEBBB40013A120 /* Main.storyboard */,
+				CB8296481CEEBBB40013A120 /* LaunchScreen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -155,18 +172,13 @@
 			path = QuartzCore;
 			sourceTree = "<group>";
 		};
-		CB8296751CEEBC3E0013A120 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
 		CB8296761CEEBC600013A120 /* Other */ = {
 			isa = PBXGroup;
 			children = (
 				CB82963D1CEEBBB40013A120 /* AppDelegate.h */,
 				CB82963E1CEEBBB40013A120 /* AppDelegate.m */,
+				F5060AAF1D476A20006DF99C /* HHAppDelegate.h */,
+				F5060AB01D476A20006DF99C /* HHAppDelegate.m */,
 				CB8296401CEEBBB40013A120 /* ViewController.h */,
 				CB8296411CEEBBB40013A120 /* ViewController.m */,
 			);
@@ -188,6 +200,221 @@
 			);
 			name = Expand;
 			path = ThirdLib;
+			sourceTree = "<group>";
+		};
+		F5060A951D47695C006DF99C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F5060A961D47695C006DF99C /* UIAlertView */,
+				F5060A971D47695C006DF99C /* UIBarButton */,
+				F5060A9D1D47695C006DF99C /* UILabel */,
+				F5060A981D47695C006DF99C /* UIButton */,
+				F5060A9A1D47695C006DF99C /* UIDevice */,
+				F5060A9B1D47695C006DF99C /* UIDocument */,
+				F5060A9C1D47695C006DF99C /* UIimageView */,
+				F5060AA01D47695C006DF99C /* UIResponder */,
+				F5060AA11D47695C006DF99C /* UIScrollView */,
+				F5060AA21D47695C006DF99C /* UISearchBar */,
+				F5060AA31D47695C006DF99C /* UISlider */,
+				F5060AA41D47695C006DF99C /* UIStackView */,
+				F5060AA51D47695C006DF99C /* UISwitch */,
+				F5060AA71D47695C006DF99C /* UITableView */,
+				F5060AA81D47695C006DF99C /* UITextField */,
+				F5060AA91D47695C006DF99C /* UITextView */,
+				F5060AAA1D47695C006DF99C /* UITouch */,
+				F5060AAB1D47695C006DF99C /* UIView */,
+				F5060AAD1D47695C006DF99C /* UIWebView */,
+				F5060AAE1D47695C006DF99C /* UIWindow */,
+				F5060A9F1D47695C006DF99C /* UIProgressView */,
+				F5060A991D47695C006DF99C /* UICollectionView */,
+				F5060AAC1D47695C006DF99C /* UIViewControllView */,
+				F5060AA61D47695C006DF99C /* UITabBarController */,
+				F5060A9E1D47695C006DF99C /* UINavigationController */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		F5060A961D47695C006DF99C /* UIAlertView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIAlertView;
+			sourceTree = "<group>";
+		};
+		F5060A971D47695C006DF99C /* UIBarButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIBarButton;
+			sourceTree = "<group>";
+		};
+		F5060A981D47695C006DF99C /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		F5060A991D47695C006DF99C /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		F5060A9A1D47695C006DF99C /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIDevice;
+			sourceTree = "<group>";
+		};
+		F5060A9B1D47695C006DF99C /* UIDocument */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIDocument;
+			sourceTree = "<group>";
+		};
+		F5060A9C1D47695C006DF99C /* UIimageView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIimageView;
+			sourceTree = "<group>";
+		};
+		F5060A9D1D47695C006DF99C /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		F5060A9E1D47695C006DF99C /* UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UINavigationController;
+			sourceTree = "<group>";
+		};
+		F5060A9F1D47695C006DF99C /* UIProgressView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIProgressView;
+			sourceTree = "<group>";
+		};
+		F5060AA01D47695C006DF99C /* UIResponder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIResponder;
+			sourceTree = "<group>";
+		};
+		F5060AA11D47695C006DF99C /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		F5060AA21D47695C006DF99C /* UISearchBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UISearchBar;
+			sourceTree = "<group>";
+		};
+		F5060AA31D47695C006DF99C /* UISlider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UISlider;
+			sourceTree = "<group>";
+		};
+		F5060AA41D47695C006DF99C /* UIStackView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIStackView;
+			sourceTree = "<group>";
+		};
+		F5060AA51D47695C006DF99C /* UISwitch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UISwitch;
+			sourceTree = "<group>";
+		};
+		F5060AA61D47695C006DF99C /* UITabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				F5060AB31D476BEF006DF99C /* HHRootViewController.h */,
+				F5060AB41D476BEF006DF99C /* HHRootViewController.m */,
+			);
+			path = UITabBarController;
+			sourceTree = "<group>";
+		};
+		F5060AA71D47695C006DF99C /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		F5060AA81D47695C006DF99C /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		F5060AA91D47695C006DF99C /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
+		F5060AAA1D47695C006DF99C /* UITouch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITouch;
+			sourceTree = "<group>";
+		};
+		F5060AAB1D47695C006DF99C /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		F5060AAC1D47695C006DF99C /* UIViewControllView */ = {
+			isa = PBXGroup;
+			children = (
+				F5060ABC1D477034006DF99C /* HHBaseVC.h */,
+				F5060ABD1D477034006DF99C /* HHBaseVC.m */,
+				F5060AB61D476D5C006DF99C /* HHFirstVC.h */,
+				F5060AB71D476D5C006DF99C /* HHFirstVC.m */,
+				F5060AB91D476D6C006DF99C /* HHSecondVC.h */,
+				F5060ABA1D476D6C006DF99C /* HHSecondVC.m */,
+			);
+			path = UIViewControllView;
+			sourceTree = "<group>";
+		};
+		F5060AAD1D47695C006DF99C /* UIWebView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIWebView;
+			sourceTree = "<group>";
+		};
+		F5060AAE1D47695C006DF99C /* UIWindow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIWindow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +479,7 @@
 		CB82962F1CEEBBB40013A120 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HH;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = HHL;
 				TargetAttributes = {
@@ -321,8 +549,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB8296421CEEBBB40013A120 /* ViewController.m in Sources */,
+				F5060ABE1D477034006DF99C /* HHBaseVC.m in Sources */,
+				F5060AB51D476BEF006DF99C /* HHRootViewController.m in Sources */,
 				CB82963F1CEEBBB40013A120 /* AppDelegate.m in Sources */,
+				F5060AB11D476A20006DF99C /* HHAppDelegate.m in Sources */,
 				CB82963C1CEEBBB40013A120 /* main.m in Sources */,
+				F5060AB81D476D5C006DF99C /* HHFirstVC.m in Sources */,
+				F5060ABB1D476D6C006DF99C /* HHSecondVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,7 +696,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HHSummarize/PrefixHeader.pch";
 				INFOPLIST_FILE = HHSummarize/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hhlm.HHSummarize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -474,7 +710,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HHSummarize/PrefixHeader.pch";
 				INFOPLIST_FILE = HHSummarize/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hhlm.HHSummarize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -548,6 +787,7 @@
 				CB8296661CEEBBB40013A120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB8296671CEEBBB40013A120 /* Build configuration list for PBXNativeTarget "HHSummarizeTests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +796,7 @@
 				CB8296691CEEBBB40013A120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB82966A1CEEBBB40013A120 /* Build configuration list for PBXNativeTarget "HHSummarizeUITests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +805,7 @@
 				CB82966C1CEEBBB40013A120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
