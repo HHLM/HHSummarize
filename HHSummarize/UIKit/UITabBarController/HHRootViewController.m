@@ -27,10 +27,10 @@
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor greenColor]}];
     
     //导航条染色
-    [UINavigationBar appearance].barTintColor = [UIColor redColor];
+//    [UINavigationBar appearance].barTintColor = [UIColor redColor];
     
     //导航条是否透明
-    [UINavigationBar appearance].translucent = NO;
+//    [UINavigationBar appearance].translucent = NO;
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabbar"] forBarMetrics:UIBarMetricsDefaultPrompt];
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabbar"] forBarPosition:UIBarPositionBottom barMetrics:UIBarMetricsDefaultPrompt];;
     
@@ -40,32 +40,45 @@
     
     item1.title = @"UIKit";
     item2.title = @"Foundation";
+    
+    
     item1.image = [UIImage imageNamed:@"home"];
     item1.selectedImage = [UIImage imageNamed:@"home_selected"];
     item2.image = [UIImage imageNamed:@"maps"];
     item2.selectedImage = [UIImage imageNamed:@"maps_selected"];
-//UITabBar的背景颜色
-//    UIImage *barBackground = [UIImage imageNamed:@"tabbar"];
-//    [[UITabBar appearance] setBackgroundImage:barBackground];
-//    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar_selected"]];
+    //item选中染色
+    [[UITabBar appearance] setTintColor:[UIColor greenColor]];
 
-//    [item1 setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateNormal];
-//    /**
-//     字体颜色 字体大小
-//     */
-//    [item2 setTitleTextAttributes:@{NSForegroundColorAttributeName :[UIColor redColor],NSFontAttributeName:[UIFont systemFontOfSize:15],NSBackgroundColorAttributeName:[UIColor yellowColor]} forState:UIControlStateNormal];
-//    [item1 setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor greenColor]} forState:UIControlStateSelected];
-//    [item2 setTitleTextAttributes:@{NSForegroundColorAttributeName :[UIColor greenColor]} forState:UIControlStateSelected];
+//UITabBar的背景颜色
+    UIImage *barBackground = [UIImage imageNamed:@"tabbar"];
+    [[UITabBar appearance] setBackgroundImage:barBackground];
+    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar_selected"]];
+
     
+#if 0
+    [item1 setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateNormal];
+    /**
+     字体颜色 字体大小
+     */
+    [item2 setTitleTextAttributes:@{NSForegroundColorAttributeName :[UIColor redColor],NSFontAttributeName:[UIFont systemFontOfSize:15],NSBackgroundColorAttributeName:[UIColor yellowColor]} forState:UIControlStateNormal];
+    [item1 setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor greenColor]} forState:UIControlStateSelected];
+    [item2 setTitleTextAttributes:@{NSForegroundColorAttributeName :[UIColor greenColor]} forState:UIControlStateSelected];
+#else
     //设置item的字体颜色 大小等等
     
-//    [UITabBar appearance].barStyle = UIBarStyleBlackTranslucent;
     self.tabBar.translucent = NO;
     [[UITabBarItem appearance] setTitleTextAttributes: @{NSForegroundColorAttributeName :[UIColor redColor],NSFontAttributeName:[UIFont systemFontOfSize:15],NSBackgroundColorAttributeName:[UIColor yellowColor]} forState:UIControlStateNormal];
+#endif
+
     
-    //上面写法默认图片的颜色是系统的蓝色 下面的代码是改变图片的颜色
-//    self.tabBar.tintColor = [UIColor yellowColor];
-    [[UITabBar appearance] setTintColor:[UIColor greenColor]];
+    /*--------------------可以添加背景颜色的View--------------*/
+    UIView *bgView =[[UIView alloc]initWithFrame:self.tabBar.bounds];//这是整个tabbar的颜色
+    
+    [bgView setBackgroundColor:[UIColor blueColor]];
+    
+    [self.tabBar insertSubview:bgView atIndex:0];
+    bgView.alpha = 0.8;
+
     
 }
 

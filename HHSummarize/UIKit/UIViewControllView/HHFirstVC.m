@@ -7,7 +7,7 @@
 //
 
 #import "HHFirstVC.h"
-
+#import "HHUILabelVC.h"
 @interface HHFirstVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSArray *dataArray;
 @property (nonatomic, strong) UITableView *tableView;
@@ -43,6 +43,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    HHUILabelVC *vc = [[HHUILabelVC alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 - (UITableView *)tableView {
     if (!_tableView) {

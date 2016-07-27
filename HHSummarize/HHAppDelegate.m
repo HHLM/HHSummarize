@@ -20,15 +20,15 @@
 /*
  接收推送消息
  */
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    
-    // Required,For systems with less than or equal to iOS6
-}
+//- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+//    
+//    // Required,For systems with less than or equal to iOS6
+//}
 
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
-    
-    // IOS 7 Support Required
-}
+//- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+//    
+//    // IOS 7 Support Required
+//}
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
     //Optional
@@ -69,8 +69,8 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     DLog(@"程序进入前台执行");
-    [application setApplicationIconBadgeNumber:0];
-    [application cancelAllLocalNotifications];
+//    [application setApplicationIconBadgeNumber:0];
+//    [application cancelAllLocalNotifications];
 }
 
 

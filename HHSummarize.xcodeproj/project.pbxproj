@@ -20,6 +20,9 @@
 		F5060AB81D476D5C006DF99C /* HHFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5060AB71D476D5C006DF99C /* HHFirstVC.m */; };
 		F5060ABB1D476D6C006DF99C /* HHSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5060ABA1D476D6C006DF99C /* HHSecondVC.m */; };
 		F5060ABE1D477034006DF99C /* HHBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5060ABD1D477034006DF99C /* HHBaseVC.m */; };
+		F5D9E4BB1D48912B00248EC0 /* HHUILabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D9E4BA1D48912B00248EC0 /* HHUILabelVC.m */; };
+		F5D9E4BE1D48922600248EC0 /* HHUIButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D9E4BD1D48922600248EC0 /* HHUIButtonVC.m */; };
+		F5D9E4C11D48924000248EC0 /* HHUIViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D9E4C01D48924000248EC0 /* HHUIViewVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,12 @@
 		F5060ABA1D476D6C006DF99C /* HHSecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHSecondVC.m; sourceTree = "<group>"; };
 		F5060ABC1D477034006DF99C /* HHBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHBaseVC.h; sourceTree = "<group>"; };
 		F5060ABD1D477034006DF99C /* HHBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHBaseVC.m; sourceTree = "<group>"; };
+		F5D9E4B91D48912B00248EC0 /* HHUILabelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUILabelVC.h; sourceTree = "<group>"; };
+		F5D9E4BA1D48912B00248EC0 /* HHUILabelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUILabelVC.m; sourceTree = "<group>"; };
+		F5D9E4BC1D48922600248EC0 /* HHUIButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUIButtonVC.h; sourceTree = "<group>"; };
+		F5D9E4BD1D48922600248EC0 /* HHUIButtonVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUIButtonVC.m; sourceTree = "<group>"; };
+		F5D9E4BF1D48924000248EC0 /* HHUIViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUIViewVC.h; sourceTree = "<group>"; };
+		F5D9E4C01D48924000248EC0 /* HHUIViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUIViewVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +260,8 @@
 		F5060A981D47695C006DF99C /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
+				F5D9E4BC1D48922600248EC0 /* HHUIButtonVC.h */,
+				F5D9E4BD1D48922600248EC0 /* HHUIButtonVC.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -286,6 +297,8 @@
 		F5060A9D1D47695C006DF99C /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
+				F5D9E4B91D48912B00248EC0 /* HHUILabelVC.h */,
+				F5D9E4BA1D48912B00248EC0 /* HHUILabelVC.m */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
@@ -386,6 +399,8 @@
 		F5060AAB1D47695C006DF99C /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				F5D9E4BF1D48924000248EC0 /* HHUIViewVC.h */,
+				F5D9E4C01D48924000248EC0 /* HHUIViewVC.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -548,12 +563,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D9E4BE1D48922600248EC0 /* HHUIButtonVC.m in Sources */,
 				CB8296421CEEBBB40013A120 /* ViewController.m in Sources */,
+				F5D9E4BB1D48912B00248EC0 /* HHUILabelVC.m in Sources */,
 				F5060ABE1D477034006DF99C /* HHBaseVC.m in Sources */,
 				F5060AB51D476BEF006DF99C /* HHRootViewController.m in Sources */,
 				CB82963F1CEEBBB40013A120 /* AppDelegate.m in Sources */,
 				F5060AB11D476A20006DF99C /* HHAppDelegate.m in Sources */,
 				CB82963C1CEEBBB40013A120 /* main.m in Sources */,
+				F5D9E4C11D48924000248EC0 /* HHUIViewVC.m in Sources */,
 				F5060AB81D476D5C006DF99C /* HHFirstVC.m in Sources */,
 				F5060ABB1D476D6C006DF99C /* HHSecondVC.m in Sources */,
 			);
