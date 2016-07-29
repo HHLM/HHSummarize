@@ -21,6 +21,10 @@
 		F5204D8B1D4B3D3300284071 /* HHBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5204D8A1D4B3D3300284071 /* HHBaseVC.m */; };
 		F5204D901D4B3DA100284071 /* HHFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5204D8D1D4B3DA100284071 /* HHFirstVC.m */; };
 		F5204D911D4B3DA100284071 /* HHSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5204D8F1D4B3DA100284071 /* HHSecondVC.m */; };
+		F5204D941D4B408F00284071 /* HHFontStyleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5204D931D4B408F00284071 /* HHFontStyleVC.m */; };
+		F5204D971D4B412A00284071 /* MyAttributedStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F5204D961D4B412A00284071 /* MyAttributedStringBuilder.m */; };
+		F5204D991D4B418100284071 /* test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5204D981D4B418100284071 /* test@2x.png */; };
+		F5204D9C1D4B42FF00284071 /* HHCopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5204D9B1D4B42FF00284071 /* HHCopyLabel.m */; };
 		F5D9E4BB1D48912B00248EC0 /* HHUILabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D9E4BA1D48912B00248EC0 /* HHUILabelVC.m */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +74,13 @@
 		F5204D8D1D4B3DA100284071 /* HHFirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHFirstVC.m; sourceTree = "<group>"; };
 		F5204D8E1D4B3DA100284071 /* HHSecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHSecondVC.h; sourceTree = "<group>"; };
 		F5204D8F1D4B3DA100284071 /* HHSecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHSecondVC.m; sourceTree = "<group>"; };
+		F5204D921D4B408F00284071 /* HHFontStyleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHFontStyleVC.h; sourceTree = "<group>"; };
+		F5204D931D4B408F00284071 /* HHFontStyleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHFontStyleVC.m; sourceTree = "<group>"; };
+		F5204D951D4B412A00284071 /* MyAttributedStringBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAttributedStringBuilder.h; sourceTree = "<group>"; };
+		F5204D961D4B412A00284071 /* MyAttributedStringBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAttributedStringBuilder.m; sourceTree = "<group>"; };
+		F5204D981D4B418100284071 /* test@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test@2x.png"; sourceTree = "<group>"; };
+		F5204D9A1D4B42FF00284071 /* HHCopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCopyLabel.h; sourceTree = "<group>"; };
+		F5204D9B1D4B42FF00284071 /* HHCopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCopyLabel.m; sourceTree = "<group>"; };
 		F5D9E4B91D48912B00248EC0 /* HHUILabelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUILabelVC.h; sourceTree = "<group>"; };
 		F5D9E4BA1D48912B00248EC0 /* HHUILabelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUILabelVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,8 +232,15 @@
 		F5060A9D1D47695C006DF99C /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
+				F5204D981D4B418100284071 /* test@2x.png */,
 				F5D9E4B91D48912B00248EC0 /* HHUILabelVC.h */,
 				F5D9E4BA1D48912B00248EC0 /* HHUILabelVC.m */,
+				F5204D921D4B408F00284071 /* HHFontStyleVC.h */,
+				F5204D931D4B408F00284071 /* HHFontStyleVC.m */,
+				F5204D9A1D4B42FF00284071 /* HHCopyLabel.h */,
+				F5204D9B1D4B42FF00284071 /* HHCopyLabel.m */,
+				F5204D951D4B412A00284071 /* MyAttributedStringBuilder.h */,
+				F5204D961D4B412A00284071 /* MyAttributedStringBuilder.m */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
@@ -354,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB82964A1CEEBBB40013A120 /* LaunchScreen.storyboard in Resources */,
+				F5204D991D4B418100284071 /* test@2x.png in Resources */,
 				CB8296471CEEBBB40013A120 /* Assets.xcassets in Resources */,
 				F5204D821D4B399F00284071 /* UIkit结构图.jpg in Resources */,
 				CB8296451CEEBBB40013A120 /* Main.storyboard in Resources */,
@@ -382,12 +401,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB8296421CEEBBB40013A120 /* ViewController.m in Sources */,
+				F5204D941D4B408F00284071 /* HHFontStyleVC.m in Sources */,
 				F5D9E4BB1D48912B00248EC0 /* HHUILabelVC.m in Sources */,
 				F5060AB51D476BEF006DF99C /* HHRootViewController.m in Sources */,
 				F5204D8B1D4B3D3300284071 /* HHBaseVC.m in Sources */,
 				F5204D911D4B3DA100284071 /* HHSecondVC.m in Sources */,
 				CB82963F1CEEBBB40013A120 /* AppDelegate.m in Sources */,
+				F5204D9C1D4B42FF00284071 /* HHCopyLabel.m in Sources */,
 				F5060AB11D476A20006DF99C /* HHAppDelegate.m in Sources */,
+				F5204D971D4B412A00284071 /* MyAttributedStringBuilder.m in Sources */,
 				CB82963C1CEEBBB40013A120 /* main.m in Sources */,
 				F5204D901D4B3DA100284071 /* HHFirstVC.m in Sources */,
 			);

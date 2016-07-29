@@ -7,7 +7,8 @@
 //
 
 #import "HHUILabelVC.h"
-
+#import "HHFontStyleVC.h"
+#import "HHCopyLabel.h"
 @interface HHUILabelVC ()
 
 @end
@@ -46,6 +47,17 @@
     }
     lable.font = [UIFont fontWithName:@"Oriya Sangam MN" size:15];
     [self setMutableAttributedString];
+    
+    HHCopyLabel *label = [[HHCopyLabel alloc] initWithFrame:CGRectMake(10, 200, 200, 40)];
+    [self.view addSubview:label];
+    label.text = @"长按可以复制我";
+    label.textColor =[UIColor greenColor];
+    
+    label.highLightColor = [UIColor yellowColor];
+    
+    UITextField *f = [[UITextField alloc] initWithFrame:CGRectMake(10, 150, 100, 40)];
+    f.placeholder = @"HHLm";
+    [self.view addSubview:f];
 }
 - (void)setMutableAttributedString
 {
@@ -131,6 +143,14 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    CGPoint point = [touch locationInView:self.view];
+    if (point.y > 300) {
+        HHFontStyleVC *vc =[[HHFontStyleVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    
+}
 
 @end
