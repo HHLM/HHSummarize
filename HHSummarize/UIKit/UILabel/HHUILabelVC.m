@@ -9,6 +9,7 @@
 #import "HHUILabelVC.h"
 #import "HHFontStyleVC.h"
 #import "HHCopyLabel.h"
+#import "UILabel+autoSize.h"
 @interface HHUILabelVC ()
 
 @end
@@ -48,9 +49,11 @@
     lable.font = [UIFont fontWithName:@"Oriya Sangam MN" size:15];
     [self setMutableAttributedString];
     
-    HHCopyLabel *label = [[HHCopyLabel alloc] initWithFrame:CGRectMake(10, 200, 200, 40)];
+    HHCopyLabel *label = [[HHCopyLabel alloc] initWithFrame:CGRectMake(10, 200, 100, 40)];
     [self.view addSubview:label];
+    label.backgroundColor = [UIColor redColor];
     label.text = @"长按可以复制我";
+    [label autoSizeHorizontal];
     label.textColor =[UIColor greenColor];
     
     label.highLightColor = [UIColor yellowColor];
@@ -58,6 +61,19 @@
     UITextField *f = [[UITextField alloc] initWithFrame:CGRectMake(10, 150, 100, 40)];
     f.placeholder = @"HHLm";
     [self.view addSubview:f];
+    
+    HHCopyLabel *label1 = [[HHCopyLabel alloc] initWithFrame:CGRectMake(10, 300, 100, 40)];
+    [self.view addSubview:label1];
+    label1.backgroundColor = [UIColor redColor];
+    label1.numberOfLines = 0;
+    label1.text = @"长按可以跳转下一页长按可以跳转下一页长按可以跳转下一页长按可以跳转下一页";
+    [label1 autoSizeVertical];
+    label1.adjustsFontSizeToFitWidth = YES;
+    label1.textColor =[UIColor greenColor];
+    
+    label1.highLightColor = [UIColor yellowColor];
+    
+    
 }
 - (void)setMutableAttributedString
 {

@@ -8,6 +8,7 @@
 
 #import "HHFirstVC.h"
 #import "HHUILabelVC.h"
+#import "HHUIButtonVC.h"
 @interface HHFirstVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSArray *dataArray;
 @property (nonatomic, strong) UITableView *tableView;
@@ -25,7 +26,7 @@
 }
 - (void)config
 {
-    self.dataArray = @[@"UILabel",@"UIView"];
+    self.dataArray = @[@"UILabel",@"UIButton",@"UIImageView"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

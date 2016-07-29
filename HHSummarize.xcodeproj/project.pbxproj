@@ -26,6 +26,11 @@
 		F5204D991D4B418100284071 /* test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5204D981D4B418100284071 /* test@2x.png */; };
 		F5204D9C1D4B42FF00284071 /* HHCopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5204D9B1D4B42FF00284071 /* HHCopyLabel.m */; };
 		F5D9E4BB1D48912B00248EC0 /* HHUILabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D9E4BA1D48912B00248EC0 /* HHUILabelVC.m */; };
+		F5F8F2651D4B4E2A00006BF5 /* UILabel+autoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8F2641D4B4E2A00006BF5 /* UILabel+autoSize.m */; };
+		F5F8F2721D4B594000006BF5 /* HHUIButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8F2701D4B594000006BF5 /* HHUIButtonVC.m */; };
+		F5F8F2731D4B594000006BF5 /* HHUIButtonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F8F2711D4B594000006BF5 /* HHUIButtonVC.xib */; };
+		F5F8F27D1D4B5A6100006BF5 /* HHUIImageViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8F27B1D4B5A6100006BF5 /* HHUIImageViewVC.m */; };
+		F5F8F27E1D4B5A6100006BF5 /* HHUIImageViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F8F27C1D4B5A6100006BF5 /* HHUIImageViewVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +88,14 @@
 		F5204D9B1D4B42FF00284071 /* HHCopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCopyLabel.m; sourceTree = "<group>"; };
 		F5D9E4B91D48912B00248EC0 /* HHUILabelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUILabelVC.h; sourceTree = "<group>"; };
 		F5D9E4BA1D48912B00248EC0 /* HHUILabelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUILabelVC.m; sourceTree = "<group>"; };
+		F5F8F2631D4B4E2A00006BF5 /* UILabel+autoSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+autoSize.h"; sourceTree = "<group>"; };
+		F5F8F2641D4B4E2A00006BF5 /* UILabel+autoSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+autoSize.m"; sourceTree = "<group>"; };
+		F5F8F26F1D4B594000006BF5 /* HHUIButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUIButtonVC.h; sourceTree = "<group>"; };
+		F5F8F2701D4B594000006BF5 /* HHUIButtonVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUIButtonVC.m; sourceTree = "<group>"; };
+		F5F8F2711D4B594000006BF5 /* HHUIButtonVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHUIButtonVC.xib; sourceTree = "<group>"; };
+		F5F8F27A1D4B5A6100006BF5 /* HHUIImageViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUIImageViewVC.h; sourceTree = "<group>"; };
+		F5F8F27B1D4B5A6100006BF5 /* HHUIImageViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUIImageViewVC.m; sourceTree = "<group>"; };
+		F5F8F27C1D4B5A6100006BF5 /* HHUIImageViewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHUIImageViewVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +146,7 @@
 		CB8296391CEEBBB40013A120 /* HHSummarize */ = {
 			isa = PBXGroup;
 			children = (
+				F5F8F2611D4B4DF400006BF5 /* Category */,
 				F5060A951D47695C006DF99C /* UIKit */,
 				CB8296781CEEBC890013A120 /* Expand */,
 				CB8296731CEEBC3E0013A120 /* Foundation */,
@@ -223,6 +237,8 @@
 			children = (
 				F5204D811D4B399F00284071 /* UIkit结构图.jpg */,
 				F5060A9D1D47695C006DF99C /* UILabel */,
+				F5F8F2661D4B582900006BF5 /* UIButton */,
+				F5F8F2741D4B5A4000006BF5 /* UIImageView */,
 				F5204D831D4B3D0700284071 /* UIViewController */,
 				F5060AA61D47695C006DF99C /* UITabBarController */,
 			);
@@ -265,6 +281,43 @@
 				F5204D8F1D4B3DA100284071 /* HHSecondVC.m */,
 			);
 			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		F5F8F2611D4B4DF400006BF5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F5F8F2621D4B4DF400006BF5 /* UILabel */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F5F8F2621D4B4DF400006BF5 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				F5F8F2631D4B4E2A00006BF5 /* UILabel+autoSize.h */,
+				F5F8F2641D4B4E2A00006BF5 /* UILabel+autoSize.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		F5F8F2661D4B582900006BF5 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				F5F8F26F1D4B594000006BF5 /* HHUIButtonVC.h */,
+				F5F8F2701D4B594000006BF5 /* HHUIButtonVC.m */,
+				F5F8F2711D4B594000006BF5 /* HHUIButtonVC.xib */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		F5F8F2741D4B5A4000006BF5 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				F5F8F27A1D4B5A6100006BF5 /* HHUIImageViewVC.h */,
+				F5F8F27B1D4B5A6100006BF5 /* HHUIImageViewVC.m */,
+				F5F8F27C1D4B5A6100006BF5 /* HHUIImageViewVC.xib */,
+			);
+			path = UIImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,7 +424,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F8F2731D4B594000006BF5 /* HHUIButtonVC.xib in Resources */,
 				CB82964A1CEEBBB40013A120 /* LaunchScreen.storyboard in Resources */,
+				F5F8F27E1D4B5A6100006BF5 /* HHUIImageViewVC.xib in Resources */,
 				F5204D991D4B418100284071 /* test@2x.png in Resources */,
 				CB8296471CEEBBB40013A120 /* Assets.xcassets in Resources */,
 				F5204D821D4B399F00284071 /* UIkit结构图.jpg in Resources */,
@@ -400,6 +455,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F8F2721D4B594000006BF5 /* HHUIButtonVC.m in Sources */,
+				F5F8F2651D4B4E2A00006BF5 /* UILabel+autoSize.m in Sources */,
 				CB8296421CEEBBB40013A120 /* ViewController.m in Sources */,
 				F5204D941D4B408F00284071 /* HHFontStyleVC.m in Sources */,
 				F5D9E4BB1D48912B00248EC0 /* HHUILabelVC.m in Sources */,
@@ -409,6 +466,7 @@
 				CB82963F1CEEBBB40013A120 /* AppDelegate.m in Sources */,
 				F5204D9C1D4B42FF00284071 /* HHCopyLabel.m in Sources */,
 				F5060AB11D476A20006DF99C /* HHAppDelegate.m in Sources */,
+				F5F8F27D1D4B5A6100006BF5 /* HHUIImageViewVC.m in Sources */,
 				F5204D971D4B412A00284071 /* MyAttributedStringBuilder.m in Sources */,
 				CB82963C1CEEBBB40013A120 /* main.m in Sources */,
 				F5204D901D4B3DA100284071 /* HHFirstVC.m in Sources */,
