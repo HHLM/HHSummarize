@@ -1,22 +1,23 @@
 //
-//  HHUIViewVC.m
+//  HHBaseVC.m
 //  HHSummarize
 //
-//  Created by LXH on 16/7/27.
+//  Created by LXH on 16/7/29.
 //  Copyright © 2016年 HHL. All rights reserved.
 //
 
-#import "HHUIViewVC.h"
+#import "HHBaseVC.h"
 
-@interface HHUIViewVC ()
+@interface HHBaseVC ()
 
 @end
 
-@implementation HHUIViewVC
+@implementation HHBaseVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 - (void)didReceiveMemoryWarning {

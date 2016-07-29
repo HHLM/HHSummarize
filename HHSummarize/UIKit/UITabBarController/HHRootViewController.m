@@ -27,13 +27,13 @@
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor greenColor]}];
     
     //导航条染色
-//    [UINavigationBar appearance].barTintColor = [UIColor redColor];
+    [UINavigationBar appearance].barTintColor = [UIColor orangeColor];
     
     //导航条是否透明
-//    [UINavigationBar appearance].translucent = NO;
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabbar"] forBarMetrics:UIBarMetricsDefaultPrompt];
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabbar"] forBarPosition:UIBarPositionBottom barMetrics:UIBarMetricsDefaultPrompt];;
-    
+    [UINavigationBar appearance].translucent = NO;
+//    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabbar"] forBarMetrics:UIBarMetricsDefaultPrompt];
+//    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabbar"] forBarPosition:UIBarPositionBottom barMetrics:UIBarMetricsDefaultPrompt];;
+//    
     /*----------------------------分割线-------------------------------------*/
     UITabBarItem *item1 = [self.tabBar.items objectAtIndex:0];
     UITabBarItem *item2 = [self.tabBar.items objectAtIndex:1];

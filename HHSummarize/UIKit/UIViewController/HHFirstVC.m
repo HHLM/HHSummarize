@@ -43,7 +43,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    HHUILabelVC *vc = [[HHUILabelVC alloc] init];
+    
+    NSString *name = [self.dataArray objectAtIndex:indexPath.row];
+    name = [@"HH" stringByAppendingString:name];
+    name = [name stringByAppendingString:@"VC"];
+    Class class = NSClassFromString(name);
+    HHBaseVC *vc = [[class alloc] init];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
