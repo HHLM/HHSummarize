@@ -9,15 +9,6 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-/**
- *  打印在Debug情况下才会打印
- */
-#ifdef DEBUG
-#   define DLog(fmt, ...) {NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);}
-#   define ELog(err) {if(err) DLog(@"%@", err)}
-#else
-#   define DLog(...)
-#   define ELog(err)
-#endif
+
 
 #endif /* PrefixHeader_pch */
