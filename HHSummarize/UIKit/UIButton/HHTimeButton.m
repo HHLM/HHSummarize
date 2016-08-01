@@ -7,7 +7,6 @@
 //
 
 #import "HHTimeButton.h"
-
 @implementation HHTimeButton
 
 - (void)addTouchDownBlock:(HHTouchDownBlock)touchDownBlock

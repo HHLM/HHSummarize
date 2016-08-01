@@ -1,3 +1,4 @@
+
 //
 //  HHUIButtonVC.m
 //  HHSummarize
@@ -8,6 +9,8 @@
 
 #import "HHUIButtonVC.h"
 #import "HHTimeButton.h"
+#import "UIView+EXT.h"
+#import "UIView+Animation.h"
 @interface HHUIButtonVC ()
 @property (weak, nonatomic) IBOutlet UIButton *button1;
 
@@ -26,6 +29,11 @@
     
     HHTimeButton *timeBtn = [[HHTimeButton alloc] initWithFrame:CGRectMake(10,200 , 100, 40)];
     [timeBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
+    [timeBtn addBorderLine:HHBorderTop borderColor:[UIColor yellowColor] borderWidth:2];
+    [timeBtn addBorderLine:HHBorderLeft borderColor:[UIColor redColor] borderWidth:2];
+
+    [timeBtn shakeHorizontally];
+    
     timeBtn.backgroundColor = [UIColor blueColor];
     [self.view addSubview:timeBtn];
     [timeBtn addTouchDownBlock:^NSString *(HHTimeButton *touchBtn, int tag) {
