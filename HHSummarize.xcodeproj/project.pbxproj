@@ -29,6 +29,7 @@
 		F5B097E81D4F2282004F1A68 /* HHTimeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097E71D4F2282004F1A68 /* HHTimeButton.m */; };
 		F5B097ED1D4F4163004F1A68 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097EC1D4F4163004F1A68 /* UIView+Frame.m */; };
 		F5B097F01D4F42ED004F1A68 /* UIButton+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097EF1D4F42ED004F1A68 /* UIButton+EXT.m */; };
+		F5B097F31D4F4EC8004F1A68 /* UIView+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097F21D4F4EC8004F1A68 /* UIView+EXT.m */; };
 		F5C55A9A1D4D09AB006A7EA7 /* NSString+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C55A991D4D09AB006A7EA7 /* NSString+EXT.m */; };
 		F5C55A9D1D4D09D7006A7EA7 /* NSObject+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C55A9C1D4D09D7006A7EA7 /* NSObject+EXT.m */; };
 		F5D9E4BB1D48912B00248EC0 /* HHUILabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D9E4BA1D48912B00248EC0 /* HHUILabelVC.m */; };
@@ -100,6 +101,8 @@
 		F5B097EC1D4F4163004F1A68 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		F5B097EE1D4F42ED004F1A68 /* UIButton+EXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EXT.h"; sourceTree = "<group>"; };
 		F5B097EF1D4F42ED004F1A68 /* UIButton+EXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EXT.m"; sourceTree = "<group>"; };
+		F5B097F11D4F4EC8004F1A68 /* UIView+EXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EXT.h"; sourceTree = "<group>"; };
+		F5B097F21D4F4EC8004F1A68 /* UIView+EXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EXT.m"; sourceTree = "<group>"; };
 		F5C55A981D4D09AB006A7EA7 /* NSString+EXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EXT.h"; sourceTree = "<group>"; };
 		F5C55A991D4D09AB006A7EA7 /* NSString+EXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EXT.m"; sourceTree = "<group>"; };
 		F5C55A9B1D4D09D7006A7EA7 /* NSObject+EXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EXT.h"; sourceTree = "<group>"; };
@@ -308,6 +311,8 @@
 			children = (
 				F5B097EB1D4F4163004F1A68 /* UIView+Frame.h */,
 				F5B097EC1D4F4163004F1A68 /* UIView+Frame.m */,
+				F5B097F11D4F4EC8004F1A68 /* UIView+EXT.h */,
+				F5B097F21D4F4EC8004F1A68 /* UIView+EXT.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -525,6 +530,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B097F31D4F4EC8004F1A68 /* UIView+EXT.m in Sources */,
 				F5F8F2721D4B594000006BF5 /* HHUIButtonVC.m in Sources */,
 				F5F8F2651D4B4E2A00006BF5 /* UILabel+autoSize.m in Sources */,
 				CB8296421CEEBBB40013A120 /* ViewController.m in Sources */,
