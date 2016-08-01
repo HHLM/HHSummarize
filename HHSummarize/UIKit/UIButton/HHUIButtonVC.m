@@ -7,7 +7,7 @@
 //
 
 #import "HHUIButtonVC.h"
-
+#import "HHTimeButton.h"
 @interface HHUIButtonVC ()
 @property (weak, nonatomic) IBOutlet UIButton *button1;
 
@@ -23,6 +23,16 @@
     [self.button1 addTarget:self action:@selector(DragOutside) forControlEvents:UIControlEventTouchDragOutside];
     [self.button1 addTarget:self action:@selector(TouchDown) forControlEvents:UIControlEventTouchDown];
     [self.button1 addTarget:self action:@selector(UpOutside) forControlEvents:UIControlEventTouchUpOutside];
+    
+    HHTimeButton *timeBtn = [[HHTimeButton alloc] initWithFrame:CGRectMake(10,200 , 100, 40)];
+    [timeBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
+    timeBtn.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:timeBtn];
+    [timeBtn addTouchDownBlock:^NSString *(HHTimeButton *touchBtn, int tag) {
+        
+      return @"18576757855";
+    }];
+    
 }
 - (void)UpInside
 {
