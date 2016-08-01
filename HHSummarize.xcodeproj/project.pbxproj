@@ -25,6 +25,10 @@
 		F5204D971D4B412A00284071 /* MyAttributedStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F5204D961D4B412A00284071 /* MyAttributedStringBuilder.m */; };
 		F5204D991D4B418100284071 /* test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5204D981D4B418100284071 /* test@2x.png */; };
 		F5204D9C1D4B42FF00284071 /* HHCopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5204D9B1D4B42FF00284071 /* HHCopyLabel.m */; };
+		F5B097E21D4EFC35004F1A68 /* HHTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097E11D4EFC35004F1A68 /* HHTool.m */; };
+		F5B097E81D4F2282004F1A68 /* HHTimeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097E71D4F2282004F1A68 /* HHTimeButton.m */; };
+		F5B097ED1D4F4163004F1A68 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097EC1D4F4163004F1A68 /* UIView+Frame.m */; };
+		F5B097F01D4F42ED004F1A68 /* UIButton+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097EF1D4F42ED004F1A68 /* UIButton+EXT.m */; };
 		F5C55A9A1D4D09AB006A7EA7 /* NSString+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C55A991D4D09AB006A7EA7 /* NSString+EXT.m */; };
 		F5C55A9D1D4D09D7006A7EA7 /* NSObject+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C55A9C1D4D09D7006A7EA7 /* NSObject+EXT.m */; };
 		F5D9E4BB1D48912B00248EC0 /* HHUILabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D9E4BA1D48912B00248EC0 /* HHUILabelVC.m */; };
@@ -88,6 +92,14 @@
 		F5204D981D4B418100284071 /* test@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test@2x.png"; sourceTree = "<group>"; };
 		F5204D9A1D4B42FF00284071 /* HHCopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCopyLabel.h; sourceTree = "<group>"; };
 		F5204D9B1D4B42FF00284071 /* HHCopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCopyLabel.m; sourceTree = "<group>"; };
+		F5B097E01D4EFC35004F1A68 /* HHTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTool.h; sourceTree = "<group>"; };
+		F5B097E11D4EFC35004F1A68 /* HHTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTool.m; sourceTree = "<group>"; };
+		F5B097E61D4F2282004F1A68 /* HHTimeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTimeButton.h; sourceTree = "<group>"; };
+		F5B097E71D4F2282004F1A68 /* HHTimeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTimeButton.m; sourceTree = "<group>"; };
+		F5B097EB1D4F4163004F1A68 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		F5B097EC1D4F4163004F1A68 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		F5B097EE1D4F42ED004F1A68 /* UIButton+EXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EXT.h"; sourceTree = "<group>"; };
+		F5B097EF1D4F42ED004F1A68 /* UIButton+EXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EXT.m"; sourceTree = "<group>"; };
 		F5C55A981D4D09AB006A7EA7 /* NSString+EXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EXT.h"; sourceTree = "<group>"; };
 		F5C55A991D4D09AB006A7EA7 /* NSString+EXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EXT.m"; sourceTree = "<group>"; };
 		F5C55A9B1D4D09D7006A7EA7 /* NSObject+EXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EXT.h"; sourceTree = "<group>"; };
@@ -273,6 +285,33 @@
 			path = UIViewController;
 			sourceTree = "<group>";
 		};
+		F5B097DF1D4EFC1F004F1A68 /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				F5B097E01D4EFC35004F1A68 /* HHTool.h */,
+				F5B097E11D4EFC35004F1A68 /* HHTool.m */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
+		F5B097E91D4F4071004F1A68 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				F5B097EE1D4F42ED004F1A68 /* UIButton+EXT.h */,
+				F5B097EF1D4F42ED004F1A68 /* UIButton+EXT.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		F5B097EA1D4F4150004F1A68 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				F5B097EB1D4F4163004F1A68 /* UIView+Frame.h */,
+				F5B097EC1D4F4163004F1A68 /* UIView+Frame.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		F5C55A961D4D0997006A7EA7 /* NSObjcet */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +333,7 @@
 		F5C55A9E1D4D0C4D006A7EA7 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				F5B097DF1D4EFC1F004F1A68 /* Unit */,
 				F5C55A9F1D4D0D4E006A7EA7 /* Macros */,
 			);
 			path = Expand;
@@ -310,6 +350,8 @@
 		F5F8F2611D4B4DF400006BF5 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F5B097EA1D4F4150004F1A68 /* UIView */,
+				F5B097E91D4F4071004F1A68 /* UIButton */,
 				F5C55A961D4D0997006A7EA7 /* NSObjcet */,
 				F5C55A971D4D0997006A7EA7 /* NSString */,
 				F5F8F2621D4B4DF400006BF5 /* UILabel */,
@@ -332,6 +374,8 @@
 				F5F8F26F1D4B594000006BF5 /* HHUIButtonVC.h */,
 				F5F8F2701D4B594000006BF5 /* HHUIButtonVC.m */,
 				F5F8F2711D4B594000006BF5 /* HHUIButtonVC.xib */,
+				F5B097E61D4F2282004F1A68 /* HHTimeButton.h */,
+				F5B097E71D4F2282004F1A68 /* HHTimeButton.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -485,10 +529,12 @@
 				F5F8F2651D4B4E2A00006BF5 /* UILabel+autoSize.m in Sources */,
 				CB8296421CEEBBB40013A120 /* ViewController.m in Sources */,
 				F5204D941D4B408F00284071 /* HHFontStyleVC.m in Sources */,
+				F5B097F01D4F42ED004F1A68 /* UIButton+EXT.m in Sources */,
 				F5D9E4BB1D48912B00248EC0 /* HHUILabelVC.m in Sources */,
 				F5060AB51D476BEF006DF99C /* HHRootViewController.m in Sources */,
 				F5204D8B1D4B3D3300284071 /* HHBaseVC.m in Sources */,
 				F5204D911D4B3DA100284071 /* HHSecondVC.m in Sources */,
+				F5B097ED1D4F4163004F1A68 /* UIView+Frame.m in Sources */,
 				CB82963F1CEEBBB40013A120 /* AppDelegate.m in Sources */,
 				F5204D9C1D4B42FF00284071 /* HHCopyLabel.m in Sources */,
 				F5060AB11D476A20006DF99C /* HHAppDelegate.m in Sources */,
@@ -497,7 +543,9 @@
 				F5C55A9D1D4D09D7006A7EA7 /* NSObject+EXT.m in Sources */,
 				F5C55A9A1D4D09AB006A7EA7 /* NSString+EXT.m in Sources */,
 				CB82963C1CEEBBB40013A120 /* main.m in Sources */,
+				F5B097E81D4F2282004F1A68 /* HHTimeButton.m in Sources */,
 				F5204D901D4B3DA100284071 /* HHFirstVC.m in Sources */,
+				F5B097E21D4EFC35004F1A68 /* HHTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
