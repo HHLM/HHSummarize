@@ -12,10 +12,14 @@
 - (UIView*)findViewRecursively:(BOOL(^)(UIView* subview, BOOL* stop))recurse
 {
     for( UIView* subview in self.subviews ) {
+        
         BOOL stop = NO;
-        if( recurse( subview, &stop ) ) {
+        if( recurse( subview, &stop ) )
+        {
             return [subview findViewRecursively:recurse];
-        } else if( stop ) {
+        }
+        else if( stop )
+        {
             return subview;
         }
     }
