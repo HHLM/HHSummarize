@@ -33,6 +33,9 @@
 		F5B097F31D4F4EC8004F1A68 /* UIView+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097F21D4F4EC8004F1A68 /* UIView+EXT.m */; };
 		F5C55A9A1D4D09AB006A7EA7 /* NSString+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C55A991D4D09AB006A7EA7 /* NSString+EXT.m */; };
 		F5C55A9D1D4D09D7006A7EA7 /* NSObject+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C55A9C1D4D09D7006A7EA7 /* NSObject+EXT.m */; };
+		F5D3B22E1D50953B00892518 /* HHUIFontVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D3B22C1D50953B00892518 /* HHUIFontVC.m */; };
+		F5D3B22F1D50953B00892518 /* HHUIFontVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5D3B22D1D50953B00892518 /* HHUIFontVC.xib */; };
+		F5D3B2311D5096E500892518 /* STSONG.TTF in Resources */ = {isa = PBXBuildFile; fileRef = F5D3B2301D5095DF00892518 /* STSONG.TTF */; };
 		F5D9E4BB1D48912B00248EC0 /* HHUILabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D9E4BA1D48912B00248EC0 /* HHUILabelVC.m */; };
 		F5F8F2651D4B4E2A00006BF5 /* UILabel+autoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8F2641D4B4E2A00006BF5 /* UILabel+autoSize.m */; };
 		F5F8F2721D4B594000006BF5 /* HHUIButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8F2701D4B594000006BF5 /* HHUIButtonVC.m */; };
@@ -111,6 +114,12 @@
 		F5C55A9B1D4D09D7006A7EA7 /* NSObject+EXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EXT.h"; sourceTree = "<group>"; };
 		F5C55A9C1D4D09D7006A7EA7 /* NSObject+EXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EXT.m"; sourceTree = "<group>"; };
 		F5C55AA01D4D0D75006A7EA7 /* Device.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		F5D3B2281D5076CE00892518 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		F5D3B2291D5078C700892518 /* FileManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileManage.h; sourceTree = "<group>"; };
+		F5D3B22B1D50953B00892518 /* HHUIFontVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUIFontVC.h; sourceTree = "<group>"; };
+		F5D3B22C1D50953B00892518 /* HHUIFontVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUIFontVC.m; sourceTree = "<group>"; };
+		F5D3B22D1D50953B00892518 /* HHUIFontVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHUIFontVC.xib; sourceTree = "<group>"; };
+		F5D3B2301D5095DF00892518 /* STSONG.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = STSONG.TTF; sourceTree = "<group>"; };
 		F5D9E4B91D48912B00248EC0 /* HHUILabelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUILabelVC.h; sourceTree = "<group>"; };
 		F5D9E4BA1D48912B00248EC0 /* HHUILabelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUILabelVC.m; sourceTree = "<group>"; };
 		F5F8F2631D4B4E2A00006BF5 /* UILabel+autoSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+autoSize.h"; sourceTree = "<group>"; };
@@ -244,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				F5204D811D4B399F00284071 /* UIkit结构图.jpg */,
+				F5D3B22A1D5094F000892518 /* UIFont */,
 				F5060A9D1D47695C006DF99C /* UILabel */,
 				F5F8F2661D4B582900006BF5 /* UIButton */,
 				F5F8F2741D4B5A4000006BF5 /* UIImageView */,
@@ -353,8 +363,21 @@
 			isa = PBXGroup;
 			children = (
 				F5C55AA01D4D0D75006A7EA7 /* Device.h */,
+				F5D3B2281D5076CE00892518 /* Color.h */,
+				F5D3B2291D5078C700892518 /* FileManage.h */,
 			);
 			path = Macros;
+			sourceTree = "<group>";
+		};
+		F5D3B22A1D5094F000892518 /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				F5D3B2301D5095DF00892518 /* STSONG.TTF */,
+				F5D3B22B1D50953B00892518 /* HHUIFontVC.h */,
+				F5D3B22C1D50953B00892518 /* HHUIFontVC.m */,
+				F5D3B22D1D50953B00892518 /* HHUIFontVC.xib */,
+			);
+			path = UIFont;
 			sourceTree = "<group>";
 		};
 		F5F8F2611D4B4DF400006BF5 /* Category */ = {
@@ -504,11 +527,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D3B2311D5096E500892518 /* STSONG.TTF in Resources */,
 				F5F8F2731D4B594000006BF5 /* HHUIButtonVC.xib in Resources */,
 				CB82964A1CEEBBB40013A120 /* LaunchScreen.storyboard in Resources */,
 				F5F8F27E1D4B5A6100006BF5 /* HHUIImageViewVC.xib in Resources */,
 				F5204D991D4B418100284071 /* test@2x.png in Resources */,
 				CB8296471CEEBBB40013A120 /* Assets.xcassets in Resources */,
+				F5D3B22F1D50953B00892518 /* HHUIFontVC.xib in Resources */,
 				F5204D821D4B399F00284071 /* UIkit结构图.jpg in Resources */,
 				CB8296451CEEBBB40013A120 /* Main.storyboard in Resources */,
 			);
@@ -556,6 +581,7 @@
 				F5C55A9A1D4D09AB006A7EA7 /* NSString+EXT.m in Sources */,
 				CB82963C1CEEBBB40013A120 /* main.m in Sources */,
 				F5B097E81D4F2282004F1A68 /* HHTimeButton.m in Sources */,
+				F5D3B22E1D50953B00892518 /* HHUIFontVC.m in Sources */,
 				F5204D901D4B3DA100284071 /* HHFirstVC.m in Sources */,
 				F5B097E21D4EFC35004F1A68 /* HHTool.m in Sources */,
 			);
