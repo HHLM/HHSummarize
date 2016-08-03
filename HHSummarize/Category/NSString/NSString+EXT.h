@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (EXT)
-
+/** 是不是正确手机号 */
+- (BOOL)isMobileNumber;
+/** 是不是车牌号 不包括缩写 比如：粤B  */
+- (BOOL)isCarNumber;
 @end
