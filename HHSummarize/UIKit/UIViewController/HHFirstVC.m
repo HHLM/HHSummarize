@@ -16,6 +16,14 @@
 
 @implementation HHFirstVC
 
+
+/**
+ 1.info.plist文件中添加一项:Fonts provided by application 并添加字体库名字 xxx.ttf
+ 2.前往TARGETS -> Build Phases -> Copy Bundle Resources中添加字体文件
+ 3.按照fontName方法遍历找到对应的字体
+ 4.使用字体 [UIFont fontWithName:@"FZYaSong-M-GBK" size:17];
+ */
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -26,7 +34,7 @@
 }
 - (void)config
 {
-    self.dataArray = @[@"UILabel",@"UIButton",@"UIImageView"];
+    self.dataArray = @[@"UILabel",@"UIButton",@"UIImageView",@"UIFont"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
