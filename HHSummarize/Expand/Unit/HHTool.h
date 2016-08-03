@@ -18,6 +18,10 @@ typedef NS_ENUM(NSInteger ,HHFileBrowseMode){
 @interface HHTool : NSObject
 
 /*--------------------文件------------------*/
+
+/** 获取documents下的文件路径 */
++ (NSString *)getDocumentsPath:(NSString *)fileName;
+
 //!<保存文件路径
 + (void)saverFileManagerAdress:(NSString *)adress;
 
@@ -57,9 +61,20 @@ typedef NS_ENUM(NSInteger ,HHFileBrowseMode){
 
 //!< 是否是文本文件
 + (BOOL)isDocumentFile:(NSString *)fileName;
-/*--------------------文件------------------*/
 
-/*--------------------加密------------------*/
+
+/*------------------- 文件 ------------------*/
+
+/*------------------- 时间 ------------------*/
+
+//美国时间转成中国时间 //Sat Jan 12 11:50:16 +0800 2013
++ (NSString *)formateString:(NSString *)dateString;
+//时间转成NSDate
++ (NSDate *)dateFormDateString:(NSString *)dateString formate:(NSString *)formate;
+//NSDate转时间
++ (NSString *)dateStringFromDate:(NSDate *)date formate:(NSString *)formate;
+
+/*------------------ 加密 ------------------*/
 
 //!< MD5加密
 + (NSString *)md5:(NSString *)key;

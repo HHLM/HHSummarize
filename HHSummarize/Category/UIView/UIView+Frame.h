@@ -20,4 +20,9 @@
 @property (nonatomic, assign) CGFloat centerY;
 @property (nonatomic, assign) CGFloat bottom;
 @property (nonatomic, assign) CGFloat right;
+
+- (void) moveBy: (CGPoint) delta;
+- (void) scaleBy: (CGFloat) scaleFactor;
+- (void) fitInSize: (CGSize) aSize;
+
 @end

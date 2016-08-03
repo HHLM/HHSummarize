@@ -114,4 +114,44 @@
 {
     return CGRectGetMaxY(self.frame);
 }
+/*--------------------------- 放大缩小 ---------------------------*/
+/** 移动 */
+- (void) moveBy: (CGPoint) delta
+{
+    CGPoint newcenter = self.center;
+    newcenter.x += delta.x;
+    newcenter.y += delta.y;
+    self.center = newcenter;
+}
+
+/** 缩放 */
+- (void) scaleBy: (CGFloat) scaleFactor
+{
+    CGRect newframe = self.frame;
+    newframe.size.width *= scaleFactor;
+    newframe.size.height *= scaleFactor;
+    self.frame = newframe;
+}
+/** 在给定的尺寸内缩小 */
+- (void) fitInSize: (CGSize) aSize
+{
+    CGFloat scale;
+    CGRect newframe = self.frame;
+    
+    if (newframe.size.height && (newframe.size.height > aSize.height))
+    {
+        scale = aSize.height / newframe.size.height;
+        newframe.size.width *= scale;
+        newframe.size.height *= scale;
+    }
+    
+    if (newframe.size.width && (newframe.size.width >= aSize.width))
+    {
+        scale = aSize.width / newframe.size.width;
+        newframe.size.width *= scale;
+        newframe.size.height *= scale;
+    }
+    
+    self.frame = newframe;	
+}
 @end

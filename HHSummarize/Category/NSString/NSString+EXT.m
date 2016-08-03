@@ -64,4 +64,18 @@
     NSPredicate *carTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",carRegex];
     return [carTest evaluateWithObject:self];
 }
+- (NSString *)cleanString:(NSString *)str {
+    if (str == nil) {
+        return @"";
+    }
+    NSMutableString *cleanString = [NSMutableString stringWithString:str];
+    [cleanString replaceOccurrencesOfString:@"\n" withString:@""
+                                    options:NSCaseInsensitiveSearch
+                                      range:NSMakeRange(0, [cleanString length])];
+    [cleanString replaceOccurrencesOfString:@"\r" withString:@""
+                                    options:NSCaseInsensitiveSearch
+                                      range:NSMakeRange(0, [cleanString length])];
+    return cleanString;
+}
+
 @end

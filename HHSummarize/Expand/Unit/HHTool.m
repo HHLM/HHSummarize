@@ -37,6 +37,40 @@ static NSString * const HHFileBowseMode = @"HHFileBowseMode";
 };
  */
 
++ (NSString *)getDocumentsPath:(NSString *)fileName {
+    //两种获取document路径的方式
+
+    //NSString *documents = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documents = [paths objectAtIndex:0];
+    NSString *path = [documents stringByAppendingPathComponent:fileName];
+    return path;
+}
+//NSDate转时间
++ (NSString *)dateStringFromDate:(NSDate *)date formate:(NSString *)formate;{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:formate];
+    NSString *dateString = [formatter stringFromDate:date];
+    return dateString;
+}
+//时间转成NSDate
++ (NSDate *)dateFormDateString:(NSString *)dateString formate:(NSString *)formate{
+    NSDateFormatter *fotmatter = [[NSDateFormatter alloc] init];
+    [fotmatter setDateFormat:formate];
+    NSDate *date = [fotmatter dateFromString:dateString];
+    return date;
+    
+}
+//美国时间转成中国时间 //Sat Jan 12 11:50:16 +0800 2013
++ (NSString *)formateString:(NSString *)dateString
+{
+    NSString *formate = @"E MMM d HH:mm:ss Z yyyy";
+    NSDate *date = [HHTool dateFormDateString:dateString formate:formate];
+    NSString *dateStr = [HHTool dateStringFromDate:date formate:@"MM-dd:HH:mm"];
+    return dateStr;
+}
+
 + (NSString *)fileManagerAdress {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     return [userDefaults objectForKey:HHFileManagerAdress];
