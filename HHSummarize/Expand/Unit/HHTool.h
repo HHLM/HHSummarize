@@ -67,10 +67,18 @@ typedef NS_ENUM(NSInteger ,HHFileBrowseMode){
 
 /*------------------- 时间 ------------------*/
 
+/** Date转时间戳 */
++ (double)timeForDate:(NSDate *)date;
+
+//!< 时间转时间戳
++ (double)timeForDateString:(NSString *)dateString;
+
 //美国时间转成中国时间 //Sat Jan 12 11:50:16 +0800 2013
 + (NSString *)formateString:(NSString *)dateString;
+
 //时间转成NSDate
 + (NSDate *)dateFormDateString:(NSString *)dateString formate:(NSString *)formate;
+
 //NSDate转时间
 + (NSString *)dateStringFromDate:(NSDate *)date formate:(NSString *)formate;
 

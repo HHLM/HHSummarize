@@ -60,7 +60,20 @@ static NSString * const HHFileBowseMode = @"HHFileBowseMode";
     [fotmatter setDateFormat:formate];
     NSDate *date = [fotmatter dateFromString:dateString];
     return date;
-    
+}
+
++ (double)timeForDate:(NSDate *)date
+{
+    double time = [date timeIntervalSince1970];
+    return time;
+}
+//!< 时间转时间戳
++ (double)timeForDateString:(NSString *)dateString
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyyMMdd"];
+    NSDate *date = [formatter dateFromString:dateString];
+    return [HHTool timeForDate:date];
 }
 //美国时间转成中国时间 //Sat Jan 12 11:50:16 +0800 2013
 + (NSString *)formateString:(NSString *)dateString
@@ -75,11 +88,13 @@ static NSString * const HHFileBowseMode = @"HHFileBowseMode";
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     return [userDefaults objectForKey:HHFileManagerAdress];
 }
+
 + (void)saverFileManagerAdress:(NSString *)adress {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setObject:adress forKey:HHFileManagerAdress];
     [userDefaults synchronize];
 }
+
 + (HHFileBrowseMode )fileBrowseModel
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
@@ -101,6 +116,7 @@ static NSString * const HHFileBowseMode = @"HHFileBowseMode";
     }
     return musicPath;
 }
+
 + (NSString *)upLoadingPath {
     NSString *uploadingPath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"uploading"];
     
@@ -116,6 +132,7 @@ static NSString * const HHFileBowseMode = @"HHFileBowseMode";
     }
     return uploadingPath;
 }
+
 + (NSString *)downloadPath {
     NSString *downloadPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"download"];
     NSFileManager *fileManager = [NSFileManager defaultManager];
