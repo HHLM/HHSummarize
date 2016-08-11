@@ -78,4 +78,26 @@
     return cleanString;
 }
 
+- (BOOL)isEmptyString:(NSString *)string {
+    if (string.length == 0 ||string == nil) {
+        return NO;
+    }
+    else{
+        //去掉首位的空格
+        string = [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        if (string.length > 0) {
+            return YES;
+        }
+        else{
+            return NO;
+        }
+    }
+    return NO;
+}
+
+- (NSArray *)cleanSpaceArray:(NSArray *)array
+{
+    array = [array filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self <> ''"]];
+    return array;
+}
 @end

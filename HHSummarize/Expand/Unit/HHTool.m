@@ -36,7 +36,6 @@ static NSString * const HHFileBowseMode = @"HHFileBowseMode";
 
 };
  */
-
 + (NSString *)getDocumentsPath:(NSString *)fileName {
     //两种获取document路径的方式
 

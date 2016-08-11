@@ -86,4 +86,9 @@ typedef NS_ENUM(NSInteger ,HHFileBrowseMode){
 
 //!< MD5加密
 + (NSString *)md5:(NSString *)key;
+
+#pragma mark -- 常用的判断工具
+
++ (BOOL)isEmptyString:(NSString *)string;
+
 @end
