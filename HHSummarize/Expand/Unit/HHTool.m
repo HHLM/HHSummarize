@@ -66,6 +66,11 @@ static NSString * const HHFileBowseMode = @"HHFileBowseMode";
     double time = [date timeIntervalSince1970];
     return time;
 }
++ (NSString *)datefromTime:(long)tiem
+{
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:tiem];
+   return [HHTool dateStringFromDate:date formate:@"yyyyMMdd"];
+}
 //!< 时间转时间戳
 + (double)timeForDateString:(NSString *)dateString
 {
