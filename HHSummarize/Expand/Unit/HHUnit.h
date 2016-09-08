@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
 @interface HHUnit : NSObject
 
 #pragma mark ----图片处理-----
@@ -58,6 +59,38 @@
  *
  *  @return 处理后的图片
  */
-+(UIImage *)roundImage:(UIImage *) image toSize:(CGSize)size radius: (float) radius;
++ (UIImage *)roundImage:(UIImage *) image toSize:(CGSize)size radius: (float) radius;
 
+#pragma mark -- 时间处理---
+/**
+ *  date转时间
+ */
++ (NSString *)dateStringFromDate:(NSDate *)date formate:(NSString *)formate ;
+/**
+ 时间转data
+ */
++ (NSDate *)dateFormDateString:(NSString *)dateString formate:(NSString *)formate;
+/**
+ *  date转时间戳
+ */
++ (double)timeForDate:(NSDate *)date;
+/**
+ 时间戳转时间
+ */
++ (NSString *)datefromTime:(long)tiem;
+/**
+ 时间转时间戳
+ */
++ (double)timeForDateString:(NSString *)dateString;
+/**
+ 美国时间转中国时间
+ */
++ (NSString *)formateString:(NSString *)dateString;
+
+#pragma mark ---- 颜色 ----
+
+/**
+ 随机颜色
+ */
++ (UIColor *)randomColor;
 @end

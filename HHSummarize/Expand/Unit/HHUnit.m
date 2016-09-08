@@ -151,4 +151,60 @@
     UIGraphicsEndImageContext();
     return imageCopy;
 }
+
+#pragma mark -- 时间处理
+//NSDate转时间
++ (NSString *)dateStringFromDate:(NSDate *)date formate:(NSString *)formate {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:formate];
+    NSString *dateString = [formatter stringFromDate:date];
+    return dateString;
+}
+//时间转成NSDate
++ (NSDate *)dateFormDateString:(NSString *)dateString formate:(NSString *)formate{
+    NSDateFormatter *fotmatter = [[NSDateFormatter alloc] init];
+    [fotmatter setDateFormat:formate];
+    NSDate *date = [fotmatter dateFromString:dateString];
+    return date;
+}
+
++ (double)timeForDate:(NSDate *)date
+{
+    double time = [date timeIntervalSince1970];
+    return time;
+}
++ (NSString *)datefromTime:(long)tiem
+{
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:tiem];
+    return [HHUnit dateStringFromDate:date formate:@"yyyyMMdd"];
+}
+//!< 时间转时间戳
++ (double)timeForDateString:(NSString *)dateString
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyyMMdd"];
+    NSDate *date = [formatter dateFromString:dateString];
+    return [HHUnit timeForDate:date];
+}
+//美国时间转成中国时间 //Sat Jan 12 11:50:16 +0800 2013
++ (NSString *)formateString:(NSString *)dateString
+{
+    NSString *formate = @"E MMM d HH:mm:ss Z yyyy";
+    NSDate *date = [HHUnit dateFormDateString:dateString formate:formate];
+    NSString *dateStr = [HHUnit dateStringFromDate:date formate:@"MM-dd:HH:mm"];
+    return dateStr;
+}
+//随机颜色
++ (UIColor *)randomColor
+{
+    static BOOL seeded = NO;
+    if (!seeded) {
+        seeded = YES;
+        srand48(time(0));
+    }
+    CGFloat r = (CGFloat)drand48();
+    CGFloat g = (CGFloat)drand48();
+    CGFloat b = (CGFloat)drand48();
+    return [UIColor colorWithRed:r green:g blue:b alpha:1.0];
+}
 @end

@@ -10,8 +10,9 @@
 #import "HHFontStyleVC.h"
 #import "HHCopyLabel.h"
 #import "UILabel+autoSize.h"
+#import "UIView+Frame.h"
 @interface HHUILabelVC ()
-
+@property (nonatomic, strong) UILabel  *htmlLab;
 @end
 
 @implementation HHUILabelVC
@@ -73,7 +74,7 @@
     
     label1.highLightColor = [UIColor yellowColor];
     
-    
+    [self.view addSubview:self.htmlLab];
 }
 - (void)setMutableAttributedString
 {
@@ -166,7 +167,28 @@
         HHFontStyleVC *vc =[[HHFontStyleVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
+}
+
+//!< 为lable添加HTML格式的文本
+- (void)addHTMLText
+{
     
+    NSString * htmlString = @"<html><body> 嘿嘿:<font size=\"20px\" color=\"green\">有钱就是这么任性!!!</font></body></html>";
+    NSAttributedString *text ;
+    text = [[NSAttributedString alloc] initWithData:[htmlString dataUsingEncoding:NSUnicodeStringEncoding]
+                                            options:@{NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType}
+                                 documentAttributes:nil
+                                              error:nil];
+    self.htmlLab.attributedText = text;
+    
+}
+- (UILabel *)htmlLab{
+    if (!_htmlLab) {
+        _htmlLab = [[UILabel alloc] initWithFrame:CGRectMake(0,HHEIGHT - 200, self.view.width, 60)];
+        _htmlLab.backgroundColor = [UIColor cyanColor];
+        [self addHTMLText];
+    }
+    return _htmlLab;
 }
 
 @end

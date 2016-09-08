@@ -67,7 +67,13 @@
     //设置item的字体颜色 大小等等
     
     self.tabBar.translucent = NO;
-    [[UITabBarItem appearance] setTitleTextAttributes: @{NSForegroundColorAttributeName :[UIColor redColor],NSFontAttributeName:[UIFont systemFontOfSize:15],NSBackgroundColorAttributeName:[UIColor yellowColor]} forState:UIControlStateNormal];
+    
+    NSDictionary *info = @{NSForegroundColorAttributeName :[UIColor redColor],
+                           NSFontAttributeName:[UIFont systemFontOfSize:15],
+                           NSBackgroundColorAttributeName:[UIColor yellowColor]};
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:info forState:UIControlStateNormal];
+    
 #endif
 
     

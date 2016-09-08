@@ -1,0 +1,127 @@
+<html>  
+    <head>  
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">  
+        <title>js调用oc</title>  
+        <script type="text/javaScript">  
+            function testClick(cmd)  
+            {  
+                //var str1 = ducument.getElementById("text1").value;  
+                //var str2 = ducument.getElementById("text2").value;  
+                var str1=document.getElementById("text1").value;  
+                var str2=document.getElementById("text2").value;  
+                //var str1="我来自ios苹果"; //%25u6211%25u6765%25u81EAios%25u82F9%25u679C  
+                //var str2="我来自earth地球";//%25u6211%25u6765%25u81EAearth%25u5730%25u7403  
+                //document.write(Date());
+                window.location.href="objc://"+cmd+":/"+EncodeUtf8(str1)+":/"+EncodeUtf8(str2);  
+            }  
+            function changeText(str1,str2)
+            {
+                document.getElementById("text1").value = str1;
+                document.getElementById("text2").value = str2;
+            }
+            // 字符串转换utf-8  
+            function EncodeUtf8(s1)  
+            {  
+                // escape函数用于对除英文字母外的字符进行编码。如“Visit W3School!”->"Visit%20W3School%21"  
+                var s = escape(s1);  
+                var sa = s.split("%");//sa[1]=u6211  
+                var retV ="";  
+                if(sa[0] != "")  
+                {  
+                    retV = sa[0];  
+                }  
+                for(var i = 1; i < sa.length; i ++)  
+                {  
+                    if(sa[i].substring(0,1) == "u")  
+                    {  
+                        retV += Hex2Utf8(Str2Hex(sa[i].substring(1,5)));  
+                        if(sa[i].length>=6)  
+                        {  
+                            retV += sa[i].substring(5);  
+                        }  
+                    }  
+                    else retV += "%" + sa[i];  
+                }  
+                return retV;  
+            }  
+            function Str2Hex(s)  
+            {  
+                var c = "";  
+                var n;  
+                var ss = "0123456789ABCDEF";  
+                var digS = "";  
+                for(var i = 0; i < s.length; i ++)  
+                {  
+                    c = s.charAt(i);  
+                    n = ss.indexOf(c);  
+                    digS += Dec2Dig(eval(n));  
+                      
+                }  
+                //return value;  
+                return digS;  
+            }  
+            function Dec2Dig(n1)  
+            {  
+                var s = "";  
+                var n2 = 0;  
+                for(var i = 0; i < 4; i++)  
+                {  
+                    n2 = Math.pow(2,3 - i);  
+                    if(n1 >= n2)  
+                    {  
+                        s += '1';  
+                        n1 = n1 - n2;  
+                    }  
+                    else  
+                    s += '0';  
+                      
+                }  
+                return s;  
+                  
+            }  
+            function Dig2Dec(s)  
+            {  
+                var retV = 0;  
+                if(s.length == 4)  
+                {  
+                    for(var i = 0; i < 4; i ++)  
+                    {  
+                        retV += eval(s.charAt(i)) * Math.pow(2, 3 - i);  
+                    }  
+                    return retV;  
+                }  
+                return -1;  
+            }  
+            function Hex2Utf8(s)  
+            {  
+                var retS = "";  
+                var tempS = "";  
+                var ss = "";  
+                if(s.length == 16)  
+                {  
+                    tempS = "1110" + s.substring(0, 4);  
+                    tempS += "10" +  s.substring(4, 10);  
+                    tempS += "10" + s.substring(10,16);   
+                    var sss = "0123456789ABCDEF";   
+                    for(var i = 0; i < 3; i ++)   
+                    {   
+                        retS += "%";   
+                        ss = tempS.substring(i * 8, (eval(i)+1)*8);   
+                          
+                          
+                          
+                        retS += sss.charAt(Dig2Dec(ss.substring(0,4)));   
+                        retS += sss.charAt(Dig2Dec(ss.substring(4,8)));   
+                    }   
+                    return retS;   
+                }   
+                return "";   
+            }  
+        </script>  
+    </head>  
+    <body>  
+        <p><input type="text" id="text1" value="我来自ios苹果"/></p>  
+        <p><input type="text" id="text2" value="我来自earth地球"/></p>  
+      <p><input type="button" id="enter" value="enter" onclick="testClick('getParam1:withParam2:');"/></p>  
+    </body>  
+</html>  
