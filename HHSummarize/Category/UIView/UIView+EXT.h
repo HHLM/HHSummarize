@@ -41,9 +41,6 @@ typedef NS_ENUM(NSInteger ,HHBorderDirection) {
           borderColor:(UIColor *)borderColor
           borderWidth:(CGFloat)borderWidth;
 
-/** 切一个圆形图片*/
-+ (UIImage *)imageRoundSize:(CGFloat)cornerRadius image:(UIImage *)image;
-
 /** 四周添加边线 无弧度 */
 - (void)addBorderColor:(UIColor *)borderColor boderWidth:(CGFloat)borderWidth;
 
