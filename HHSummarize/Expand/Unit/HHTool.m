@@ -312,4 +312,19 @@ static NSString * const HHFileBowseMode = @"HHFileBowseMode";
     NSString *fileName = [NSString stringWithFormat:@"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9], r[10], r[11], r[12], r[13], r[14], r[15]];
     return fileName;
 }
+
++ (BOOL)isEmptyString:(NSString *)string
+{
+    if (string.length == 0 || string == nil) {
+        return NO;
+    }else {
+        //去除首尾空格
+        string = [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        if (string > 0) {
+            return YES;
+        }
+        return NO;
+    }
+    return NO;
+}
 @end

@@ -38,6 +38,8 @@
 		F5D3B22F1D50953B00892518 /* HHUIFontVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5D3B22D1D50953B00892518 /* HHUIFontVC.xib */; };
 		F5D3B2311D5096E500892518 /* STSONG.TTF in Resources */ = {isa = PBXBuildFile; fileRef = F5D3B2301D5095DF00892518 /* STSONG.TTF */; };
 		F5D9E4BB1D48912B00248EC0 /* HHUILabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D9E4BA1D48912B00248EC0 /* HHUILabelVC.m */; };
+		F5EA82C21D80FE8600847DC6 /* UIImage+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EA82C11D80FE8600847DC6 /* UIImage+EXT.m */; };
+		F5EA82C81D80FFD100847DC6 /* HHUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EA82C71D80FFD100847DC6 /* HHUnit.m */; };
 		F5F8F2651D4B4E2A00006BF5 /* UILabel+autoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8F2641D4B4E2A00006BF5 /* UILabel+autoSize.m */; };
 		F5F8F2721D4B594000006BF5 /* HHUIButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8F2701D4B594000006BF5 /* HHUIButtonVC.m */; };
 		F5F8F2731D4B594000006BF5 /* HHUIButtonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F8F2711D4B594000006BF5 /* HHUIButtonVC.xib */; };
@@ -125,6 +127,10 @@
 		F5D3B2301D5095DF00892518 /* STSONG.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = STSONG.TTF; sourceTree = "<group>"; };
 		F5D9E4B91D48912B00248EC0 /* HHUILabelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUILabelVC.h; sourceTree = "<group>"; };
 		F5D9E4BA1D48912B00248EC0 /* HHUILabelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUILabelVC.m; sourceTree = "<group>"; };
+		F5EA82C01D80FE8600847DC6 /* UIImage+EXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+EXT.h"; sourceTree = "<group>"; };
+		F5EA82C11D80FE8600847DC6 /* UIImage+EXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+EXT.m"; sourceTree = "<group>"; };
+		F5EA82C61D80FFD100847DC6 /* HHUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUnit.h; sourceTree = "<group>"; };
+		F5EA82C71D80FFD100847DC6 /* HHUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUnit.m; sourceTree = "<group>"; };
 		F5F8F2631D4B4E2A00006BF5 /* UILabel+autoSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+autoSize.h"; sourceTree = "<group>"; };
 		F5F8F2641D4B4E2A00006BF5 /* UILabel+autoSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+autoSize.m"; sourceTree = "<group>"; };
 		F5F8F26F1D4B594000006BF5 /* HHUIButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUIButtonVC.h; sourceTree = "<group>"; };
@@ -323,6 +329,7 @@
 		F57AC2291D5197DA0055F7F2 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				F5EA82BF1D80FE5F00847DC6 /* UIImage */,
 				F57AC2271D5197C20055F7F2 /* NSData */,
 				F57AC2281D5197C20055F7F2 /* NSDate */,
 				F5C55A971D4D0997006A7EA7 /* NSString */,
@@ -346,6 +353,8 @@
 			children = (
 				F5B097E01D4EFC35004F1A68 /* HHTool.h */,
 				F5B097E11D4EFC35004F1A68 /* HHTool.m */,
+				F5EA82C61D80FFD100847DC6 /* HHUnit.h */,
+				F5EA82C71D80FFD100847DC6 /* HHUnit.m */,
 			);
 			path = Unit;
 			sourceTree = "<group>";
@@ -418,6 +427,15 @@
 				F5D3B22D1D50953B00892518 /* HHUIFontVC.xib */,
 			);
 			path = UIFont;
+			sourceTree = "<group>";
+		};
+		F5EA82BF1D80FE5F00847DC6 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				F5EA82C01D80FE8600847DC6 /* UIImage+EXT.h */,
+				F5EA82C11D80FE8600847DC6 /* UIImage+EXT.m */,
+			);
+			path = UIImage;
 			sourceTree = "<group>";
 		};
 		F5F8F2611D4B4DF400006BF5 /* Category */ = {
@@ -600,6 +618,8 @@
 				F5B097F31D4F4EC8004F1A68 /* UIView+EXT.m in Sources */,
 				F5F8F2721D4B594000006BF5 /* HHUIButtonVC.m in Sources */,
 				F5F8F2651D4B4E2A00006BF5 /* UILabel+autoSize.m in Sources */,
+				F5EA82C81D80FFD100847DC6 /* HHUnit.m in Sources */,
+				F5EA82C21D80FE8600847DC6 /* UIImage+EXT.m in Sources */,
 				CB8296421CEEBBB40013A120 /* ViewController.m in Sources */,
 				F57AC22D1D5198100055F7F2 /* NSDate+Utilities.m in Sources */,
 				F5204D941D4B408F00284071 /* HHFontStyleVC.m in Sources */,
