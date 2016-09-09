@@ -53,10 +53,12 @@
     NSString *text = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     
     NSLog(@"打印文本数据：%@",text);
-
     
     //webView加载txt文件
-    [webView1 loadData:data MIMEType:@"text/plain" textEncodingName:@"UTF-8" baseURL:nil];
+    [webView1 loadData:data
+              MIMEType:@"text/plain"
+      textEncodingName:@"UTF-8"
+                baseURL:[NSURL URLWithString:@""]];
     
 #if 0
      NSString  *htmlString = [NSString stringWithFormat:@"<body style=\"background-color: white;margin-right:20px;margin-left:16px;\">"];//设置背景ht颜色
@@ -92,13 +94,22 @@
     
     
     //webView加载txt文件
-    [webView1 loadData:data MIMEType:@"text/plain" textEncodingName:@"UTF-8" baseURL:nil];
+    [webView1 loadData:data
+              MIMEType:@"text/plain"
+      textEncodingName:@"UTF-8"
+               baseURL:[NSURL URLWithString:@""]];
     
     //webView加载docx文件
-    [webView1 loadData:data MIMEType:@"application/vnd.openxmlformats-officedocument.wordprocessingml.document" textEncodingName:@"UTF-8" baseURL:nil];
+    [webView1 loadData:data
+              MIMEType:@"application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      textEncodingName:@"UTF-8"
+               baseURL:[NSURL URLWithString:@""]];
     
     //webView加载pdf文件
-    [webView1 loadData:data MIMEType:@"application/pdf" textEncodingName:@"UTF-8" baseURL:nil];
+    [webView1 loadData:data
+              MIMEType:@"application/pdf"
+      textEncodingName:@"UTF-8"
+               baseURL:[NSURL URLWithString:@""]];
     
     //webview透明
     [webView1 setBackgroundColor:[UIColor clearColor]];

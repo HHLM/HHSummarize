@@ -10,5 +10,8 @@
 #define PrefixHeader_pch
 
 #import "Device.h"
+#import "Color.h"
+#import "FileManage.h"
+#import "PublicFile.h"
 
 #endif /* PrefixHeader_pch */

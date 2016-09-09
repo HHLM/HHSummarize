@@ -7,7 +7,8 @@
 //
 
 #import "HHUITableViewVC.h"
-
+#import "HHTableViewController.h"
+#import "HHViewController.h"
 
 @interface HHUITableViewVC ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) UITableView *myTableView;
@@ -64,6 +65,13 @@
     NSLog(@"--------%f",rectInTableView.origin.y);
     CGRect rect = [tableView convertRect:rectInTableView toView:[tableView superview]];
     NSLog(@"++++++%f",rect.origin.y);
+    if (indexPath.section == 0) {
+        HHViewController *vc = [[HHViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else{
+        HHTableViewController *vc = [[HHTableViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 2;
@@ -89,4 +97,5 @@
     }
     return cell;
 }
+
 @end
