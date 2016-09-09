@@ -34,6 +34,8 @@
 		F5183A011D82521D0079A2D5 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F51839F51D82521D0079A2D5 /* 7.jpg */; };
 		F5183A021D82521D0079A2D5 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F51839F61D82521D0079A2D5 /* 8.jpg */; };
 		F5183A031D82521D0079A2D5 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F51839F71D82521D0079A2D5 /* 9.jpg */; };
+		F5183A0A1D82993F0079A2D5 /* HHUIWebViewAndJS.m in Sources */ = {isa = PBXBuildFile; fileRef = F5183A091D82993F0079A2D5 /* HHUIWebViewAndJS.m */; };
+		F5183A0C1D82B6DE0079A2D5 /* HHhtmlAndjsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5183A0B1D82B6DE0079A2D5 /* HHhtmlAndjsVC.xib */; };
 		F5204D821D4B399F00284071 /* UIkit结构图.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5204D811D4B399F00284071 /* UIkit结构图.jpg */; };
 		F5204D8B1D4B3D3300284071 /* HHBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5204D8A1D4B3D3300284071 /* HHBaseVC.m */; };
 		F5204D901D4B3DA100284071 /* HHFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5204D8D1D4B3DA100284071 /* HHFirstVC.m */; };
@@ -58,7 +60,6 @@
 		F5EA82C21D80FE8600847DC6 /* UIImage+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EA82C11D80FE8600847DC6 /* UIImage+EXT.m */; };
 		F5EA82C81D80FFD100847DC6 /* HHUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EA82C71D80FFD100847DC6 /* HHUnit.m */; };
 		F5EA82DA1D810BA200847DC6 /* HHhtmlAndjsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EA82CE1D810BA200847DC6 /* HHhtmlAndjsVC.m */; };
-		F5EA82DB1D810BA200847DC6 /* HHhtmlAndjsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5EA82CF1D810BA200847DC6 /* HHhtmlAndjsVC.xib */; };
 		F5EA82DC1D810BA200847DC6 /* HHUIWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EA82D11D810BA200847DC6 /* HHUIWebViewVC.m */; };
 		F5EA82DD1D810BA200847DC6 /* HHUIWebViewDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EA82D31D810BA200847DC6 /* HHUIWebViewDetail.m */; };
 		F5EA82DE1D810BA200847DC6 /* HHUIWebViewFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EA82D51D810BA200847DC6 /* HHUIWebViewFile.m */; };
@@ -135,6 +136,9 @@
 		F51839F61D82521D0079A2D5 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		F51839F71D82521D0079A2D5 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		F5183A041D8253BA0079A2D5 /* PublicFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicFile.h; sourceTree = "<group>"; };
+		F5183A081D82993F0079A2D5 /* HHUIWebViewAndJS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUIWebViewAndJS.h; sourceTree = "<group>"; };
+		F5183A091D82993F0079A2D5 /* HHUIWebViewAndJS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUIWebViewAndJS.m; sourceTree = "<group>"; };
+		F5183A0B1D82B6DE0079A2D5 /* HHhtmlAndjsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHhtmlAndjsVC.xib; sourceTree = "<group>"; };
 		F5204D811D4B399F00284071 /* UIkit结构图.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UIkit结构图.jpg"; sourceTree = "<group>"; };
 		F5204D891D4B3D3300284071 /* HHBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHBaseVC.h; sourceTree = "<group>"; };
 		F5204D8A1D4B3D3300284071 /* HHBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHBaseVC.m; sourceTree = "<group>"; };
@@ -182,7 +186,6 @@
 		F5EA82C71D80FFD100847DC6 /* HHUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUnit.m; sourceTree = "<group>"; };
 		F5EA82CD1D810BA200847DC6 /* HHhtmlAndjsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHhtmlAndjsVC.h; sourceTree = "<group>"; };
 		F5EA82CE1D810BA200847DC6 /* HHhtmlAndjsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHhtmlAndjsVC.m; sourceTree = "<group>"; };
-		F5EA82CF1D810BA200847DC6 /* HHhtmlAndjsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHhtmlAndjsVC.xib; sourceTree = "<group>"; };
 		F5EA82D01D810BA200847DC6 /* HHUIWebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUIWebViewVC.h; sourceTree = "<group>"; };
 		F5EA82D11D810BA200847DC6 /* HHUIWebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUIWebViewVC.m; sourceTree = "<group>"; };
 		F5EA82D21D810BA200847DC6 /* HHUIWebViewDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUIWebViewDetail.h; sourceTree = "<group>"; };
@@ -565,13 +568,15 @@
 			children = (
 				F5EA82CD1D810BA200847DC6 /* HHhtmlAndjsVC.h */,
 				F5EA82CE1D810BA200847DC6 /* HHhtmlAndjsVC.m */,
-				F5EA82CF1D810BA200847DC6 /* HHhtmlAndjsVC.xib */,
+				F5183A0B1D82B6DE0079A2D5 /* HHhtmlAndjsVC.xib */,
 				F5EA82D01D810BA200847DC6 /* HHUIWebViewVC.h */,
 				F5EA82D11D810BA200847DC6 /* HHUIWebViewVC.m */,
 				F5EA82D21D810BA200847DC6 /* HHUIWebViewDetail.h */,
 				F5EA82D31D810BA200847DC6 /* HHUIWebViewDetail.m */,
 				F5EA82D41D810BA200847DC6 /* HHUIWebViewFile.h */,
 				F5EA82D51D810BA200847DC6 /* HHUIWebViewFile.m */,
+				F5183A081D82993F0079A2D5 /* HHUIWebViewAndJS.h */,
+				F5183A091D82993F0079A2D5 /* HHUIWebViewAndJS.m */,
 				F5EA82D61D810BA200847DC6 /* jeep_1.txt */,
 				F5EA82D71D810BA200847DC6 /* test.html */,
 			);
@@ -740,7 +745,6 @@
 				F5D3B2311D5096E500892518 /* STSONG.TTF in Resources */,
 				F5F8F2731D4B594000006BF5 /* HHUIButtonVC.xib in Resources */,
 				CB82964A1CEEBBB40013A120 /* LaunchScreen.storyboard in Resources */,
-				F5EA82DB1D810BA200847DC6 /* HHhtmlAndjsVC.xib in Resources */,
 				F51839FC1D82521D0079A2D5 /* 2.jpg in Resources */,
 				F51839FE1D82521D0079A2D5 /* 4.jpg in Resources */,
 				F5F8F27E1D4B5A6100006BF5 /* HHUIImageViewVC.xib in Resources */,
@@ -751,6 +755,7 @@
 				F5204D991D4B418100284071 /* test@2x.png in Resources */,
 				CB8296471CEEBBB40013A120 /* Assets.xcassets in Resources */,
 				F5D3B22F1D50953B00892518 /* HHUIFontVC.xib in Resources */,
+				F5183A0C1D82B6DE0079A2D5 /* HHhtmlAndjsVC.xib in Resources */,
 				F5183A021D82521D0079A2D5 /* 8.jpg in Resources */,
 				F51839FA1D82521D0079A2D5 /* 10.jpg in Resources */,
 				F5204D821D4B399F00284071 /* UIkit结构图.jpg in Resources */,
@@ -804,6 +809,7 @@
 				CB82963F1CEEBBB40013A120 /* AppDelegate.m in Sources */,
 				F5204D9C1D4B42FF00284071 /* HHCopyLabel.m in Sources */,
 				F5EA82E61D810DF000847DC6 /* HHCell1.m in Sources */,
+				F5183A0A1D82993F0079A2D5 /* HHUIWebViewAndJS.m in Sources */,
 				F52A443A1D4F868500AD009F /* UIView+Animation.m in Sources */,
 				F5EA82DD1D810BA200847DC6 /* HHUIWebViewDetail.m in Sources */,
 				F5060AB11D476A20006DF99C /* HHAppDelegate.m in Sources */,

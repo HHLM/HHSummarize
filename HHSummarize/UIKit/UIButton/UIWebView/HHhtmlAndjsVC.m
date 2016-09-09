@@ -7,7 +7,7 @@
 //
 
 #import "HHhtmlAndjsVC.h"
-
+#import "HHUIWebViewAndJS.h"
 @interface HHhtmlAndjsVC ()<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *text1;
 @property (weak, nonatomic) IBOutlet UITextField *text2;
@@ -17,14 +17,30 @@
 
 @implementation HHhtmlAndjsVC
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     self.title = @"JS交互";
+    UIBarButtonItem *leftItem =
+    [[UIBarButtonItem alloc] initWithTitle:@"下一页"
+                                     style:UIBarButtonItemStylePlain
+                                    target:self
+                                    action:@selector(next)];
+    
+    leftItem.tintColor =[UIColor redColor];
+    
+    self.navigationItem.rightBarButtonItem = leftItem;
+    
     NSString *basePath = [[NSBundle mainBundle] bundlePath];
     NSString *helpHtmlPath = [basePath stringByAppendingPathComponent:@"test.html"];
     NSURL *url = [NSURL fileURLWithPath:helpHtmlPath];
     NSURLRequest *request=[NSURLRequest requestWithURL:url];
     [_webView loadRequest:request];
+}
+- (void)next
+{
+    HHUIWebViewAndJS *jsVc = [[HHUIWebViewAndJS alloc] init];
+    [self.navigationController pushViewController:jsVc animated:YES];
 }
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {

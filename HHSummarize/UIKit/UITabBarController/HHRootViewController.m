@@ -24,10 +24,10 @@
     self.viewControllers = @[nav1,nav2];
     
     //设置导航的文字颜色 和背景颜色
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor greenColor]}];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor cyanColor]}];
     
     //导航条染色
-    [UINavigationBar appearance].barTintColor = [UIColor orangeColor];
+    [UINavigationBar appearance].barTintColor = [UIColor whiteColor];
     
     //导航条是否透明
     [UINavigationBar appearance].translucent = NO;
