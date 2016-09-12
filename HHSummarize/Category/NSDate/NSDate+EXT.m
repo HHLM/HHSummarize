@@ -65,6 +65,9 @@ static const unsigned components = (NSYearCalendarUnit|
     return dayComPonents;
 }
 
+- (NSDate *)dateAfterMonth:(NSUInteger)month {
+    return [NSDate dateAfterDate:self month:month];
+}
 + (NSDate *)dateAfterDate:(NSDate *)date month:(NSInteger)month {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *componentsToAdd = [[NSDateComponents alloc] init];
@@ -73,9 +76,7 @@ static const unsigned components = (NSYearCalendarUnit|
     
     return dateAfterMonth;
 }
-- (NSDate *)dateAfterMonth:(NSUInteger)month {
-    return [NSDate dateAfterDate:self month:month];
-}
+
 - (NSDate *)dateAfterDay:(NSUInteger)day {
     return [NSDate dateAfterDate:self day:day];
 }
@@ -88,6 +89,7 @@ static const unsigned components = (NSYearCalendarUnit|
     
     return dateAfterDay;
 }
+#pragma mark -- 第一天 和最后一天
 - (NSDate *)begindayOfMonth {
     return [NSDate begindayOfMonth:self];
 }
@@ -104,7 +106,7 @@ static const unsigned components = (NSYearCalendarUnit|
     NSDate *lastDate = [self begindayOfMonth:date];
     return [[lastDate dateAfterMonth:1] dateAfterDay:-1];
 }
-
+#pragma mark -- 年、月、日 时、分、秒
 - (NSInteger)day {
     return [NSDate day:self];;
 }
@@ -157,11 +159,30 @@ static const unsigned components = (NSYearCalendarUnit|
 }
 
 #pragma mark -- 星期几
+
 - (NSUInteger)weekOfYear {
     return [NSDate weekOfYear:self];
 }
+
 + (NSUInteger)weekOfYear:(NSDate *)date {
-    return [[NSDate dateComPonents:date] weekOfYear];
+    NSUInteger i;
+    NSUInteger year = [date year];
+    
+    NSDate *lastdate = [date lastdayOfMonth];
+    
+    for (i = 1;[[lastdate dateAfterDay:-7 * i] year] == year; i++) {
+        
+    }
+    
+    return i;
+}
+
+- (NSUInteger)weeksOfMonth {
+    return [NSDate weeksOfMonth:self];
+}
+
++ (NSUInteger)weeksOfMonth:(NSDate *)date {
+    return [[date lastdayOfMonth] weekOfYear] - [[date begindayOfMonth] weekOfYear] + 1;
 }
 
 - (NSString *)weekday {

@@ -83,6 +83,12 @@
 + (NSUInteger)weekOfYear:(NSDate *)date;
 
 /**
+ * 返回当前月一共有几周(可能为4,5,6)
+ */
+- (NSUInteger)weeksOfMonth;
++ (NSUInteger)weeksOfMonth:(NSDate *)date;
+
+/**
  * 获取该日期是该年的月份
  */
 - (NSString *)monthOfYear;
