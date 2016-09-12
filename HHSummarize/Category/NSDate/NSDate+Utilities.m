@@ -3,7 +3,15 @@
 #import "NSDate+Utilities.h"
 
 // Thanks, AshFurrow
-static const unsigned componentFlags = (NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit |  NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit);
+static const unsigned componentFlags = (NSYearCalendarUnit|
+                                        NSMonthCalendarUnit|
+                                        NSDayCalendarUnit |
+                                        NSWeekCalendarUnit |
+                                        NSHourCalendarUnit |
+                                        NSMinuteCalendarUnit |
+                                        NSSecondCalendarUnit |
+                                        NSWeekdayCalendarUnit |
+                                        NSWeekdayOrdinalCalendarUnit);
 
 @implementation NSDate (Utilities)
 

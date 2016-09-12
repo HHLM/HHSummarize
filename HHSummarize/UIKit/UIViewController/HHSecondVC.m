@@ -7,10 +7,14 @@
 //
 
 #import "HHSecondVC.h"
-
+#import "NSDate+EXT.h"
+#import "NSDate+Utilities.h"
+#import "HHUnit.h"
 @interface HHSecondVC ()
 
 @end
+
+
 
 @implementation HHSecondVC
 
@@ -18,7 +22,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"Foundation界面";
+    NSDate*date = [HHUnit dateFormDateString:@"2016-09-10 12:12:12" formate:@"yyyy-MM-dd hh:mm:ss"];
+    [NSDate timeInfoWithDate:date];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -17,6 +17,7 @@
 		CB8296601CEEBBB40013A120 /* HHSummarizeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB82965F1CEEBBB40013A120 /* HHSummarizeUITests.m */; };
 		F5060AB11D476A20006DF99C /* HHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5060AB01D476A20006DF99C /* HHAppDelegate.m */; };
 		F5060AB51D476BEF006DF99C /* HHRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5060AB41D476BEF006DF99C /* HHRootViewController.m */; };
+		F50C96D41D86530300E6F16A /* NSDate+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = F50C96D31D86530300E6F16A /* NSDate+EXT.m */; };
 		F51839E61D8251F20079A2D5 /* HHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51839DD1D8251F20079A2D5 /* HHViewController.m */; };
 		F51839E71D8251F20079A2D5 /* HHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51839DF1D8251F20079A2D5 /* HHTableViewController.m */; };
 		F51839E81D8251F20079A2D5 /* HHModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51839E11D8251F20079A2D5 /* HHModel.m */; };
@@ -113,6 +114,8 @@
 		F5060AB21D476B04006DF99C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F5060AB31D476BEF006DF99C /* HHRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHRootViewController.h; sourceTree = "<group>"; };
 		F5060AB41D476BEF006DF99C /* HHRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHRootViewController.m; sourceTree = "<group>"; };
+		F50C96D21D86530300E6F16A /* NSDate+EXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+EXT.h"; sourceTree = "<group>"; };
+		F50C96D31D86530300E6F16A /* NSDate+EXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+EXT.m"; sourceTree = "<group>"; };
 		F51839DC1D8251F20079A2D5 /* HHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHViewController.h; sourceTree = "<group>"; };
 		F51839DD1D8251F20079A2D5 /* HHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHViewController.m; sourceTree = "<group>"; };
 		F51839DE1D8251F20079A2D5 /* HHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTableViewController.h; sourceTree = "<group>"; };
@@ -446,6 +449,8 @@
 			children = (
 				F57AC22B1D5198100055F7F2 /* NSDate+Utilities.h */,
 				F57AC22C1D5198100055F7F2 /* NSDate+Utilities.m */,
+				F50C96D21D86530300E6F16A /* NSDate+EXT.h */,
+				F50C96D31D86530300E6F16A /* NSDate+EXT.m */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -789,6 +794,7 @@
 			files = (
 				F51839E71D8251F20079A2D5 /* HHTableViewController.m in Sources */,
 				F5B097F31D4F4EC8004F1A68 /* UIView+EXT.m in Sources */,
+				F50C96D41D86530300E6F16A /* NSDate+EXT.m in Sources */,
 				F5F8F2721D4B594000006BF5 /* HHUIButtonVC.m in Sources */,
 				F51839E61D8251F20079A2D5 /* HHViewController.m in Sources */,
 				F5F8F2651D4B4E2A00006BF5 /* UILabel+autoSize.m in Sources */,

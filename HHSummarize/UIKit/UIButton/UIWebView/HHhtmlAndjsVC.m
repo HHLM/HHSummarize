@@ -60,10 +60,8 @@
             // 没有参数
             if([funcStr isEqualToString:@"doFunc1"])
             {
-                
                 /*调用本地函数1*/
-                NSLog(@"doFunc1");
-                
+                NSLog(@"doFunc1");   
             }
         }
         else
