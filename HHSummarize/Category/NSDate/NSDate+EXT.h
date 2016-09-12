@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface NSDate (EXT)
 /*
  * 获取年、月、日、小时、分钟、秒
@@ -28,6 +29,18 @@
 + (NSUInteger)second:(NSDate *)date;
 + (NSUInteger)week:(NSDate *)date;
 
+
+/**
+ *  之前之后的时间
+ */
++ (NSDate *) dateTomorrow;
++ (NSDate *) dateYesterday;
++ (NSDate *) dateWithDaysFromNow: (NSInteger) days;
++ (NSDate *) dateWithDaysBeforeNow: (NSInteger) days;
++ (NSDate *) dateWithHoursFromNow: (NSInteger) hours;
++ (NSDate *) dateWithHoursBeforeNow: (NSInteger) hours;
++ (NSDate *) dateWithMinutesFromNow: (NSInteger) minutes;
++ (NSDate *) dateWithMinutesBeforeNow: (NSInteger) minutes;
 /**
  获取星期几
  */

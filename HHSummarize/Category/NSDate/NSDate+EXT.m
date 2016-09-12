@@ -9,6 +9,9 @@
 #import "NSDate+EXT.h"
 
 
+
+
+
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_8_0
 
 static const unsigned components = (NSCalendarUnitYear|
@@ -37,8 +40,13 @@ static const unsigned components = (NSYearCalendarUnit|
                                     NSWeekdayOrdinalCalendarUnit);
 
 #endif
+static const NSInteger  H_Day = 60 * 60 *24;
+static const NSInteger  H_Hour = 60 * 60;
+static const NSInteger  H_Minute = 60;
+static const NSInteger  H_Week = 3600 * 24 * 7;
 
 @implementation NSDate (EXT)
+
 #pragma mark -- shareCalendar
 + (NSCalendar *)calendar
 {
@@ -64,7 +72,9 @@ static const unsigned components = (NSYearCalendarUnit|
     NSDateComponents *dayComPonents = [calendar components:components fromDate:date];
     return dayComPonents;
 }
-
+/**
+ 正数代表后面的日期 负数代表之前的日期
+ */
 - (NSDate *)dateAfterMonth:(NSUInteger)month {
     return [NSDate dateAfterDate:self month:month];
 }
@@ -76,7 +86,9 @@ static const unsigned components = (NSYearCalendarUnit|
     
     return dateAfterMonth;
 }
-
+/**
+ 正数代表后面的日期 负数代表之前的日期
+ */
 - (NSDate *)dateAfterDay:(NSUInteger)day {
     return [NSDate dateAfterDate:self day:day];
 }
@@ -84,7 +96,6 @@ static const unsigned components = (NSYearCalendarUnit|
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *componentsToAdd = [[NSDateComponents alloc] init];
     [componentsToAdd setDay:day];
-    
     NSDate *dateAfterDay = [calendar dateByAddingComponents:componentsToAdd toDate:date options:0];
     
     return dateAfterDay;
@@ -156,6 +167,53 @@ static const unsigned components = (NSYearCalendarUnit|
 + (NSUInteger)week:(NSDate *)date
 {
     return [[NSDate dateComPonents:date] weekday];
+}
+
+#pragma mark -- 当前时间前后时间
+- (NSDate *) dateByAddingDays: (NSInteger) dDays
+{
+    NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
+    [dateComponents setDay:dDays];
+    NSDate *newDate = [[NSCalendar currentCalendar] dateByAddingComponents:dateComponents toDate:self options:0];
+    return newDate;
+}
++ (NSDate *) dateTomorrow
+{
+    return  [NSDate dateWithDaysFromNow:1];
+}
++ (NSDate *) dateYesterday{
+    return [NSDate dateWithDaysBeforeNow:-1];
+}
+- (NSDate *) dateBySubtractingDays: (NSInteger) days
+{
+    return [self dateByAddingDays: (days * -1)];
+}
++ (NSDate *) dateWithDaysFromNow: (NSInteger) days
+{
+    return [[NSDate date] dateByAddingDays:days];
+}
++ (NSDate *) dateWithDaysBeforeNow: (NSInteger) days{
+    return [[NSDate date] dateBySubtractingDays:days];
+}
++ (NSDate *) dateWithHoursFromNow: (NSInteger) hours{
+    NSTimeInterval aTimeInterval = [[NSDate date] timeIntervalSinceReferenceDate] + H_Hour * hours;
+    NSDate *newDate = [NSDate dateWithTimeIntervalSinceReferenceDate:aTimeInterval];
+    return newDate;
+}
++ (NSDate *) dateWithHoursBeforeNow: (NSInteger) hours{
+    NSTimeInterval aTimeInterval = [[NSDate date] timeIntervalSinceReferenceDate] - H_Hour * hours;
+    NSDate *newDate = [NSDate dateWithTimeIntervalSinceReferenceDate:aTimeInterval];
+    return newDate;
+}
++ (NSDate *) dateWithMinutesFromNow: (NSInteger) minutes{
+    NSTimeInterval aTimeInterval = [[NSDate date] timeIntervalSinceReferenceDate] + H_Minute * minutes;
+    NSDate *newDate = [NSDate dateWithTimeIntervalSinceReferenceDate:aTimeInterval];
+    return newDate;
+}
++ (NSDate *) dateWithMinutesBeforeNow: (NSInteger) minutes{
+    NSTimeInterval aTimeInterval = [[NSDate date] timeIntervalSinceReferenceDate] - H_Minute * minutes;
+    NSDate *newDate = [NSDate dateWithTimeIntervalSinceReferenceDate:aTimeInterval];
+    return newDate;
 }
 
 #pragma mark -- 星期几
