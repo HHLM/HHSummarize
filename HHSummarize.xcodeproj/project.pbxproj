@@ -47,6 +47,7 @@
 		F5204D9C1D4B42FF00284071 /* HHCopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5204D9B1D4B42FF00284071 /* HHCopyLabel.m */; };
 		F52A443A1D4F868500AD009F /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = F52A44391D4F868500AD009F /* UIView+Animation.m */; };
 		F57AC22D1D5198100055F7F2 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F57AC22C1D5198100055F7F2 /* NSDate+Utilities.m */; };
+		F5880FF71DD4087900275C13 /* HHConverRectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5880FF61DD4087900275C13 /* HHConverRectVC.m */; };
 		F5B097E21D4EFC35004F1A68 /* HHTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097E11D4EFC35004F1A68 /* HHTool.m */; };
 		F5B097E81D4F2282004F1A68 /* HHTimeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097E71D4F2282004F1A68 /* HHTimeButton.m */; };
 		F5B097ED1D4F4163004F1A68 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097EC1D4F4163004F1A68 /* UIView+Frame.m */; };
@@ -160,6 +161,8 @@
 		F52A44391D4F868500AD009F /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
 		F57AC22B1D5198100055F7F2 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
 		F57AC22C1D5198100055F7F2 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
+		F5880FF51DD4087900275C13 /* HHConverRectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHConverRectVC.h; sourceTree = "<group>"; };
+		F5880FF61DD4087900275C13 /* HHConverRectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHConverRectVC.m; sourceTree = "<group>"; };
 		F5B097E01D4EFC35004F1A68 /* HHTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTool.h; sourceTree = "<group>"; };
 		F5B097E11D4EFC35004F1A68 /* HHTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTool.m; sourceTree = "<group>"; };
 		F5B097E61D4F2282004F1A68 /* HHTimeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTimeButton.h; sourceTree = "<group>"; };
@@ -333,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				F5204D811D4B399F00284071 /* UIkit结构图.jpg */,
+				F5880FF41DD4085E00275C13 /* OtherVC */,
 				F5D3B22A1D5094F000892518 /* UIFont */,
 				F5060A9D1D47695C006DF99C /* UILabel */,
 				F5F8F2661D4B582900006BF5 /* UIButton */,
@@ -475,6 +479,16 @@
 				F5F8F2621D4B4DF400006BF5 /* UILabel */,
 			);
 			name = UIKit;
+			sourceTree = "<group>";
+		};
+		F5880FF41DD4085E00275C13 /* OtherVC */ = {
+			isa = PBXGroup;
+			children = (
+				F5880FF51DD4087900275C13 /* HHConverRectVC.h */,
+				F5880FF61DD4087900275C13 /* HHConverRectVC.m */,
+			);
+			name = OtherVC;
+			path = Other;
 			sourceTree = "<group>";
 		};
 		F5B097DF1D4EFC1F004F1A68 /* Unit */ = {
@@ -826,6 +840,7 @@
 				F5EA82DC1D810BA200847DC6 /* HHUIWebViewVC.m in Sources */,
 				F5C55A9A1D4D09AB006A7EA7 /* NSString+EXT.m in Sources */,
 				CB82963C1CEEBBB40013A120 /* main.m in Sources */,
+				F5880FF71DD4087900275C13 /* HHConverRectVC.m in Sources */,
 				F51839EA1D8251F20079A2D5 /* HHCellView.m in Sources */,
 				F5B097E81D4F2282004F1A68 /* HHTimeButton.m in Sources */,
 				F5D3B22E1D50953B00892518 /* HHUIFontVC.m in Sources */,

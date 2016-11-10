@@ -19,6 +19,7 @@
     NSMutableArray *array;
     NSMutableArray *arr;
     UISearchBar *seach;
+    UILabel *lllll;
     
 }
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -145,20 +146,20 @@
 {
     
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    
+    lllll = cell.textLabel;
     //黏贴板
-    UIPasteboard *pasteBoard = [UIPasteboard generalPasteboard];
+//    UIPasteboard *pasteBoard = [UIPasteboard generalPasteboard];
+//    
+//    //获得剪贴板的内容
+//    [pasteBoard setString:cell.textLabel.text];
+//    NSLog(@"%@＝＝＝＝",pasteBoard.string);
     
-    //获得剪贴板的内容
-    [pasteBoard setString:cell.textLabel.text];
-    NSLog(@"%@＝＝＝＝",pasteBoard.string);
-    
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"拷贝数据"
-                                                    message:pasteBoard.string
-                                                   delegate:nil
-                                          cancelButtonTitle:@"确定"
-                                          otherButtonTitles:nil, nil];
-    [alert show];
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"拷贝数据"
+//                                                    message:pasteBoard.string
+//                                                   delegate:nil
+//                                          cancelButtonTitle:@"确定"
+//                                          otherButtonTitles:nil, nil];
+//    [alert show];
     
     return YES;
 }
@@ -166,6 +167,29 @@
 -(void)tableView:(UITableView *)tableView performAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender
 {
     NSLog(@"***************");
+    UIMenuItem *copyItem = [[UIMenuItem alloc] initWithTitle:@"复制" action:@selector(onCopyOrderId)];
+    [[UIMenuController sharedMenuController] setMenuItems:@[copyItem]];
+    [[UIMenuController sharedMenuController] setTargetRect:lllll.frame inView:lllll.superview];
+    [[UIMenuController sharedMenuController] setMenuVisible:true animated:true];
+
+}
+- (void)onCopyOrderId
+{
+    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+    pasteboard.string = lllll.text;
+    DLog(@"pasteboard::::::%@", pasteboard.string);
+}
+
+//为了能接收到事件（能成为第一响应者），我们需要覆盖一个方法：
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+//还需要针对复制的操作覆盖两个方法：
+// 可以响应的方法
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender
+{
+    return (action == @selector(onCopyOrderId));
 }
 //索引
 -(NSArray*)sectionIndexTitlesForTableView:(UITableView *)tableView
