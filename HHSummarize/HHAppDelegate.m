@@ -9,6 +9,70 @@
 #import "HHAppDelegate.h"
 
 @implementation HHAppDelegate
+
+
+// 设置本地通知
+- (void)registerLocalNotification:(NSInteger)alertTime
+{
+    
+    UILocalNotification *notifications = [[UILocalNotification alloc] init];
+    
+    //出发通知时间
+    NSDate *date = [NSDate dateWithTimeIntervalSinceNow:alertTime];
+    
+    notifications.fireDate = date;
+    
+    notifications.timeZone = [NSTimeZone defaultTimeZone];
+    
+    notifications.repeatInterval = kCFCalendarUnitSecond;
+    
+    //通知内容
+    notifications.alertBody = @"小伙子加油啊...";
+    
+    notifications.applicationIconBadgeNumber = 3;
+    
+    // 通知被触发时播放的声音
+    notifications.soundName = @"eyd_cry.caf"; //自定义的声音
+    
+    NSDictionary *keys = @{@"key":@"在不努力你什么没有了!!!"};
+    
+    notifications.userInfo = keys;
+    
+    //iOS以后 需要注册者这个才能授权
+    if ([[UIApplication sharedApplication] respondsToSelector:@selector(registerUserNotificationSettings:)])
+    {
+        UIUserNotificationType  type = UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound;
+        
+        UIUserNotificationSettings *setting = [UIUserNotificationSettings settingsForTypes:type categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:setting];
+        
+        //通知重复提示时间单位
+        notifications.repeatInterval = NSCalendarUnitDay;
+    }else {
+        notifications.repeatInterval = NSCalendarUnitDay;
+    }
+    
+    //注册本地通知
+    [[UIApplication sharedApplication] scheduleLocalNotification:notifications];;
+    
+}
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    NSString *notMess = [notification.userInfo objectForKey:@"key"];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"小伙伴通知来了"
+                                                    message:notMess
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+    
+    // 更新显示的徽章个数
+    NSInteger badge = [UIApplication sharedApplication].applicationIconBadgeNumber;
+    badge--;
+    NSLog(@"小圆点的个数：%ld",badge);
+    badge = badge >= 0 ? badge : 0;
+    [UIApplication sharedApplication].applicationIconBadgeNumber = badge;
+}
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     return YES;
@@ -16,14 +80,17 @@
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     /// Required - 注册 DeviceToken
+    DLog(@"deviceToken:%@",deviceToken);
 }
+
+
 /*
  接收推送消息
  */
-//- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-//    
-//    // Required,For systems with less than or equal to iOS6
-//}
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+
+    
+}
 
 //- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
 //    

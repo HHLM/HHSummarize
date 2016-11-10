@@ -163,6 +163,8 @@
 		F57AC22C1D5198100055F7F2 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
 		F5880FF51DD4087900275C13 /* HHConverRectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHConverRectVC.h; sourceTree = "<group>"; };
 		F5880FF61DD4087900275C13 /* HHConverRectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHConverRectVC.m; sourceTree = "<group>"; };
+		F5880FF81DD47BBE00275C13 /* eyd_cry.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = eyd_cry.caf; sourceTree = "<group>"; };
+		F5880FF91DD47D8800275C13 /* HHSummarize.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HHSummarize.entitlements; sourceTree = "<group>"; };
 		F5B097E01D4EFC35004F1A68 /* HHTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTool.h; sourceTree = "<group>"; };
 		F5B097E11D4EFC35004F1A68 /* HHTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTool.m; sourceTree = "<group>"; };
 		F5B097E61D4F2282004F1A68 /* HHTimeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTimeButton.h; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 		CB8296391CEEBBB40013A120 /* HHSummarize */ = {
 			isa = PBXGroup;
 			children = (
+				F5880FF91DD47D8800275C13 /* HHSummarize.entitlements */,
 				F5C55A9E1D4D0C4D006A7EA7 /* Expand */,
 				F5F8F2611D4B4DF400006BF5 /* Category */,
 				F5060A951D47695C006DF99C /* UIKit */,
@@ -276,6 +279,7 @@
 		CB82963A1CEEBBB40013A120 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F5880FF81DD47BBE00275C13 /* eyd_cry.caf */,
 				CB8296461CEEBBB40013A120 /* Assets.xcassets */,
 				CB82964B1CEEBBB40013A120 /* Info.plist */,
 				CB82963B1CEEBBB40013A120 /* main.m */,
@@ -722,6 +726,15 @@
 				TargetAttributes = {
 					CB8296361CEEBBB40013A120 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = YM2MZ34492;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					CB82964F1CEEBBB40013A120 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -987,6 +1000,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HHSummarize/HHSummarize.entitlements;
+				DEVELOPMENT_TEAM = YM2MZ34492;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HHSummarize/PrefixHeader.pch";
 				INFOPLIST_FILE = HHSummarize/Info.plist;
@@ -1001,6 +1016,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HHSummarize/HHSummarize.entitlements;
+				DEVELOPMENT_TEAM = YM2MZ34492;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HHSummarize/PrefixHeader.pch";
 				INFOPLIST_FILE = HHSummarize/Info.plist;

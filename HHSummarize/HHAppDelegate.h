@@ -10,4 +10,7 @@
 
 @interface HHAppDelegate : UIResponder
 
+/** 注册本地通知 */
+- (void)registerLocalNotification:(NSInteger)alertTime;
+
 @end

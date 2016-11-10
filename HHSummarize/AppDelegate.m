@@ -17,7 +17,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self registerLocalNotification:30];
     return YES;
+}
+/**
+ iOS8以后的注册
+ */
+- (void)registerUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings NS_AVAILABLE_IOS(8_0);
+{
+    [self registerLocalNotification:30];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
