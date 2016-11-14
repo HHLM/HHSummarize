@@ -49,6 +49,8 @@
 		F57AC22D1D5198100055F7F2 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F57AC22C1D5198100055F7F2 /* NSDate+Utilities.m */; };
 		F5880FF71DD4087900275C13 /* HHConverRectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5880FF61DD4087900275C13 /* HHConverRectVC.m */; };
 		F5880FFD1DD5601F00275C13 /* HHTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5880FFC1DD5601F00275C13 /* HHTextView.m */; };
+		F58810001DD5C01200275C13 /* HHToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F5880FFF1DD5C01200275C13 /* HHToolBar.m */; };
+		F58810041DD5C04E00275C13 /* UIScrollView+HiddenTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = F58810031DD5C04E00275C13 /* UIScrollView+HiddenTabbar.m */; };
 		F5B097E21D4EFC35004F1A68 /* HHTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097E11D4EFC35004F1A68 /* HHTool.m */; };
 		F5B097E81D4F2282004F1A68 /* HHTimeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097E71D4F2282004F1A68 /* HHTimeButton.m */; };
 		F5B097ED1D4F4163004F1A68 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097EC1D4F4163004F1A68 /* UIView+Frame.m */; };
@@ -168,6 +170,10 @@
 		F5880FF91DD47D8800275C13 /* HHSummarize.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HHSummarize.entitlements; sourceTree = "<group>"; };
 		F5880FFB1DD5601F00275C13 /* HHTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTextView.h; sourceTree = "<group>"; };
 		F5880FFC1DD5601F00275C13 /* HHTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTextView.m; sourceTree = "<group>"; };
+		F5880FFE1DD5C01200275C13 /* HHToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHToolBar.h; sourceTree = "<group>"; };
+		F5880FFF1DD5C01200275C13 /* HHToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHToolBar.m; sourceTree = "<group>"; };
+		F58810021DD5C04E00275C13 /* UIScrollView+HiddenTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+HiddenTabbar.h"; sourceTree = "<group>"; };
+		F58810031DD5C04E00275C13 /* UIScrollView+HiddenTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+HiddenTabbar.m"; sourceTree = "<group>"; };
 		F5B097E01D4EFC35004F1A68 /* HHTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTool.h; sourceTree = "<group>"; };
 		F5B097E11D4EFC35004F1A68 /* HHTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTool.m; sourceTree = "<group>"; };
 		F5B097E61D4F2282004F1A68 /* HHTimeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTimeButton.h; sourceTree = "<group>"; };
@@ -482,6 +488,7 @@
 		F57AC22A1D5197E70055F7F2 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				F58810011DD5C03C00275C13 /* UIScrollView */,
 				F5B097EA1D4F4150004F1A68 /* UIView */,
 				F5B097E91D4F4071004F1A68 /* UIButton */,
 				F5F8F2621D4B4DF400006BF5 /* UILabel */,
@@ -502,10 +509,21 @@
 		F5880FFA1DD55FC000275C13 /* HHCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				F5880FFE1DD5C01200275C13 /* HHToolBar.h */,
+				F5880FFF1DD5C01200275C13 /* HHToolBar.m */,
 				F5880FFB1DD5601F00275C13 /* HHTextView.h */,
 				F5880FFC1DD5601F00275C13 /* HHTextView.m */,
 			);
 			path = HHCustomView;
+			sourceTree = "<group>";
+		};
+		F58810011DD5C03C00275C13 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F58810021DD5C04E00275C13 /* UIScrollView+HiddenTabbar.h */,
+				F58810031DD5C04E00275C13 /* UIScrollView+HiddenTabbar.m */,
+			);
+			path = UIScrollView;
 			sourceTree = "<group>";
 		};
 		F5B097DF1D4EFC1F004F1A68 /* Unit */ = {
@@ -855,6 +873,7 @@
 				CB82963F1CEEBBB40013A120 /* AppDelegate.m in Sources */,
 				F5204D9C1D4B42FF00284071 /* HHCopyLabel.m in Sources */,
 				F5EA82E61D810DF000847DC6 /* HHCell1.m in Sources */,
+				F58810001DD5C01200275C13 /* HHToolBar.m in Sources */,
 				F5880FFD1DD5601F00275C13 /* HHTextView.m in Sources */,
 				F5183A0A1D82993F0079A2D5 /* HHUIWebViewAndJS.m in Sources */,
 				F52A443A1D4F868500AD009F /* UIView+Animation.m in Sources */,
@@ -868,6 +887,7 @@
 				F5C55A9A1D4D09AB006A7EA7 /* NSString+EXT.m in Sources */,
 				CB82963C1CEEBBB40013A120 /* main.m in Sources */,
 				F5880FF71DD4087900275C13 /* HHConverRectVC.m in Sources */,
+				F58810041DD5C04E00275C13 /* UIScrollView+HiddenTabbar.m in Sources */,
 				F51839EA1D8251F20079A2D5 /* HHCellView.m in Sources */,
 				F5B097E81D4F2282004F1A68 /* HHTimeButton.m in Sources */,
 				F5D3B22E1D50953B00892518 /* HHUIFontVC.m in Sources */,
