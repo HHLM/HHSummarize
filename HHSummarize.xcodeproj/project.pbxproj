@@ -51,6 +51,9 @@
 		F5880FFD1DD5601F00275C13 /* HHTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5880FFC1DD5601F00275C13 /* HHTextView.m */; };
 		F58810001DD5C01200275C13 /* HHToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F5880FFF1DD5C01200275C13 /* HHToolBar.m */; };
 		F58810041DD5C04E00275C13 /* UIScrollView+HiddenTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = F58810031DD5C04E00275C13 /* UIScrollView+HiddenTabbar.m */; };
+		F588100E1DD94E3500275C13 /* HHCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F588100D1DD94E3500275C13 /* HHCollectionViewLayout.m */; };
+		F58810111DD956E800275C13 /* HHCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F58810101DD956E800275C13 /* HHCollectionViewCell.m */; };
+		F58810141DD9582200275C13 /* HHUICollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F58810131DD9582200275C13 /* HHUICollectionVC.m */; };
 		F5B097E21D4EFC35004F1A68 /* HHTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097E11D4EFC35004F1A68 /* HHTool.m */; };
 		F5B097E81D4F2282004F1A68 /* HHTimeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097E71D4F2282004F1A68 /* HHTimeButton.m */; };
 		F5B097ED1D4F4163004F1A68 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097EC1D4F4163004F1A68 /* UIView+Frame.m */; };
@@ -174,6 +177,12 @@
 		F5880FFF1DD5C01200275C13 /* HHToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHToolBar.m; sourceTree = "<group>"; };
 		F58810021DD5C04E00275C13 /* UIScrollView+HiddenTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+HiddenTabbar.h"; sourceTree = "<group>"; };
 		F58810031DD5C04E00275C13 /* UIScrollView+HiddenTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+HiddenTabbar.m"; sourceTree = "<group>"; };
+		F588100C1DD94E3500275C13 /* HHCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCollectionViewLayout.h; sourceTree = "<group>"; };
+		F588100D1DD94E3500275C13 /* HHCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCollectionViewLayout.m; sourceTree = "<group>"; };
+		F588100F1DD956E800275C13 /* HHCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCollectionViewCell.h; sourceTree = "<group>"; };
+		F58810101DD956E800275C13 /* HHCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCollectionViewCell.m; sourceTree = "<group>"; };
+		F58810121DD9582200275C13 /* HHUICollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUICollectionVC.h; sourceTree = "<group>"; };
+		F58810131DD9582200275C13 /* HHUICollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUICollectionVC.m; sourceTree = "<group>"; };
 		F5B097E01D4EFC35004F1A68 /* HHTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTool.h; sourceTree = "<group>"; };
 		F5B097E11D4EFC35004F1A68 /* HHTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTool.m; sourceTree = "<group>"; };
 		F5B097E61D4F2282004F1A68 /* HHTimeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTimeButton.h; sourceTree = "<group>"; };
@@ -359,6 +368,7 @@
 				F5F8F2741D4B5A4000006BF5 /* UIImageView */,
 				F5204D831D4B3D0700284071 /* UIViewController */,
 				F5060AA61D47695C006DF99C /* UITabBarController */,
+				F58810051DD9494E00275C13 /* UICollectionViewController */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -524,6 +534,19 @@
 				F58810031DD5C04E00275C13 /* UIScrollView+HiddenTabbar.m */,
 			);
 			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		F58810051DD9494E00275C13 /* UICollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F58810121DD9582200275C13 /* HHUICollectionVC.h */,
+				F58810131DD9582200275C13 /* HHUICollectionVC.m */,
+				F588100C1DD94E3500275C13 /* HHCollectionViewLayout.h */,
+				F588100D1DD94E3500275C13 /* HHCollectionViewLayout.m */,
+				F588100F1DD956E800275C13 /* HHCollectionViewCell.h */,
+				F58810101DD956E800275C13 /* HHCollectionViewCell.m */,
+			);
+			path = UICollectionViewController;
 			sourceTree = "<group>";
 		};
 		F5B097DF1D4EFC1F004F1A68 /* Unit */ = {
@@ -858,12 +881,15 @@
 				F5F8F2651D4B4E2A00006BF5 /* UILabel+autoSize.m in Sources */,
 				F5EA82C81D80FFD100847DC6 /* HHUnit.m in Sources */,
 				F5EA82DA1D810BA200847DC6 /* HHhtmlAndjsVC.m in Sources */,
+				F588100E1DD94E3500275C13 /* HHCollectionViewLayout.m in Sources */,
 				F5EA82C21D80FE8600847DC6 /* UIImage+EXT.m in Sources */,
 				F5EA82DE1D810BA200847DC6 /* HHUIWebViewFile.m in Sources */,
 				F51839E91D8251F20079A2D5 /* HHCell.m in Sources */,
+				F58810111DD956E800275C13 /* HHCollectionViewCell.m in Sources */,
 				CB8296421CEEBBB40013A120 /* ViewController.m in Sources */,
 				F57AC22D1D5198100055F7F2 /* NSDate+Utilities.m in Sources */,
 				F5204D941D4B408F00284071 /* HHFontStyleVC.m in Sources */,
+				F58810141DD9582200275C13 /* HHUICollectionVC.m in Sources */,
 				F5B097F01D4F42ED004F1A68 /* UIButton+EXT.m in Sources */,
 				F5D9E4BB1D48912B00248EC0 /* HHUILabelVC.m in Sources */,
 				F5060AB51D476BEF006DF99C /* HHRootViewController.m in Sources */,

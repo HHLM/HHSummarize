@@ -12,6 +12,7 @@
 #import "HHUIWebViewVC.h"
 #import "HHUITableViewVC.h"
 #import "HHConverRectVC.h"
+
 #import <objc/runtime.h>
 @interface HHFirstVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSArray *dataArray;
@@ -438,7 +439,7 @@
 }
 - (void)config
 {
-    self.dataArray = @[@"UILabel",@"UIButton",@"UIImageView",@"UIFont",@"UIWebView",@"UITableView",@"ConverRect"];
+    self.dataArray = @[@"UILabel",@"UIButton",@"UIImageView",@"UIFont",@"UIWebView",@"UITableView",@"UICollection",@"ConverRect"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
