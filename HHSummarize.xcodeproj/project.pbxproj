@@ -17,6 +17,7 @@
 		CB8296601CEEBBB40013A120 /* HHSummarizeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB82965F1CEEBBB40013A120 /* HHSummarizeUITests.m */; };
 		F5060AB11D476A20006DF99C /* HHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5060AB01D476A20006DF99C /* HHAppDelegate.m */; };
 		F5060AB51D476BEF006DF99C /* HHRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5060AB41D476BEF006DF99C /* HHRootViewController.m */; };
+		F50929911DE990F000E68CAE /* NSString+HHTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F50929901DE990F000E68CAE /* NSString+HHTools.m */; };
 		F50C96D41D86530300E6F16A /* NSDate+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = F50C96D31D86530300E6F16A /* NSDate+EXT.m */; };
 		F51839E61D8251F20079A2D5 /* HHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51839DD1D8251F20079A2D5 /* HHViewController.m */; };
 		F51839E71D8251F20079A2D5 /* HHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51839DF1D8251F20079A2D5 /* HHTableViewController.m */; };
@@ -75,6 +76,7 @@
 		F5EA82E01D810BA200847DC6 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = F5EA82D71D810BA200847DC6 /* test.html */; };
 		F5EA82E31D810DBD00847DC6 /* HHUITableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EA82E21D810DBD00847DC6 /* HHUITableViewVC.m */; };
 		F5EA82E61D810DF000847DC6 /* HHCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EA82E51D810DF000847DC6 /* HHCell1.m */; };
+		F5EC0BA31DE441CD003DD15B /* HHNSStringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EC0BA21DE441CD003DD15B /* HHNSStringVC.m */; };
 		F5F8F2651D4B4E2A00006BF5 /* UILabel+autoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8F2641D4B4E2A00006BF5 /* UILabel+autoSize.m */; };
 		F5F8F2721D4B594000006BF5 /* HHUIButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8F2701D4B594000006BF5 /* HHUIButtonVC.m */; };
 		F5F8F2731D4B594000006BF5 /* HHUIButtonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F8F2711D4B594000006BF5 /* HHUIButtonVC.xib */; };
@@ -121,6 +123,8 @@
 		F5060AB21D476B04006DF99C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F5060AB31D476BEF006DF99C /* HHRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHRootViewController.h; sourceTree = "<group>"; };
 		F5060AB41D476BEF006DF99C /* HHRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHRootViewController.m; sourceTree = "<group>"; };
+		F509298F1DE990F000E68CAE /* NSString+HHTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HHTools.h"; sourceTree = "<group>"; };
+		F50929901DE990F000E68CAE /* NSString+HHTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HHTools.m"; sourceTree = "<group>"; };
 		F50C96D21D86530300E6F16A /* NSDate+EXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+EXT.h"; sourceTree = "<group>"; };
 		F50C96D31D86530300E6F16A /* NSDate+EXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+EXT.m"; sourceTree = "<group>"; };
 		F51839DC1D8251F20079A2D5 /* HHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHViewController.h; sourceTree = "<group>"; };
@@ -224,6 +228,8 @@
 		F5EA82E21D810DBD00847DC6 /* HHUITableViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUITableViewVC.m; sourceTree = "<group>"; };
 		F5EA82E41D810DF000847DC6 /* HHCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCell1.h; sourceTree = "<group>"; };
 		F5EA82E51D810DF000847DC6 /* HHCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCell1.m; sourceTree = "<group>"; };
+		F5EC0BA11DE441CD003DD15B /* HHNSStringVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHNSStringVC.h; sourceTree = "<group>"; };
+		F5EC0BA21DE441CD003DD15B /* HHNSStringVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHNSStringVC.m; sourceTree = "<group>"; };
 		F5F8F2631D4B4E2A00006BF5 /* UILabel+autoSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+autoSize.h"; sourceTree = "<group>"; };
 		F5F8F2641D4B4E2A00006BF5 /* UILabel+autoSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+autoSize.m"; sourceTree = "<group>"; };
 		F5F8F26F1D4B594000006BF5 /* HHUIButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUIButtonVC.h; sourceTree = "<group>"; };
@@ -329,6 +335,30 @@
 		CB8296731CEEBC3E0013A120 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				F5EC0B0F1DE440BD003DD15B /* NSArray */,
+				F5EC0B131DE440BD003DD15B /* NSBundle */,
+				F5EC0B171DE440BD003DD15B /* NSData */,
+				F5EC0B1B1DE440BD003DD15B /* NSDate */,
+				F5EC0B1F1DE440BD003DD15B /* NSDateFormatter */,
+				F5EC0B231DE440BD003DD15B /* NSDictionary */,
+				F5EC0B271DE440BD003DD15B /* NSException */,
+				F5EC0B2B1DE440BD003DD15B /* NSFileHandle */,
+				F5EC0B301DE440BD003DD15B /* NSFileManager */,
+				F5EC0B341DE440BD003DD15B /* NSHTTPCookieStorage */,
+				F5EC0B381DE440BD003DD15B /* NSIndexPath */,
+				F5EC0B3C1DE440BD003DD15B /* NSInvocation */,
+				F5EC0B401DE440BD003DD15B /* NSNotificationCenter */,
+				F5EC0B441DE440BD003DD15B /* NSNumber */,
+				F5EC0B481DE440BD003DD15B /* NSObject */,
+				F5EC0B4C1DE440BD003DD15B /* NSOperation */,
+				F5EC0B501DE440BD003DD15B /* NSRunLoop */,
+				F5EC0B541DE440BD003DD15B /* NSSet */,
+				F5EC0B581DE440BD003DD15B /* NSString */,
+				F5EC0B5C1DE440BD003DD15B /* NSTimer */,
+				F5EC0B601DE440BD003DD15B /* NSURL */,
+				F5EC0B641DE440BD003DD15B /* NSURLConnection */,
+				F5EC0B681DE440BD003DD15B /* NSURLRequest */,
+				F5EC0B6C1DE440BD003DD15B /* NSUserDefaults */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -357,8 +387,8 @@
 		F5060A951D47695C006DF99C /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				F5880FFA1DD55FC000275C13 /* HHCustomView */,
 				F5204D811D4B399F00284071 /* UIkit结构图.jpg */,
+				F5880FFA1DD55FC000275C13 /* HHCustomView */,
 				F5880FF41DD4085E00275C13 /* OtherVC */,
 				F5D3B22A1D5094F000892518 /* UIFont */,
 				F5060A9D1D47695C006DF99C /* UILabel */,
@@ -596,6 +626,8 @@
 			children = (
 				F5C55A981D4D09AB006A7EA7 /* NSString+EXT.h */,
 				F5C55A991D4D09AB006A7EA7 /* NSString+EXT.m */,
+				F509298F1DE990F000E68CAE /* NSString+HHTools.h */,
+				F50929901DE990F000E68CAE /* NSString+HHTools.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -670,6 +702,176 @@
 			);
 			name = UITableView;
 			path = UIButton/UIWebView/UITableView;
+			sourceTree = "<group>";
+		};
+		F5EC0B0F1DE440BD003DD15B /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		F5EC0B131DE440BD003DD15B /* NSBundle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSBundle;
+			sourceTree = "<group>";
+		};
+		F5EC0B171DE440BD003DD15B /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSData;
+			sourceTree = "<group>";
+		};
+		F5EC0B1B1DE440BD003DD15B /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		F5EC0B1F1DE440BD003DD15B /* NSDateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSDateFormatter;
+			sourceTree = "<group>";
+		};
+		F5EC0B231DE440BD003DD15B /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		F5EC0B271DE440BD003DD15B /* NSException */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSException;
+			sourceTree = "<group>";
+		};
+		F5EC0B2B1DE440BD003DD15B /* NSFileHandle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSFileHandle;
+			sourceTree = "<group>";
+		};
+		F5EC0B301DE440BD003DD15B /* NSFileManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSFileManager;
+			sourceTree = "<group>";
+		};
+		F5EC0B341DE440BD003DD15B /* NSHTTPCookieStorage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSHTTPCookieStorage;
+			sourceTree = "<group>";
+		};
+		F5EC0B381DE440BD003DD15B /* NSIndexPath */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSIndexPath;
+			sourceTree = "<group>";
+		};
+		F5EC0B3C1DE440BD003DD15B /* NSInvocation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSInvocation;
+			sourceTree = "<group>";
+		};
+		F5EC0B401DE440BD003DD15B /* NSNotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSNotificationCenter;
+			sourceTree = "<group>";
+		};
+		F5EC0B441DE440BD003DD15B /* NSNumber */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSNumber;
+			sourceTree = "<group>";
+		};
+		F5EC0B481DE440BD003DD15B /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		F5EC0B4C1DE440BD003DD15B /* NSOperation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSOperation;
+			sourceTree = "<group>";
+		};
+		F5EC0B501DE440BD003DD15B /* NSRunLoop */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSRunLoop;
+			sourceTree = "<group>";
+		};
+		F5EC0B541DE440BD003DD15B /* NSSet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSSet;
+			sourceTree = "<group>";
+		};
+		F5EC0B581DE440BD003DD15B /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				F5EC0BA11DE441CD003DD15B /* HHNSStringVC.h */,
+				F5EC0BA21DE441CD003DD15B /* HHNSStringVC.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		F5EC0B5C1DE440BD003DD15B /* NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSTimer;
+			sourceTree = "<group>";
+		};
+		F5EC0B601DE440BD003DD15B /* NSURL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSURL;
+			sourceTree = "<group>";
+		};
+		F5EC0B641DE440BD003DD15B /* NSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSURLConnection;
+			sourceTree = "<group>";
+		};
+		F5EC0B681DE440BD003DD15B /* NSURLRequest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSURLRequest;
+			sourceTree = "<group>";
+		};
+		F5EC0B6C1DE440BD003DD15B /* NSUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSUserDefaults;
 			sourceTree = "<group>";
 		};
 		F5F8F2611D4B4DF400006BF5 /* Category */ = {
@@ -883,6 +1085,7 @@
 				F5EA82DA1D810BA200847DC6 /* HHhtmlAndjsVC.m in Sources */,
 				F588100E1DD94E3500275C13 /* HHCollectionViewLayout.m in Sources */,
 				F5EA82C21D80FE8600847DC6 /* UIImage+EXT.m in Sources */,
+				F5EC0BA31DE441CD003DD15B /* HHNSStringVC.m in Sources */,
 				F5EA82DE1D810BA200847DC6 /* HHUIWebViewFile.m in Sources */,
 				F51839E91D8251F20079A2D5 /* HHCell.m in Sources */,
 				F58810111DD956E800275C13 /* HHCollectionViewCell.m in Sources */,
@@ -891,6 +1094,7 @@
 				F5204D941D4B408F00284071 /* HHFontStyleVC.m in Sources */,
 				F58810141DD9582200275C13 /* HHUICollectionVC.m in Sources */,
 				F5B097F01D4F42ED004F1A68 /* UIButton+EXT.m in Sources */,
+				F50929911DE990F000E68CAE /* NSString+HHTools.m in Sources */,
 				F5D9E4BB1D48912B00248EC0 /* HHUILabelVC.m in Sources */,
 				F5060AB51D476BEF006DF99C /* HHRootViewController.m in Sources */,
 				F5204D8B1D4B3D3300284071 /* HHBaseVC.m in Sources */,

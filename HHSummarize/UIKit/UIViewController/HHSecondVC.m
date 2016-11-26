@@ -10,6 +10,7 @@
 #import "NSDate+EXT.h"
 #import "NSDate+Utilities.h"
 #import "HHUnit.h"
+#import "HHNSStringVC.h"
 @interface HHSecondVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView       *myTableView;
 @property (nonatomic, strong) NSMutableArray    *dataArray;
@@ -23,10 +24,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"Foundation界面";
+    [self config];
     [self.view addSubview:self.myTableView];
     NSDate*date = [HHUnit dateFormDateString:@"2016-09-10 12:12:12" formate:@"yyyy-MM-dd hh:mm:ss"];
     [NSDate timeInfoWithDate:date];
 }
+- (void)config
+{
+    [self.dataArray setArray: @[@"NSString",
+                                @"NSArray",
+                                @"NSDictionary",
+                                @"NSData",
+                                @"NSFileManger"]];
+}
+
 - (NSMutableArray *)dataArray
 {
     if (!_dataArray) {
@@ -40,7 +51,7 @@
 {
     if (!_myTableView)
     {
-        _myTableView = [[UITableView alloc] initWithFrame:CGRectMake(0,64,CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame)-64)];
+        _myTableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0,CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame)-64)];
         _myTableView.delegate = self;
         _myTableView.dataSource = self;
     }
@@ -67,7 +78,13 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSString *name = [self.dataArray objectAtIndex:indexPath.row];
+    name = [@"HH" stringByAppendingString:name];
+    name = [name stringByAppendingString:@"VC"];
+    Class class = NSClassFromString(name);
+    HHBaseVC *vc = [[class alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
