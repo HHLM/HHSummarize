@@ -48,6 +48,11 @@
 		F5204D9C1D4B42FF00284071 /* HHCopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5204D9B1D4B42FF00284071 /* HHCopyLabel.m */; };
 		F52A443A1D4F868500AD009F /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = F52A44391D4F868500AD009F /* UIView+Animation.m */; };
 		F57AC22D1D5198100055F7F2 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F57AC22C1D5198100055F7F2 /* NSDate+Utilities.m */; };
+		F582BDA51DED71BB0023F276 /* HHCollectionVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = F582BDA41DED71BB0023F276 /* HHCollectionVC1.m */; };
+		F582BDA91DED72020023F276 /* HHCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F582BDA81DED72020023F276 /* HHCollectionCell.m */; };
+		F582BDAC1DED79120023F276 /* HHCyclingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F582BDAB1DED79120023F276 /* HHCyclingView.m */; };
+		F582BDAF1DED7B390023F276 /* HHCyclingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F582BDAE1DED7B390023F276 /* HHCyclingCell.m */; };
+		F582BDB21DED87AD0023F276 /* HHCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F582BDB11DED87AD0023F276 /* HHCollectionModel.m */; };
 		F5880FF71DD4087900275C13 /* HHConverRectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5880FF61DD4087900275C13 /* HHConverRectVC.m */; };
 		F5880FFD1DD5601F00275C13 /* HHTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5880FFC1DD5601F00275C13 /* HHTextView.m */; };
 		F58810001DD5C01200275C13 /* HHToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F5880FFF1DD5C01200275C13 /* HHToolBar.m */; };
@@ -171,6 +176,16 @@
 		F52A44391D4F868500AD009F /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
 		F57AC22B1D5198100055F7F2 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
 		F57AC22C1D5198100055F7F2 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
+		F582BDA31DED71BB0023F276 /* HHCollectionVC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCollectionVC1.h; sourceTree = "<group>"; };
+		F582BDA41DED71BB0023F276 /* HHCollectionVC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCollectionVC1.m; sourceTree = "<group>"; };
+		F582BDA71DED72020023F276 /* HHCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCollectionCell.h; sourceTree = "<group>"; };
+		F582BDA81DED72020023F276 /* HHCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCollectionCell.m; sourceTree = "<group>"; };
+		F582BDAA1DED79120023F276 /* HHCyclingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCyclingView.h; sourceTree = "<group>"; };
+		F582BDAB1DED79120023F276 /* HHCyclingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCyclingView.m; sourceTree = "<group>"; };
+		F582BDAD1DED7B390023F276 /* HHCyclingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCyclingCell.h; sourceTree = "<group>"; };
+		F582BDAE1DED7B390023F276 /* HHCyclingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCyclingCell.m; sourceTree = "<group>"; };
+		F582BDB01DED87AD0023F276 /* HHCollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCollectionModel.h; sourceTree = "<group>"; };
+		F582BDB11DED87AD0023F276 /* HHCollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCollectionModel.m; sourceTree = "<group>"; };
 		F5880FF51DD4087900275C13 /* HHConverRectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHConverRectVC.h; sourceTree = "<group>"; };
 		F5880FF61DD4087900275C13 /* HHConverRectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHConverRectVC.m; sourceTree = "<group>"; };
 		F5880FF81DD47BBE00275C13 /* eyd_cry.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = eyd_cry.caf; sourceTree = "<group>"; };
@@ -536,6 +551,23 @@
 			name = UIKit;
 			sourceTree = "<group>";
 		};
+		F582BDA61DED71CC0023F276 /* Next */ = {
+			isa = PBXGroup;
+			children = (
+				F582BDA31DED71BB0023F276 /* HHCollectionVC1.h */,
+				F582BDA41DED71BB0023F276 /* HHCollectionVC1.m */,
+				F582BDA71DED72020023F276 /* HHCollectionCell.h */,
+				F582BDA81DED72020023F276 /* HHCollectionCell.m */,
+				F582BDAA1DED79120023F276 /* HHCyclingView.h */,
+				F582BDAB1DED79120023F276 /* HHCyclingView.m */,
+				F582BDAD1DED7B390023F276 /* HHCyclingCell.h */,
+				F582BDAE1DED7B390023F276 /* HHCyclingCell.m */,
+				F582BDB01DED87AD0023F276 /* HHCollectionModel.h */,
+				F582BDB11DED87AD0023F276 /* HHCollectionModel.m */,
+			);
+			name = Next;
+			sourceTree = "<group>";
+		};
 		F5880FF41DD4085E00275C13 /* OtherVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -575,6 +607,7 @@
 				F588100D1DD94E3500275C13 /* HHCollectionViewLayout.m */,
 				F588100F1DD956E800275C13 /* HHCollectionViewCell.h */,
 				F58810101DD956E800275C13 /* HHCollectionViewCell.m */,
+				F582BDA61DED71CC0023F276 /* Next */,
 			);
 			path = UICollectionViewController;
 			sourceTree = "<group>";
@@ -1089,21 +1122,26 @@
 				F5EA82DE1D810BA200847DC6 /* HHUIWebViewFile.m in Sources */,
 				F51839E91D8251F20079A2D5 /* HHCell.m in Sources */,
 				F58810111DD956E800275C13 /* HHCollectionViewCell.m in Sources */,
+				F582BDAC1DED79120023F276 /* HHCyclingView.m in Sources */,
 				CB8296421CEEBBB40013A120 /* ViewController.m in Sources */,
 				F57AC22D1D5198100055F7F2 /* NSDate+Utilities.m in Sources */,
 				F5204D941D4B408F00284071 /* HHFontStyleVC.m in Sources */,
 				F58810141DD9582200275C13 /* HHUICollectionVC.m in Sources */,
+				F582BDB21DED87AD0023F276 /* HHCollectionModel.m in Sources */,
 				F5B097F01D4F42ED004F1A68 /* UIButton+EXT.m in Sources */,
 				F50929911DE990F000E68CAE /* NSString+HHTools.m in Sources */,
 				F5D9E4BB1D48912B00248EC0 /* HHUILabelVC.m in Sources */,
 				F5060AB51D476BEF006DF99C /* HHRootViewController.m in Sources */,
 				F5204D8B1D4B3D3300284071 /* HHBaseVC.m in Sources */,
 				F5204D911D4B3DA100284071 /* HHSecondVC.m in Sources */,
+				F582BDA51DED71BB0023F276 /* HHCollectionVC1.m in Sources */,
 				F5B097ED1D4F4163004F1A68 /* UIView+Frame.m in Sources */,
 				CB82963F1CEEBBB40013A120 /* AppDelegate.m in Sources */,
+				F582BDA91DED72020023F276 /* HHCollectionCell.m in Sources */,
 				F5204D9C1D4B42FF00284071 /* HHCopyLabel.m in Sources */,
 				F5EA82E61D810DF000847DC6 /* HHCell1.m in Sources */,
 				F58810001DD5C01200275C13 /* HHToolBar.m in Sources */,
+				F582BDAF1DED7B390023F276 /* HHCyclingCell.m in Sources */,
 				F5880FFD1DD5601F00275C13 /* HHTextView.m in Sources */,
 				F5183A0A1D82993F0079A2D5 /* HHUIWebViewAndJS.m in Sources */,
 				F52A443A1D4F868500AD009F /* UIView+Animation.m in Sources */,

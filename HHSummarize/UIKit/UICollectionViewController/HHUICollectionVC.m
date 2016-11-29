@@ -8,6 +8,7 @@
 
 #import "HHUICollectionVC.h"
 #import "HHCollectionViewCell.h"
+#import "HHCollectionVC1.h"
 @interface HHUICollectionVC ()
 
 @end
@@ -79,7 +80,16 @@ static NSString * const reuseIdentifier = @"Cell";
 {
     return arc4random() % 100 + 50;
 }
-
+- (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    HHCollectionVC1 *vc  =[[HHCollectionVC1 alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    HHCollectionVC1 *vc  =[[HHCollectionVC1 alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 
 @end
