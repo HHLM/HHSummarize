@@ -82,8 +82,8 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 - (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    HHCollectionVC1 *vc  =[[HHCollectionVC1 alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+//    HHCollectionVC1 *vc  =[[HHCollectionVC1 alloc] init];
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {

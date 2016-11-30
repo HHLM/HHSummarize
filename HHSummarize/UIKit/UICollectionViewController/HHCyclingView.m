@@ -37,6 +37,9 @@
 - (void)setImageArray:(NSArray *)imageArray {
     dataArray = imageArray;
     [self.collectionView reloadData];
+    NSIndexPath *path = [NSIndexPath indexPathForItem:0 inSection:50];
+    [self.collectionView selectItemAtIndexPath:path animated:YES scrollPosition:UICollectionViewScrollPositionNone];
+    
 }
 - (UICollectionView *)collectionView
 {
