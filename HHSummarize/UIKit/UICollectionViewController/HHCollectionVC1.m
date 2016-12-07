@@ -75,7 +75,7 @@ static CGFloat const ADHeigth = 200;
         //定义每个UICollectionView 纵向的间距
         layout.minimumInteritemSpacing = 2;
         
-        layout.sectionInset = UIEdgeInsetsMake(0, 5, 5, 5);
+        layout.sectionInset = UIEdgeInsetsMake(5, 6.67, 0, 6.67);
         
         _collectionView = [[UICollectionView alloc]  initWithFrame:self.view.bounds collectionViewLayout:layout];
         
@@ -91,6 +91,7 @@ static CGFloat const ADHeigth = 200;
         
         //注册头部
         [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"ReusableView"];
+        
     }
     return _collectionView;
 }

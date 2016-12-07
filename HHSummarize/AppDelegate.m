@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+#import "HHWindowView.h"
 @interface AppDelegate ()
 
 @end
@@ -18,7 +19,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self registerLocalNotification:30];
+    [self performSelector:@selector(showWindow) withObject:self afterDelay:0.1];
     return YES;
+}
+- (void)showWindow
+{
+    [HHWindowView shareView];
 }
 /**
  iOS8以后的注册
