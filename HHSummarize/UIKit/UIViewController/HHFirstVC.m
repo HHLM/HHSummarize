@@ -12,6 +12,7 @@
 #import "HHUIWebViewVC.h"
 #import "HHUITableViewVC.h"
 #import "HHConverRectVC.h"
+#import "HHUIGestureRecognizerVC.h"
 
 #import <objc/runtime.h>
 @interface HHFirstVC ()<UITableViewDelegate,UITableViewDataSource>
@@ -439,7 +440,7 @@
 }
 - (void)config
 {
-    self.dataArray = @[@"UILabel",@"UIButton",@"UIImageView",@"UIFont",@"UIWebView",@"UITableView",@"UICollection",@"ConverRect"];
+    self.dataArray = @[@"UILabel",@"UIButton",@"UIImageView",@"UIFont",@"UIWebView",@"UITableView",@"UICollection",@"ConverRect",@"UIGestureRecognizer"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
