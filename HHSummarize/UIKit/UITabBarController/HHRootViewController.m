@@ -9,6 +9,7 @@
 #import "HHRootViewController.h"
 #import "HHFirstVC.h"
 #import "HHSecondVC.h"
+#import "HHThirdVC.h"
 @interface HHRootViewController ()
 
 @end
@@ -19,9 +20,12 @@
     [super viewDidLoad];
     HHFirstVC  *first   = [[HHFirstVC alloc] init];
     HHSecondVC *second  = [[HHSecondVC alloc] init];
+    HHThirdVC *third    = [[HHThirdVC alloc] init];
+    
     UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:first];
     UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:second];
-    self.viewControllers = @[nav1,nav2];
+    UINavigationController *nav3 = [[UINavigationController alloc] initWithRootViewController:third];
+    self.viewControllers = @[nav1,nav2,nav3];
     
     //设置导航的文字颜色 和背景颜色
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor cyanColor]}];
@@ -37,15 +41,21 @@
     /*----------------------------分割线-------------------------------------*/
     UITabBarItem *item1 = [self.tabBar.items objectAtIndex:0];
     UITabBarItem *item2 = [self.tabBar.items objectAtIndex:1];
+    UITabBarItem *item3 = [self.tabBar.items objectAtIndex:2];
     
     item1.title = @"UIKit";
     item2.title = @"Foundation";
+    item3.title = @"tools";
     
     
     item1.image = [UIImage imageNamed:@"home"];
     item1.selectedImage = [UIImage imageNamed:@"home_selected"];
     item2.image = [UIImage imageNamed:@"maps"];
     item2.selectedImage = [UIImage imageNamed:@"maps_selected"];
+    item3.image = [UIImage imageNamed:@"myplan"];
+    item3.selectedImage = [UIImage imageNamed:@"myplan_selected"];
+    
+    
     //item选中染色
     [[UITabBar appearance] setTintColor:[UIColor greenColor]];
 
