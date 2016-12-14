@@ -47,6 +47,9 @@
 		F5204D991D4B418100284071 /* test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5204D981D4B418100284071 /* test@2x.png */; };
 		F5204D9C1D4B42FF00284071 /* HHCopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5204D9B1D4B42FF00284071 /* HHCopyLabel.m */; };
 		F52A443A1D4F868500AD009F /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = F52A44391D4F868500AD009F /* UIView+Animation.m */; };
+		F544D6FF1DFFF2EC0088DD08 /* MBProgressHUD+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = F544D6FB1DFFF2EC0088DD08 /* MBProgressHUD+Ex.m */; };
+		F544D7001DFFF2EC0088DD08 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F544D6FC1DFFF2EC0088DD08 /* MBProgressHUD.bundle */; };
+		F544D7011DFFF2EC0088DD08 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F544D6FE1DFFF2EC0088DD08 /* MBProgressHUD.m */; };
 		F57AC22D1D5198100055F7F2 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F57AC22C1D5198100055F7F2 /* NSDate+Utilities.m */; };
 		F5819F8F1DF8F17800D8E8DC /* HHUIGestureRecognizerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5819F8E1DF8F17800D8E8DC /* HHUIGestureRecognizerVC.m */; };
 		F582BDA51DED71BB0023F276 /* HHCollectionVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = F582BDA41DED71BB0023F276 /* HHCollectionVC1.m */; };
@@ -176,6 +179,11 @@
 		F5204D9B1D4B42FF00284071 /* HHCopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCopyLabel.m; sourceTree = "<group>"; };
 		F52A44381D4F868500AD009F /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
 		F52A44391D4F868500AD009F /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		F544D6FA1DFFF2EC0088DD08 /* MBProgressHUD+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Ex.h"; sourceTree = "<group>"; };
+		F544D6FB1DFFF2EC0088DD08 /* MBProgressHUD+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Ex.m"; sourceTree = "<group>"; };
+		F544D6FC1DFFF2EC0088DD08 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		F544D6FD1DFFF2EC0088DD08 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		F544D6FE1DFFF2EC0088DD08 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		F57AC22B1D5198100055F7F2 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
 		F57AC22C1D5198100055F7F2 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
 		F5819F8D1DF8F17800D8E8DC /* HHUIGestureRecognizerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUIGestureRecognizerVC.h; sourceTree = "<group>"; };
@@ -310,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				F5880FF91DD47D8800275C13 /* HHSummarize.entitlements */,
+				F544D6F81DFFF2BD0088DD08 /* Vender(第三方) */,
 				F5C55A9E1D4D0C4D006A7EA7 /* Expand */,
 				F5F8F2611D4B4DF400006BF5 /* Category */,
 				F5060A951D47695C006DF99C /* UIKit */,
@@ -420,7 +429,7 @@
 				F5F8F2741D4B5A4000006BF5 /* UIImageView */,
 				F5204D831D4B3D0700284071 /* UIViewController */,
 				F5060AA61D47695C006DF99C /* UITabBarController */,
-				F58810051DD9494E00275C13 /* UICollectionViewController */,
+				F58810051DD9494E00275C13 /* UICollectionView */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -515,6 +524,27 @@
 				F5204D8F1D4B3DA100284071 /* HHSecondVC.m */,
 			);
 			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		F544D6F81DFFF2BD0088DD08 /* Vender(第三方) */ = {
+			isa = PBXGroup;
+			children = (
+				F544D6F91DFFF2EC0088DD08 /* MBProgressHUD */,
+			);
+			name = "Vender(第三方)";
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		F544D6F91DFFF2EC0088DD08 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F544D6FA1DFFF2EC0088DD08 /* MBProgressHUD+Ex.h */,
+				F544D6FB1DFFF2EC0088DD08 /* MBProgressHUD+Ex.m */,
+				F544D6FC1DFFF2EC0088DD08 /* MBProgressHUD.bundle */,
+				F544D6FD1DFFF2EC0088DD08 /* MBProgressHUD.h */,
+				F544D6FE1DFFF2EC0088DD08 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		F57AC2271D5197C20055F7F2 /* NSData */ = {
@@ -616,7 +646,7 @@
 			path = UIScrollView;
 			sourceTree = "<group>";
 		};
-		F58810051DD9494E00275C13 /* UICollectionViewController */ = {
+		F58810051DD9494E00275C13 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
 				F58810121DD9582200275C13 /* HHUICollectionVC.h */,
@@ -627,6 +657,7 @@
 				F58810101DD956E800275C13 /* HHCollectionViewCell.m */,
 				F582BDA61DED71CC0023F276 /* Next */,
 			);
+			name = UICollectionView;
 			path = UICollectionViewController;
 			sourceTree = "<group>";
 		};
@@ -1095,6 +1126,7 @@
 				CB8296471CEEBBB40013A120 /* Assets.xcassets in Resources */,
 				F5D3B22F1D50953B00892518 /* HHUIFontVC.xib in Resources */,
 				F5183A0C1D82B6DE0079A2D5 /* HHhtmlAndjsVC.xib in Resources */,
+				F544D7001DFFF2EC0088DD08 /* MBProgressHUD.bundle in Resources */,
 				F5183A021D82521D0079A2D5 /* 8.jpg in Resources */,
 				F51839FA1D82521D0079A2D5 /* 10.jpg in Resources */,
 				F5204D821D4B399F00284071 /* UIkit结构图.jpg in Resources */,
@@ -1129,6 +1161,7 @@
 				F51839E71D8251F20079A2D5 /* HHTableViewController.m in Sources */,
 				F5B097F31D4F4EC8004F1A68 /* UIView+EXT.m in Sources */,
 				F50C96D41D86530300E6F16A /* NSDate+EXT.m in Sources */,
+				F544D6FF1DFFF2EC0088DD08 /* MBProgressHUD+Ex.m in Sources */,
 				F5F8F2721D4B594000006BF5 /* HHUIButtonVC.m in Sources */,
 				F51839E61D8251F20079A2D5 /* HHViewController.m in Sources */,
 				F5F8F2651D4B4E2A00006BF5 /* UILabel+autoSize.m in Sources */,
@@ -1162,6 +1195,7 @@
 				F58810001DD5C01200275C13 /* HHToolBar.m in Sources */,
 				F5819F8F1DF8F17800D8E8DC /* HHUIGestureRecognizerVC.m in Sources */,
 				F582BDAF1DED7B390023F276 /* HHCyclingCell.m in Sources */,
+				F544D7011DFFF2EC0088DD08 /* MBProgressHUD.m in Sources */,
 				F5880FFD1DD5601F00275C13 /* HHTextView.m in Sources */,
 				F5183A0A1D82993F0079A2D5 /* HHUIWebViewAndJS.m in Sources */,
 				F52A443A1D4F868500AD009F /* UIView+Animation.m in Sources */,
