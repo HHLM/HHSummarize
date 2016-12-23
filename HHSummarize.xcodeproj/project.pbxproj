@@ -62,6 +62,8 @@
 		F5644EF21E013F85004CDF12 /* HHCountDownTimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5644EF11E013F85004CDF12 /* HHCountDownTimeVC.m */; };
 		F5644EF61E013FC2004CDF12 /* HHTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5644EF41E013FC2004CDF12 /* HHTimeCell.m */; };
 		F5644EF71E013FC2004CDF12 /* HHTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5644EF51E013FC2004CDF12 /* HHTimeCell.xib */; };
+		F5644EFB1E0148FC004CDF12 /* HHColumnViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5644EFA1E0148FC004CDF12 /* HHColumnViewVC.m */; };
+		F5644EFE1E01491E004CDF12 /* HHColumnView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5644EFD1E01491E004CDF12 /* HHColumnView.m */; };
 		F57AC22D1D5198100055F7F2 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F57AC22C1D5198100055F7F2 /* NSDate+Utilities.m */; };
 		F5819F8F1DF8F17800D8E8DC /* HHUIGestureRecognizerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5819F8E1DF8F17800D8E8DC /* HHUIGestureRecognizerVC.m */; };
 		F5880FF71DD4087900275C13 /* HHConverRectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5880FF61DD4087900275C13 /* HHConverRectVC.m */; };
@@ -211,6 +213,10 @@
 		F5644EF31E013FC2004CDF12 /* HHTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTimeCell.h; sourceTree = "<group>"; };
 		F5644EF41E013FC2004CDF12 /* HHTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTimeCell.m; sourceTree = "<group>"; };
 		F5644EF51E013FC2004CDF12 /* HHTimeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHTimeCell.xib; sourceTree = "<group>"; };
+		F5644EF91E0148FC004CDF12 /* HHColumnViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHColumnViewVC.h; sourceTree = "<group>"; };
+		F5644EFA1E0148FC004CDF12 /* HHColumnViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHColumnViewVC.m; sourceTree = "<group>"; };
+		F5644EFC1E01491E004CDF12 /* HHColumnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHColumnView.h; sourceTree = "<group>"; };
+		F5644EFD1E01491E004CDF12 /* HHColumnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHColumnView.m; sourceTree = "<group>"; };
 		F57AC22B1D5198100055F7F2 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
 		F57AC22C1D5198100055F7F2 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
 		F5819F8D1DF8F17800D8E8DC /* HHUIGestureRecognizerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUIGestureRecognizerVC.h; sourceTree = "<group>"; };
@@ -587,6 +593,7 @@
 		F5644EEB1E013D53004CDF12 /* HHTools */ = {
 			isa = PBXGroup;
 			children = (
+				F5644EF81E0147A6004CDF12 /* HHColumnView(仿网易新闻选择item) */,
 				F5644EEF1E013F53004CDF12 /* HHCountDownTime(倒计时) */,
 			);
 			path = HHTools;
@@ -603,6 +610,18 @@
 			);
 			name = "HHCountDownTime(倒计时)";
 			path = HHCountDownTime;
+			sourceTree = "<group>";
+		};
+		F5644EF81E0147A6004CDF12 /* HHColumnView(仿网易新闻选择item) */ = {
+			isa = PBXGroup;
+			children = (
+				F5644EF91E0148FC004CDF12 /* HHColumnViewVC.h */,
+				F5644EFA1E0148FC004CDF12 /* HHColumnViewVC.m */,
+				F5644EFC1E01491E004CDF12 /* HHColumnView.h */,
+				F5644EFD1E01491E004CDF12 /* HHColumnView.m */,
+			);
+			name = "HHColumnView(仿网易新闻选择item)";
+			path = HHColumnView;
 			sourceTree = "<group>";
 		};
 		F57AC2271D5197C20055F7F2 /* NSData */ = {
@@ -1204,6 +1223,7 @@
 				F51839E91D8251F20079A2D5 /* HHCell.m in Sources */,
 				CB8296421CEEBBB40013A120 /* ViewController.m in Sources */,
 				F57AC22D1D5198100055F7F2 /* NSDate+Utilities.m in Sources */,
+				F5644EFB1E0148FC004CDF12 /* HHColumnViewVC.m in Sources */,
 				F5D50E971DF4EDB90071287F /* HHWindowView.m in Sources */,
 				F5644EE51E013D07004CDF12 /* HHCollectionVC1.m in Sources */,
 				F5204D941D4B408F00284071 /* HHFontStyleVC.m in Sources */,
@@ -1226,6 +1246,7 @@
 				F58810001DD5C01200275C13 /* HHToolBar.m in Sources */,
 				F5819F8F1DF8F17800D8E8DC /* HHUIGestureRecognizerVC.m in Sources */,
 				F544D7011DFFF2EC0088DD08 /* MBProgressHUD.m in Sources */,
+				F5644EFE1E01491E004CDF12 /* HHColumnView.m in Sources */,
 				F5880FFD1DD5601F00275C13 /* HHTextView.m in Sources */,
 				F5183A0A1D82993F0079A2D5 /* HHUIWebViewAndJS.m in Sources */,
 				F52A443A1D4F868500AD009F /* UIView+Animation.m in Sources */,

@@ -29,11 +29,11 @@
 {
      self.navigationItem.title = @"工具类界面";
     [self.dataArray setArray: @[@"CountDownTime",
-                                @"NSArray",
+                                @"ColumnView",
                                 @"NSDictionary",
                                 @"NSData",
                                 @"NSFileManger"]];
-    titlesArray = @[@"倒计时cell"];
+    titlesArray = @[@"倒计时cell",@"仿网易新闻的选择item"];
 }
 
 - (NSMutableArray *)dataArray
