@@ -28,6 +28,11 @@
 - (void)config
 {
      self.navigationItem.title = @"工具类界面";
+    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.extendedLayoutIncludesOpaqueBars = NO;    
+    
     [self.dataArray setArray: @[@"CountDownTime",
                                 @"ColumnView",
                                 @"NSDictionary",

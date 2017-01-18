@@ -70,6 +70,7 @@
 		F5880FFD1DD5601F00275C13 /* HHTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5880FFC1DD5601F00275C13 /* HHTextView.m */; };
 		F58810001DD5C01200275C13 /* HHToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F5880FFF1DD5C01200275C13 /* HHToolBar.m */; };
 		F58810041DD5C04E00275C13 /* UIScrollView+HiddenTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = F58810031DD5C04E00275C13 /* UIScrollView+HiddenTabbar.m */; };
+		F59BD44E1E1CF75F008A3FDE /* HHFilePath.m in Sources */ = {isa = PBXBuildFile; fileRef = F59BD44D1E1CF75F008A3FDE /* HHFilePath.m */; };
 		F5B097E21D4EFC35004F1A68 /* HHTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097E11D4EFC35004F1A68 /* HHTool.m */; };
 		F5B097E81D4F2282004F1A68 /* HHTimeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097E71D4F2282004F1A68 /* HHTimeButton.m */; };
 		F5B097ED1D4F4163004F1A68 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097EC1D4F4163004F1A68 /* UIView+Frame.m */; };
@@ -231,6 +232,8 @@
 		F5880FFF1DD5C01200275C13 /* HHToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHToolBar.m; sourceTree = "<group>"; };
 		F58810021DD5C04E00275C13 /* UIScrollView+HiddenTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+HiddenTabbar.h"; sourceTree = "<group>"; };
 		F58810031DD5C04E00275C13 /* UIScrollView+HiddenTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+HiddenTabbar.m"; sourceTree = "<group>"; };
+		F59BD44C1E1CF75F008A3FDE /* HHFilePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHFilePath.h; sourceTree = "<group>"; };
+		F59BD44D1E1CF75F008A3FDE /* HHFilePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHFilePath.m; sourceTree = "<group>"; };
 		F5B097E01D4EFC35004F1A68 /* HHTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTool.h; sourceTree = "<group>"; };
 		F5B097E11D4EFC35004F1A68 /* HHTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTool.m; sourceTree = "<group>"; };
 		F5B097E61D4F2282004F1A68 /* HHTimeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTimeButton.h; sourceTree = "<group>"; };
@@ -932,6 +935,8 @@
 		F5EC0B481DE440BD003DD15B /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
+				F59BD44C1E1CF75F008A3FDE /* HHFilePath.h */,
+				F59BD44D1E1CF75F008A3FDE /* HHFilePath.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -1208,6 +1213,7 @@
 				F5644EE91E013D07004CDF12 /* HHCyclingView.m in Sources */,
 				F5B097F31D4F4EC8004F1A68 /* UIView+EXT.m in Sources */,
 				F5644EF21E013F85004CDF12 /* HHCountDownTimeVC.m in Sources */,
+				F59BD44E1E1CF75F008A3FDE /* HHFilePath.m in Sources */,
 				F50C96D41D86530300E6F16A /* NSDate+EXT.m in Sources */,
 				F544D6FF1DFFF2EC0088DD08 /* MBProgressHUD+Ex.m in Sources */,
 				F5F8F2721D4B594000006BF5 /* HHUIButtonVC.m in Sources */,

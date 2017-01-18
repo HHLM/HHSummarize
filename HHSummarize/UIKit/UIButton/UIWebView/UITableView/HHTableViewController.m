@@ -147,6 +147,7 @@
     
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     lllll = cell.textLabel;
+    DLog(@"长按cell");
     //黏贴板
 //    UIPasteboard *pasteBoard = [UIPasteboard generalPasteboard];
 //    
