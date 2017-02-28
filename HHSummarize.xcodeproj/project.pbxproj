@@ -169,7 +169,7 @@
 		F5183A041D8253BA0079A2D5 /* PublicFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicFile.h; sourceTree = "<group>"; };
 		F5183A081D82993F0079A2D5 /* HHUIWebViewAndJS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUIWebViewAndJS.h; sourceTree = "<group>"; };
 		F5183A091D82993F0079A2D5 /* HHUIWebViewAndJS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUIWebViewAndJS.m; sourceTree = "<group>"; };
-		F5183A0B1D82B6DE0079A2D5 /* HHhtmlAndjsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHhtmlAndjsVC.xib; sourceTree = "<group>"; };
+		F5183A0B1D82B6DE0079A2D5 /* HHhtmlAndjsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HHhtmlAndjsVC.xib; path = ../HHhtmlAndjsVC.xib; sourceTree = "<group>"; };
 		F5204D811D4B399F00284071 /* UIkit结构图.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "UIkit结构图.jpg"; sourceTree = "<group>"; };
 		F5204D891D4B3D3300284071 /* HHBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHBaseVC.h; sourceTree = "<group>"; };
 		F5204D8A1D4B3D3300284071 /* HHBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHBaseVC.m; sourceTree = "<group>"; };
@@ -807,7 +807,6 @@
 			children = (
 				F5EA82CD1D810BA200847DC6 /* HHhtmlAndjsVC.h */,
 				F5EA82CE1D810BA200847DC6 /* HHhtmlAndjsVC.m */,
-				F5183A0B1D82B6DE0079A2D5 /* HHhtmlAndjsVC.xib */,
 				F5EA82D01D810BA200847DC6 /* HHUIWebViewVC.h */,
 				F5EA82D11D810BA200847DC6 /* HHUIWebViewVC.m */,
 				F5EA82D21D810BA200847DC6 /* HHUIWebViewDetail.h */,
@@ -826,6 +825,7 @@
 		F5EA82CA1D810B1600847DC6 /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				F5183A0B1D82B6DE0079A2D5 /* HHhtmlAndjsVC.xib */,
 				F5183A051D8255E90079A2D5 /* View */,
 				F5183A071D82560A0079A2D5 /* Model */,
 				F5183A061D8255F70079A2D5 /* Control */,
