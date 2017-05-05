@@ -60,10 +60,12 @@
         [_collectionView registerClass:[HHCyclingCell class]
             forCellWithReuseIdentifier:NSStringFromClass([HHCyclingCell class])];
         
+        
     }
     return _collectionView;
 }
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    
     return 100;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
