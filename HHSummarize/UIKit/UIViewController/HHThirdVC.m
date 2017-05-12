@@ -35,10 +35,10 @@
     
     [self.dataArray setArray: @[@"CountDownTime",
                                 @"ColumnView",
-                                @"NSDictionary",
+                                @"Circulate",
                                 @"NSData",
                                 @"NSFileManger"]];
-    titlesArray = @[@"倒计时cell",@"仿网易新闻的选择item"];
+    titlesArray = @[@"倒计时cell",@"仿网易新闻的选择item",@"scrollView轮播图"];
 }
 
 - (NSMutableArray *)dataArray

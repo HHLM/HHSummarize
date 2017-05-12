@@ -95,7 +95,7 @@
     }else {
         cell.textLabel.text = @"你就是个傻瓜";
     }
-    tableView.visibleCells
+    
     return cell;
 }
 
