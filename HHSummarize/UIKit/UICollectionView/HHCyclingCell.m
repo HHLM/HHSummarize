@@ -30,8 +30,9 @@
     if (!_titleLab) {
         _titleLab = [[UILabel alloc] initWithFrame:CGRectMake(0, self.height - 20, self.width, 20)];
         _titleLab.textAlignment = NSTextAlignmentCenter;
-        _titleLab.text = @"headView";
+//        _titleLab.text = @"headView";
         _titleLab.textColor = [UIColor redColor];
+//        _titleLab.backgroundColor = [UIColor greenColor];
     }
     return _titleLab;
 }

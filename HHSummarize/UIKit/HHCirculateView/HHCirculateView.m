@@ -106,7 +106,7 @@
     else
     {
         [_pageControl setFrame:CGRectMake(KWIDTH - size.width - 10, 0, size.width, CGRectGetHeight(_showView.frame))];
-        [_textLable setFrame:CGRectMake(10, 5, KWIDTH - CGRectGetMinX(_pageControl.frame) - 30, 20)];
+        [_textLable setFrame:CGRectMake(10, 5, KWIDTH - CGRectGetWidth(_pageControl.frame) - 30, 20)];
         _textLable.textAlignment = NSTextAlignmentLeft;
     }
 }

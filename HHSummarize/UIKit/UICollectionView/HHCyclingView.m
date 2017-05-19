@@ -9,7 +9,7 @@
 #import "HHCyclingView.h"
 #import "HHCyclingCell.h"
 
-@interface HHCyclingView ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface HHCyclingView ()<UICollectionViewDelegate,UICollectionViewDataSource,UIScrollViewDelegate>
 {
     NSArray *dataArray;
 }
@@ -37,8 +37,9 @@
 - (void)setImageArray:(NSArray *)imageArray {
     dataArray = imageArray;
     [self.collectionView reloadData];
-    NSIndexPath *path = [NSIndexPath indexPathForItem:0 inSection:50];
-    [self.collectionView selectItemAtIndexPath:path animated:YES scrollPosition:UICollectionViewScrollPositionNone];
+    NSIndexPath *path = [NSIndexPath indexPathForItem:dataArray.count * 5 inSection:0];
+    [self.collectionView scrollToItemAtIndexPath:path  atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
+//    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:_selectIndex] atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
     
 }
 - (UICollectionView *)collectionView
@@ -64,19 +65,32 @@
     }
     return _collectionView;
 }
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    
-    return 100;
-}
+
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return dataArray.count;
+    return dataArray.count * 10;
 }
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath;
 {
     HHCyclingCell *cell = [collectionView  dequeueReusableCellWithReuseIdentifier:NSStringFromClass([HHCyclingCell class]) forIndexPath:indexPath];
-    HHCollectionModel *model = dataArray[indexPath.row];
+    HHCollectionModel *model = dataArray[indexPath.item % dataArray.count];
     cell.imgView.image = [UIImage imageNamed:model.imgName];
+    cell.titleLab.text = [NSString stringWithFormat:@"%ld",(indexPath.item % dataArray.count)];
     
     return cell;
+}
+- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
+
+}
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    NSArray *indexPaths = _collectionView.indexPathsForVisibleItems;
+    NSIndexPath *path = indexPaths.firstObject;
+    DLog(@"section:%ld----row:%ld",(long)path.section,(long)path.item);
+    if (path.item % dataArray.count == 0) {
+        NSIndexPath *path = [NSIndexPath indexPathForItem:dataArray.count* 5 inSection:0];
+        [self.collectionView scrollToItemAtIndexPath:path  atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+        NSInteger count = dataArray.count * 5;
+        DLog(@"+++++++%ld",count);
+    }
 }
 @end
