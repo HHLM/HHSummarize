@@ -157,7 +157,7 @@
         //左右的最小边距
         CGFloat minRangeH = leftRange > rightRange ? rightRange : leftRange;
         //最小边距
-        CGFloat minRange = minRangeV > minRangeH ? minRangeH : minRangeV;
+        CGFloat minRange = (minRangeV > minRangeH) ? minRangeH : minRangeV;
         
         
         //判断最小距离属于上下左右哪个方向 并设置该方向边缘的point属性
@@ -183,7 +183,7 @@
             endY = endY + kOffSet > superHeigh ? superHeigh - kOffSet:endY;
             minPoint = CGPointMake(0 + kOffSet, endY);
         }
-        else if(minRange == rightRange){
+        else {
             
             //右
             

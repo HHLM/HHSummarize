@@ -8,6 +8,7 @@
 
 #import "HHCirculateVC.h"
 #import "HHCirculateView.h"
+#import "HHCyclicView.h"
 @interface HHCirculateVC ()
 
 @end
@@ -39,8 +40,8 @@
                         @"呜呜呜呜我问问",
                         @"很好很好很"];
 
-    
-    HHCirculateView *cycleView = [[HHCirculateView alloc] initWithFrame:CGRectMake(0, 0,HWIDTH , HHEIGHT/2)];
+#if 1
+    HHCirculateView *cycleView = [[HHCirculateView alloc] initWithFrame:CGRectMake(0, 0,HWIDTH , HHEIGHT/2-32)];
     
     //回掉函数 点击的几张图片
     [cycleView setBlock:^(NSInteger index) {
@@ -53,6 +54,13 @@
     cycleView.imageArray = array;
     cycleView.autoSroller = YES;
     cycleView.textAliment = HHTextAlignmentLeft;
+#else
+    
+
+#endif
+    HHCyclicView *view = [[HHCyclicView alloc] initWithFrame:CGRectMake(0,HHEIGHT/2-32 , HWIDTH, HHEIGHT/2-32)];
+    [self.view addSubview:view];
+    view.dataArray = array;
     
 
 

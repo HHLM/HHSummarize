@@ -96,7 +96,7 @@
 }
 - (void)setTextAliment:(HHTextAlignment)textAliment {
     _textAliment = textAliment;
-    CGSize size = [_pageControl sizeForNumberOfPages:self.images.count];
+    CGSize size = [_pageControl sizeForNumberOfPages:self.images.count]; // 获取到pageControl的大小
     if (_textAliment == HHTextAlignmentRight)
     {
         [_pageControl setFrame:CGRectMake(20, 0, size.width,CGRectGetHeight(_showView.frame))];
