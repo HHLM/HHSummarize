@@ -46,6 +46,10 @@
 		F5204D971D4B412A00284071 /* MyAttributedStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F5204D961D4B412A00284071 /* MyAttributedStringBuilder.m */; };
 		F5204D991D4B418100284071 /* test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5204D981D4B418100284071 /* test@2x.png */; };
 		F5204D9C1D4B42FF00284071 /* HHCopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F5204D9B1D4B42FF00284071 /* HHCopyLabel.m */; };
+		F52387311EFCF516002925FF /* HHPickerViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F52387301EFCF516002925FF /* HHPickerViewVC.m */; };
+		F52387341EFCF52E002925FF /* HHCustomPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F52387331EFCF52E002925FF /* HHCustomPickerView.m */; };
+		F52387371EFCF536002925FF /* HHAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F52387361EFCF536002925FF /* HHAddressModel.m */; };
+		F52387391EFCF53C002925FF /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = F52387381EFCF53C002925FF /* area.plist */; };
 		F52A443A1D4F868500AD009F /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = F52A44391D4F868500AD009F /* UIView+Animation.m */; };
 		F544D6FF1DFFF2EC0088DD08 /* MBProgressHUD+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = F544D6FB1DFFF2EC0088DD08 /* MBProgressHUD+Ex.m */; };
 		F544D7001DFFF2EC0088DD08 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F544D6FC1DFFF2EC0088DD08 /* MBProgressHUD.bundle */; };
@@ -195,6 +199,13 @@
 		F5204D981D4B418100284071 /* test@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test@2x.png"; sourceTree = "<group>"; };
 		F5204D9A1D4B42FF00284071 /* HHCopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCopyLabel.h; sourceTree = "<group>"; };
 		F5204D9B1D4B42FF00284071 /* HHCopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCopyLabel.m; sourceTree = "<group>"; };
+		F523872F1EFCF516002925FF /* HHPickerViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHPickerViewVC.h; sourceTree = "<group>"; };
+		F52387301EFCF516002925FF /* HHPickerViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHPickerViewVC.m; sourceTree = "<group>"; };
+		F52387321EFCF52E002925FF /* HHCustomPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCustomPickerView.h; sourceTree = "<group>"; };
+		F52387331EFCF52E002925FF /* HHCustomPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCustomPickerView.m; sourceTree = "<group>"; };
+		F52387351EFCF536002925FF /* HHAddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAddressModel.h; sourceTree = "<group>"; };
+		F52387361EFCF536002925FF /* HHAddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAddressModel.m; sourceTree = "<group>"; };
+		F52387381EFCF53C002925FF /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
 		F52A44381D4F868500AD009F /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
 		F52A44391D4F868500AD009F /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
 		F544D6FA1DFFF2EC0088DD08 /* MBProgressHUD+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Ex.h"; sourceTree = "<group>"; };
@@ -578,6 +589,21 @@
 			path = UIViewController;
 			sourceTree = "<group>";
 		};
+		F523872E1EFCF4C9002925FF /* HPickerView（地址选择器） */ = {
+			isa = PBXGroup;
+			children = (
+				F52387381EFCF53C002925FF /* area.plist */,
+				F52387351EFCF536002925FF /* HHAddressModel.h */,
+				F52387361EFCF536002925FF /* HHAddressModel.m */,
+				F52387321EFCF52E002925FF /* HHCustomPickerView.h */,
+				F52387331EFCF52E002925FF /* HHCustomPickerView.m */,
+				F523872F1EFCF516002925FF /* HHPickerViewVC.h */,
+				F52387301EFCF516002925FF /* HHPickerViewVC.m */,
+			);
+			name = "HPickerView（地址选择器）";
+			path = HPickerView;
+			sourceTree = "<group>";
+		};
 		F544D6F81DFFF2BD0088DD08 /* Vender(第三方) */ = {
 			isa = PBXGroup;
 			children = (
@@ -625,6 +651,7 @@
 		F5644EEB1E013D53004CDF12 /* HHTools */ = {
 			isa = PBXGroup;
 			children = (
+				F523872E1EFCF4C9002925FF /* HPickerView（地址选择器） */,
 				F586D03B1EEA405D004FC0C7 /* HHPhotosView(添加图片) */,
 				F5B5888B1EC4460A004CE707 /* HHCirculateView(轮播图) */,
 				F5644EF81E0147A6004CDF12 /* HHColumnView(仿网易新闻选择item) */,
@@ -1252,6 +1279,7 @@
 				F5204D821D4B399F00284071 /* UIkit结构图.jpg in Resources */,
 				CB8296451CEEBBB40013A120 /* Main.storyboard in Resources */,
 				F5183A031D82521D0079A2D5 /* 9.jpg in Resources */,
+				F52387391EFCF53C002925FF /* area.plist in Resources */,
 				F5EA82DF1D810BA200847DC6 /* jeep_1.txt in Resources */,
 				F51839F91D82521D0079A2D5 /* 1.jpg in Resources */,
 			);
@@ -1307,6 +1335,7 @@
 				F5B097F01D4F42ED004F1A68 /* UIButton+EXT.m in Sources */,
 				F50929911DE990F000E68CAE /* NSString+HHTools.m in Sources */,
 				F5644EF61E013FC2004CDF12 /* HHTimeCell.m in Sources */,
+				F52387311EFCF516002925FF /* HHPickerViewVC.m in Sources */,
 				F5644EEA1E013D07004CDF12 /* HHUICollectionVC.m in Sources */,
 				F5644EE61E013D07004CDF12 /* HHCollectionViewCell.m in Sources */,
 				F5644EE41E013D07004CDF12 /* HHCollectionModel.m in Sources */,
@@ -1317,6 +1346,7 @@
 				F5204D911D4B3DA100284071 /* HHSecondVC.m in Sources */,
 				F5644EE81E013D07004CDF12 /* HHCyclingCell.m in Sources */,
 				F5B097ED1D4F4163004F1A68 /* UIView+Frame.m in Sources */,
+				F52387371EFCF536002925FF /* HHAddressModel.m in Sources */,
 				CB82963F1CEEBBB40013A120 /* AppDelegate.m in Sources */,
 				F5B588941EC54FF0004CE707 /* HHPageController.m in Sources */,
 				F5204D9C1D4B42FF00284071 /* HHCopyLabel.m in Sources */,
@@ -1325,6 +1355,7 @@
 				F5644EE31E013D07004CDF12 /* HHCollectionCell.m in Sources */,
 				F58810001DD5C01200275C13 /* HHToolBar.m in Sources */,
 				F5819F8F1DF8F17800D8E8DC /* HHUIGestureRecognizerVC.m in Sources */,
+				F52387341EFCF52E002925FF /* HHCustomPickerView.m in Sources */,
 				F544D7011DFFF2EC0088DD08 /* MBProgressHUD.m in Sources */,
 				F5644EFE1E01491E004CDF12 /* HHColumnView.m in Sources */,
 				F586D0491EEA40E2004FC0C7 /* HHPhotoViewVC.m in Sources */,
