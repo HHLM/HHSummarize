@@ -43,6 +43,7 @@
 - (void)dealloc {
     [self.pickerView removeFromSuperview];
     self.pickerView = nil;
+    NSLog(@"%@",_pickerView);
 }
 
 @end
