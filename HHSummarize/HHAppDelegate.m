@@ -7,13 +7,31 @@
 //
 
 #import "HHAppDelegate.h"
-
+#import "HHTTSModel.h"
+#import "HHTTSSpeaker.h"
 @implementation HHAppDelegate
+{
+    UIBackgroundTaskIdentifier bgTask;
+}
 
+/** 
+    在后台持续播放语音功能：
+    1、打开 UIBackgroundModes 勾选第一个和最后两个
+    2、推送时候 content-avilable 要为 1
+    3、一定要打开手机的后台应用程序刷新
+ */
 
+- (void)setAVAudio {
+    //语音播报后台持续
+    AVAudioSession *audio= [AVAudioSession sharedInstance];
+    [audio setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [audio setActive:YES error:nil];
+}
 // 设置本地通知
 - (void)registerLocalNotification:(NSInteger)alertTime
 {
+    
+    [self setAVAudio];
     
     UILocalNotification *notifications = [[UILocalNotification alloc] init];
     
@@ -69,10 +87,22 @@
     // 更新显示的徽章个数
     NSInteger badge = [UIApplication sharedApplication].applicationIconBadgeNumber;
     badge--;
-    NSLog(@"小圆点的个数：%ld",badge);
+    NSLog(@"小圆点的个数：%ld",(long)badge);
     badge = badge >= 0 ? badge : 0;
     [UIApplication sharedApplication].applicationIconBadgeNumber = badge;
+    
+//    if ([[HHTTSModel shareTTS].synther isSpeaking]) {
+//        return;
+//    }
+//    [[HHTTSModel shareTTS] speaking:@"窗前明月光，地上鞋两双"];
+    
+    if ([[HHTTSSpeaker shareSpeaker] isSpeaking]) {
+        return;
+    }
+    [[HHTTSSpeaker shareSpeaker] speakString:@"窗前明月光，地上鞋两双"];
+    
 }
+
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     return YES;
@@ -117,6 +147,7 @@
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     DLog(@"非执行活动中");
+    bgTask = [HHAppDelegate backgroundPlayerID:bgTask];
 }
 
 //当应用程序入活动状态执行，这个刚好跟上面那个方法相反
@@ -124,11 +155,27 @@
 {
     DLog(@"进入执行状态");
 }
-
+- (void)hh {
+    [[HHTTSModel shareTTS] speaking:@"黄河之水天上来，奔流到海不复还"];;
+}
 //当程序被推送到后台的时候调用。所以要设置后台继续运行，则在这个函数里面设置即可
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    DLog("程序进入后台执行");
+    DLog(@"程序进入后台执行");
+    [self performSelector:@selector(hh) withObject:nil afterDelay:5];
+    bgTask = [application beginBackgroundTaskWithName:@"MyTask" expirationHandler:^{
+        // Clean up any unfinished task business by marking where you
+        // stopped or ending the task outright.
+        [application endBackgroundTask:bgTask];
+        bgTask = [HHAppDelegate backgroundPlayerID:bgTask];
+    }];
+    
+    // Start the long-running task and return immediately.
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        [application endBackgroundTask:bgTask];
+        bgTask = [HHAppDelegate backgroundPlayerID:bgTask];;
+    });
 }
 
 
@@ -145,6 +192,24 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     DLog(@"程序即将退出");
+    UIApplication*  app = [UIApplication sharedApplication];
+    
+    bgTask = [app beginBackgroundTaskWithExpirationHandler:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (bgTask != UIBackgroundTaskInvalid)
+            {
+                bgTask = UIBackgroundTaskInvalid;
+            }
+        });
+    }];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (bgTask != UIBackgroundTaskInvalid)
+            {
+                bgTask = UIBackgroundTaskInvalid;
+            }
+        });
+    });
 }
 
 
@@ -153,6 +218,29 @@
 {
     DLog(@"当程序载入后执行");
 }
+
+//实现一下backgroundPlayerID:这个方法:
++ (UIBackgroundTaskIdentifier)backgroundPlayerID:(UIBackgroundTaskIdentifier)backTaskId
+{
+    //设置并激活音频会话类别
+    AVAudioSession *audio = [AVAudioSession sharedInstance];
+    [audio setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [audio setActive:YES error:nil];
+    
+    //允许应用程序接收远程控制
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    
+    //设置后台任务ID
+    UIBackgroundTaskIdentifier newTaskId = UIBackgroundTaskInvalid;
+    
+    newTaskId = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:nil];
+    if(newTaskId != UIBackgroundTaskInvalid && backTaskId != UIBackgroundTaskInvalid)
+    {
+        [[UIApplication sharedApplication] endBackgroundTask:backTaskId];
+    }
+    return newTaskId;
+}
+
 
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation

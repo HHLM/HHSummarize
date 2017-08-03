@@ -19,6 +19,9 @@
 		F5060AB51D476BEF006DF99C /* HHRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5060AB41D476BEF006DF99C /* HHRootViewController.m */; };
 		F50929911DE990F000E68CAE /* NSString+HHTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F50929901DE990F000E68CAE /* NSString+HHTools.m */; };
 		F50C96D41D86530300E6F16A /* NSDate+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = F50C96D31D86530300E6F16A /* NSDate+EXT.m */; };
+		F50FCB041F32D0C8002C23E1 /* HHTTSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F50FCB031F32D0C8002C23E1 /* HHTTSModel.m */; };
+		F50FCB071F331BB6002C23E1 /* HHTTSSpeakVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F50FCB061F331BB6002C23E1 /* HHTTSSpeakVC.m */; };
+		F50FCB0A1F332B3E002C23E1 /* HHTTSSpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = F50FCB091F332B3E002C23E1 /* HHTTSSpeaker.m */; };
 		F51839E61D8251F20079A2D5 /* HHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51839DD1D8251F20079A2D5 /* HHViewController.m */; };
 		F51839E71D8251F20079A2D5 /* HHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51839DF1D8251F20079A2D5 /* HHTableViewController.m */; };
 		F51839E81D8251F20079A2D5 /* HHModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51839E11D8251F20079A2D5 /* HHModel.m */; };
@@ -160,6 +163,12 @@
 		F50929901DE990F000E68CAE /* NSString+HHTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HHTools.m"; sourceTree = "<group>"; };
 		F50C96D21D86530300E6F16A /* NSDate+EXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+EXT.h"; sourceTree = "<group>"; };
 		F50C96D31D86530300E6F16A /* NSDate+EXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+EXT.m"; sourceTree = "<group>"; };
+		F50FCB021F32D0C8002C23E1 /* HHTTSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTTSModel.h; sourceTree = "<group>"; };
+		F50FCB031F32D0C8002C23E1 /* HHTTSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTTSModel.m; sourceTree = "<group>"; };
+		F50FCB051F331BB6002C23E1 /* HHTTSSpeakVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTTSSpeakVC.h; sourceTree = "<group>"; };
+		F50FCB061F331BB6002C23E1 /* HHTTSSpeakVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTTSSpeakVC.m; sourceTree = "<group>"; };
+		F50FCB081F332B3E002C23E1 /* HHTTSSpeaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTTSSpeaker.h; sourceTree = "<group>"; };
+		F50FCB091F332B3E002C23E1 /* HHTTSSpeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTTSSpeaker.m; sourceTree = "<group>"; };
 		F51839DC1D8251F20079A2D5 /* HHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHViewController.h; sourceTree = "<group>"; };
 		F51839DD1D8251F20079A2D5 /* HHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHViewController.m; sourceTree = "<group>"; };
 		F51839DE1D8251F20079A2D5 /* HHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTableViewController.h; sourceTree = "<group>"; };
@@ -523,6 +532,20 @@
 			path = UITabBarController;
 			sourceTree = "<group>";
 		};
+		F50FCB011F32D064002C23E1 /* HHTTSView(语音播报) */ = {
+			isa = PBXGroup;
+			children = (
+				F50FCB021F32D0C8002C23E1 /* HHTTSModel.h */,
+				F50FCB031F32D0C8002C23E1 /* HHTTSModel.m */,
+				F50FCB081F332B3E002C23E1 /* HHTTSSpeaker.h */,
+				F50FCB091F332B3E002C23E1 /* HHTTSSpeaker.m */,
+				F50FCB051F331BB6002C23E1 /* HHTTSSpeakVC.h */,
+				F50FCB061F331BB6002C23E1 /* HHTTSSpeakVC.m */,
+			);
+			name = "HHTTSView(语音播报)";
+			path = HHTTSView;
+			sourceTree = "<group>";
+		};
 		F51839EB1D82521D0079A2D5 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -654,6 +677,7 @@
 		F5644EEB1E013D53004CDF12 /* HHTools */ = {
 			isa = PBXGroup;
 			children = (
+				F50FCB011F32D064002C23E1 /* HHTTSView(语音播报) */,
 				F523872E1EFCF4C9002925FF /* HPickerView（地址选择器） */,
 				F586D03B1EEA405D004FC0C7 /* HHPhotosView(添加图片) */,
 				F5B5888B1EC4460A004CE707 /* HHCirculateView(轮播图) */,
@@ -1212,6 +1236,7 @@
 					CB8296361CEEBBB40013A120 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = YM2MZ34492;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1323,6 +1348,7 @@
 				F51839E61D8251F20079A2D5 /* HHViewController.m in Sources */,
 				F5F8F2651D4B4E2A00006BF5 /* UILabel+autoSize.m in Sources */,
 				F586D04F1EEA8C53004FC0C7 /* HHCyclicView.m in Sources */,
+				F50FCB071F331BB6002C23E1 /* HHTTSSpeakVC.m in Sources */,
 				F5EA82C81D80FFD100847DC6 /* HHUnit.m in Sources */,
 				F5644EE71E013D07004CDF12 /* HHCollectionViewLayout.m in Sources */,
 				F5EA82DA1D810BA200847DC6 /* HHhtmlAndjsVC.m in Sources */,
@@ -1353,6 +1379,7 @@
 				F5B097ED1D4F4163004F1A68 /* UIView+Frame.m in Sources */,
 				F52387371EFCF536002925FF /* HHAddressModel.m in Sources */,
 				CB82963F1CEEBBB40013A120 /* AppDelegate.m in Sources */,
+				F50FCB0A1F332B3E002C23E1 /* HHTTSSpeaker.m in Sources */,
 				F5B588941EC54FF0004CE707 /* HHPageController.m in Sources */,
 				F5204D9C1D4B42FF00284071 /* HHCopyLabel.m in Sources */,
 				F5B5888E1EC4462C004CE707 /* HHCirculateView.m in Sources */,
@@ -1366,6 +1393,7 @@
 				F586D0491EEA40E2004FC0C7 /* HHPhotoViewVC.m in Sources */,
 				F5880FFD1DD5601F00275C13 /* HHTextView.m in Sources */,
 				F5183A0A1D82993F0079A2D5 /* HHUIWebViewAndJS.m in Sources */,
+				F50FCB041F32D0C8002C23E1 /* HHTTSModel.m in Sources */,
 				F59E67331F218EEA0039F978 /* UIView+DisPlaying.m in Sources */,
 				F52A443A1D4F868500AD009F /* UIView+Animation.m in Sources */,
 				F5EA82DD1D810BA200847DC6 /* HHUIWebViewDetail.m in Sources */,
@@ -1527,6 +1555,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HHSummarize/HHSummarize.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = YM2MZ34492;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HHSummarize/PrefixHeader.pch";
@@ -1535,6 +1564,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hhlm.HHSummarize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -1543,6 +1573,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HHSummarize/HHSummarize.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = YM2MZ34492;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HHSummarize/PrefixHeader.pch";
@@ -1551,6 +1582,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hhlm.HHSummarize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

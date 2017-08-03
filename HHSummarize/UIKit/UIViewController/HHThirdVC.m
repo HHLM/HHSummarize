@@ -38,9 +38,14 @@
                                 @"Circulate",
                                 @"PhotoView",
                                 @"PickerView",
-                                @"NSData",
-                                @"NSFileManger"]];
-    titlesArray = @[@"倒计时cell",@"仿网易新闻的选择item",@"scrollView轮播图",@"添加图片",@"地址选择器"];
+                                @"TTSSpeak"]];
+    
+    titlesArray = @[@"倒计时cell",
+                    @"仿网易新闻的选择item",
+                    @"scrollView轮播图",
+                    @"添加图片",
+                    @"地址选择器",
+                    @"语音播报"];
 }
 
 - (NSMutableArray *)dataArray
