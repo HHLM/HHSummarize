@@ -154,6 +154,13 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     DLog(@"进入执行状态");
+    /**
+     * 让推送列表的消息消失
+     *
+     * 先变成1 在变成0 就消失了
+     */
+    //    [UIApplication sharedApplication].applicationIconBadgeNumber = 1;
+    //    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
 }
 - (void)hh {
     [[HHTTSModel shareTTS] speaking:@"黄河之水天上来，奔流到海不复还"];;

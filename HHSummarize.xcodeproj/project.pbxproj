@@ -87,6 +87,8 @@
 		F58810041DD5C04E00275C13 /* UIScrollView+HiddenTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = F58810031DD5C04E00275C13 /* UIScrollView+HiddenTabbar.m */; };
 		F59BD44E1E1CF75F008A3FDE /* HHFilePath.m in Sources */ = {isa = PBXBuildFile; fileRef = F59BD44D1E1CF75F008A3FDE /* HHFilePath.m */; };
 		F59E67331F218EEA0039F978 /* UIView+DisPlaying.m in Sources */ = {isa = PBXBuildFile; fileRef = F59E67321F218EEA0039F978 /* UIView+DisPlaying.m */; };
+		F5A9653E1F7BF861004B205A /* HHChartsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A9653D1F7BF861004B205A /* HHChartsVC.m */; };
+		F5A965411F7BF8AC004B205A /* HHDreawView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A965401F7BF8AC004B205A /* HHDreawView.m */; };
 		F5B097E21D4EFC35004F1A68 /* HHTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097E11D4EFC35004F1A68 /* HHTool.m */; };
 		F5B097E81D4F2282004F1A68 /* HHTimeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097E71D4F2282004F1A68 /* HHTimeButton.m */; };
 		F5B097ED1D4F4163004F1A68 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B097EC1D4F4163004F1A68 /* UIView+Frame.m */; };
@@ -280,6 +282,10 @@
 		F59BD44D1E1CF75F008A3FDE /* HHFilePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHFilePath.m; sourceTree = "<group>"; };
 		F59E67311F218EEA0039F978 /* UIView+DisPlaying.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DisPlaying.h"; sourceTree = "<group>"; };
 		F59E67321F218EEA0039F978 /* UIView+DisPlaying.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DisPlaying.m"; sourceTree = "<group>"; };
+		F5A9653C1F7BF861004B205A /* HHChartsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHChartsVC.h; sourceTree = "<group>"; };
+		F5A9653D1F7BF861004B205A /* HHChartsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHChartsVC.m; sourceTree = "<group>"; };
+		F5A9653F1F7BF8AC004B205A /* HHDreawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHDreawView.h; sourceTree = "<group>"; };
+		F5A965401F7BF8AC004B205A /* HHDreawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHDreawView.m; sourceTree = "<group>"; };
 		F5B097E01D4EFC35004F1A68 /* HHTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTool.h; sourceTree = "<group>"; };
 		F5B097E11D4EFC35004F1A68 /* HHTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHTool.m; sourceTree = "<group>"; };
 		F5B097E61D4F2282004F1A68 /* HHTimeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHTimeButton.h; sourceTree = "<group>"; };
@@ -677,6 +683,7 @@
 		F5644EEB1E013D53004CDF12 /* HHTools */ = {
 			isa = PBXGroup;
 			children = (
+				F5A9653B1F7BF838004B205A /* HHChartsView(折线图) */,
 				F50FCB011F32D064002C23E1 /* HHTTSView(语音播报) */,
 				F523872E1EFCF4C9002925FF /* HPickerView（地址选择器） */,
 				F586D03B1EEA405D004FC0C7 /* HHPhotosView(添加图片) */,
@@ -808,6 +815,18 @@
 				F58810031DD5C04E00275C13 /* UIScrollView+HiddenTabbar.m */,
 			);
 			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		F5A9653B1F7BF838004B205A /* HHChartsView(折线图) */ = {
+			isa = PBXGroup;
+			children = (
+				F5A9653C1F7BF861004B205A /* HHChartsVC.h */,
+				F5A9653D1F7BF861004B205A /* HHChartsVC.m */,
+				F5A9653F1F7BF8AC004B205A /* HHDreawView.h */,
+				F5A965401F7BF8AC004B205A /* HHDreawView.m */,
+			);
+			name = "HHChartsView(折线图)";
+			path = HHChartsView;
 			sourceTree = "<group>";
 		};
 		F5B097DF1D4EFC1F004F1A68 /* Unit */ = {
@@ -1369,6 +1388,7 @@
 				F52387311EFCF516002925FF /* HHPickerViewVC.m in Sources */,
 				F5644EEA1E013D07004CDF12 /* HHUICollectionVC.m in Sources */,
 				F5644EE61E013D07004CDF12 /* HHCollectionViewCell.m in Sources */,
+				F5A9653E1F7BF861004B205A /* HHChartsVC.m in Sources */,
 				F5644EE41E013D07004CDF12 /* HHCollectionModel.m in Sources */,
 				F5D9E4BB1D48912B00248EC0 /* HHUILabelVC.m in Sources */,
 				F586D0521EEA91BE004FC0C7 /* HHCyclicCell.m in Sources */,
@@ -1405,6 +1425,7 @@
 				F5EA82DC1D810BA200847DC6 /* HHUIWebViewVC.m in Sources */,
 				F586D0421EEA407E004FC0C7 /* HHPhotoView.m in Sources */,
 				F5C55A9A1D4D09AB006A7EA7 /* NSString+EXT.m in Sources */,
+				F5A965411F7BF8AC004B205A /* HHDreawView.m in Sources */,
 				CB82963C1CEEBBB40013A120 /* main.m in Sources */,
 				F5880FF71DD4087900275C13 /* HHConverRectVC.m in Sources */,
 				F58810041DD5C04E00275C13 /* UIScrollView+HiddenTabbar.m in Sources */,

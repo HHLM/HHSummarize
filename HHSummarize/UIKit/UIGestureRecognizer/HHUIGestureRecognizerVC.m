@@ -175,24 +175,45 @@
     
     self.panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognize:)];//初始化平移手势识别器(Pan)
     self.panGestureRecognizer.delegate = self;
-    [self.view addGestureRecognizer:self.panGestureRecognizer];
+    [self.touchView addGestureRecognizer:self.panGestureRecognizer];
     // Do any additional setup after loading the view, typically from a nib.
     UITapGestureRecognizer * ges = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(click:)];;
     
     //view.backgroundColor = [UIColor redColor];
     
     //ges.delegate=self;
-    [self.view addGestureRecognizer:ges];
+    [self.touchView addGestureRecognizer:ges];
     
-    UITapGestureRecognizer * ges2 = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(click1:)];
+    UIPanGestureRecognizer * ges2 = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(requireGestureRecognizerToFail:)];
     //    ges2.delegate=self;
-    [self.view addGestureRecognizer:ges2];
-    [self requireGestureRecognizerToFail:ges2];
+//    [self.touchView addGestureRecognizer:ges2];
 
 }
 
-- (void)requireGestureRecognizerToFail:(UIGestureRecognizer *)otherGestureRecognizer
+- (void)requireGestureRecognizerToFail:(UIPanGestureRecognizer *)panGR
 {
+    CGPoint point = [panGR translationInView:self.view];
+    
+    //左移
+    if (point.x < 0)
+    {
+        //如果没有出边界就可以移动
+        if (panGR.view.frame.origin.x >= 0)
+        {
+            //panGR.view 为添加手势的那个view
+            panGR.view.frame = CGRectMake(panGR.view.frame.origin.x + point.x, panGR.view.frame.origin.y + point.y, 100, 100);
+        }
+    }
+    else
+    {
+        //如果右移 没有出右侧边界
+        if (panGR.view.frame.origin.x + panGR.view.frame.size.width <= CGRectGetWidth(self.view.frame))
+        {
+            panGR.view.frame = CGRectMake(panGR.view.frame.origin.x + point.x, panGR.view.frame.origin.y + point.y, 100, 100);
+        }
+    }
+    //清零
+    [panGR setTranslation:CGPointZero inView:self.view];
 
 }
 
