@@ -25,6 +25,8 @@
 #define IOS7   ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
 #define IOS8   ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
 #define IOS9   ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0)
+#define IOS10   ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0)
+#define IOS11   ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11.0)
 
 //判断设备
 #define IPHONE4     (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)

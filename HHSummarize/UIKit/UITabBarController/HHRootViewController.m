@@ -43,9 +43,9 @@
     UITabBarItem *item2 = [self.tabBar.items objectAtIndex:1];
     UITabBarItem *item3 = [self.tabBar.items objectAtIndex:2];
     
-    item1.title = @"UIKit";
+    item1.title = @"UI";
     item2.title = @"Foundation";
-    item3.title = @"tools";
+    item3.title = @"工具";
     
     
     item1.image = [UIImage imageNamed:@"home"];
@@ -60,9 +60,9 @@
     [[UITabBar appearance] setTintColor:[UIColor greenColor]];
 
 //UITabBar的背景颜色
-    UIImage *barBackground = [UIImage imageNamed:@"tabbar"];
-    [[UITabBar appearance] setBackgroundImage:barBackground];
-    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar_selected"]];
+//    UIImage *barBackground = [UIImage imageNamed:@"tabbar"];
+//    [[UITabBar appearance] setBackgroundImage:barBackground];
+//    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar_selected"]];
 
     
 #if 0
@@ -90,7 +90,7 @@
     /*--------------------可以添加背景颜色的View--------------*/
     UIView *bgView =[[UIView alloc]initWithFrame:self.tabBar.bounds];//这是整个tabbar的颜色
     
-    [bgView setBackgroundColor:[UIColor blueColor]];
+//    [bgView setBackgroundColor:[UIColor blueColor]];
     
     [self.tabBar insertSubview:bgView atIndex:0];
     bgView.alpha = 0.8;

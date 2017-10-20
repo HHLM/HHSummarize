@@ -54,6 +54,7 @@
 		F52387371EFCF536002925FF /* HHAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F52387361EFCF536002925FF /* HHAddressModel.m */; };
 		F52387391EFCF53C002925FF /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = F52387381EFCF53C002925FF /* area.plist */; };
 		F52A443A1D4F868500AD009F /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = F52A44391D4F868500AD009F /* UIView+Animation.m */; };
+		F52BC26A1F98DD3100A09C61 /* UILabel+setFont.m in Sources */ = {isa = PBXBuildFile; fileRef = F52BC2691F98DD3100A09C61 /* UILabel+setFont.m */; };
 		F544D6FF1DFFF2EC0088DD08 /* MBProgressHUD+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = F544D6FB1DFFF2EC0088DD08 /* MBProgressHUD+Ex.m */; };
 		F544D7001DFFF2EC0088DD08 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F544D6FC1DFFF2EC0088DD08 /* MBProgressHUD.bundle */; };
 		F544D7011DFFF2EC0088DD08 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F544D6FE1DFFF2EC0088DD08 /* MBProgressHUD.m */; };
@@ -220,6 +221,8 @@
 		F52387381EFCF53C002925FF /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
 		F52A44381D4F868500AD009F /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
 		F52A44391D4F868500AD009F /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		F52BC2681F98DD3100A09C61 /* UILabel+setFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+setFont.h"; sourceTree = "<group>"; };
+		F52BC2691F98DD3100A09C61 /* UILabel+setFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+setFont.m"; sourceTree = "<group>"; };
 		F544D6FA1DFFF2EC0088DD08 /* MBProgressHUD+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Ex.h"; sourceTree = "<group>"; };
 		F544D6FB1DFFF2EC0088DD08 /* MBProgressHUD+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Ex.m"; sourceTree = "<group>"; };
 		F544D6FC1DFFF2EC0088DD08 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
@@ -1160,6 +1163,8 @@
 			children = (
 				F5F8F2631D4B4E2A00006BF5 /* UILabel+autoSize.h */,
 				F5F8F2641D4B4E2A00006BF5 /* UILabel+autoSize.m */,
+				F52BC2681F98DD3100A09C61 /* UILabel+setFont.h */,
+				F52BC2691F98DD3100A09C61 /* UILabel+setFont.m */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
@@ -1367,6 +1372,7 @@
 				F51839E61D8251F20079A2D5 /* HHViewController.m in Sources */,
 				F5F8F2651D4B4E2A00006BF5 /* UILabel+autoSize.m in Sources */,
 				F586D04F1EEA8C53004FC0C7 /* HHCyclicView.m in Sources */,
+				F52BC26A1F98DD3100A09C61 /* UILabel+setFont.m in Sources */,
 				F50FCB071F331BB6002C23E1 /* HHTTSSpeakVC.m in Sources */,
 				F5EA82C81D80FFD100847DC6 /* HHUnit.m in Sources */,
 				F5644EE71E013D07004CDF12 /* HHCollectionViewLayout.m in Sources */,
