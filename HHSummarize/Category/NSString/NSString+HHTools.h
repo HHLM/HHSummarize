@@ -23,4 +23,7 @@
  是不是网址
  */
 - (BOOL)isURL;
+
+/** 文件大小 */
+- (unsigned long long)fileSize;
 @end

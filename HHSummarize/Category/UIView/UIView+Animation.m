@@ -84,6 +84,35 @@ translation   在所有上面移动
     [self.layer addAnimation:animation forKey:@"shake"];
 }
 
+//!< 主要用于输入框
+- (void)animationForTextField {
+    CAKeyframeAnimation * animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.translation.x"];
+    CGFloat currentTx = self.transform.tx;
+    
+    animation.delegate = self;
+    animation.duration = 1.f;
+    animation.values = @[ @(currentTx), @(currentTx + 10), @(currentTx-8), @(currentTx + 8), @(currentTx -5), @(currentTx + 5), @(currentTx) ];
+    animation.keyTimes = @[ @(0), @(0.225), @(0.425), @(0.6), @(0.75), @(0.875), @(1) ];
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    animation.fillMode = @"backwards";
+    animation.removedOnCompletion = YES;
+    [self.layer addAnimation:animation forKey:@"kAFViewShakerAnimationKey"];
+}
+
+- (void)bounceAnimation {
+    [UIView animateWithDuration:.1f animations:^{
+        self.transform = CGAffineTransformMakeScale(.8f, .8f);
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:.1f animations:^{
+            self.transform = CGAffineTransformMakeScale(1.2f, 1.2f);
+        } completion:^(BOOL finished) {
+            [UIView animateWithDuration:.1f animations:^{
+                self.transform = CGAffineTransformIdentity;
+            }];
+        }];
+    }];
+}
+
 - (void)applyMotionEffects {
     if ([[[UIDevice currentDevice] systemVersion] floatValue] > 7.0)
     {

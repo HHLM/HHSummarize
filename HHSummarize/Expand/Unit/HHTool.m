@@ -302,7 +302,9 @@ static NSString * const HHFileBowseMode = @"HHFileBowseMode";
     return flag;
 }
 #pragma mark -- 文件加密
-+ (NSString *)md5:(NSString *)key {
+//!< MD5加密
++ (NSString *)md5:(NSString *)key
+{
     const char *str = [key UTF8String];
     if (str == NULL) {
         str = "";
@@ -312,7 +314,7 @@ static NSString * const HHFileBowseMode = @"HHFileBowseMode";
     NSString *fileName = [NSString stringWithFormat:@"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9], r[10], r[11], r[12], r[13], r[14], r[15]];
     return fileName;
 }
-
+//!< 判断是不是空数组
 + (BOOL)isEmptyString:(NSString *)string
 {
     if (string.length == 0 || string == nil) {

@@ -18,4 +18,9 @@
  字典或者数组转json字符串
  */
 - (NSString *)jsonStringWithObject:(id)object;
+
+/**
+ *  通过运行时获取所有属性
+ */
++ (void)logAllIvars;
 @end

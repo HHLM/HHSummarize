@@ -45,7 +45,7 @@ typedef NS_ENUM(NSUInteger, UIViewAnimationRotationDirection) {
 };
 
 
-@interface UIView (Animation)
+@interface UIView (Animation)<CAAnimationDelegate>
 
 //!< 增强运动效果
 - (void)applyMotionEffects;
@@ -61,6 +61,11 @@ typedef NS_ENUM(NSUInteger, UIViewAnimationRotationDirection) {
 
 //!< 结束动画
 - (void)stopAnimation;
+
+//!< 主要用于输入框
+- (void)animationForTextField;
+
+- (void)bounceAnimation;
 
 /**
  *  执行试图上脉冲动画
