@@ -25,10 +25,34 @@
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"Foundation界面";
     [self config];
+    
+    
+    //{} 执行域 （） 执行
+    
+    UILabel *labe = ({
+        UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, 200, 20)];
+        l.text = @"我是label";
+        l.textColor = [UIColor greenColor];
+        l;
+    });
+    
+    
+    
     [self.view addSubview:self.myTableView];
     NSDate*date = [HHUnit dateFormDateString:@"2016-09-10 12:12:12" formate:@"yyyy-MM-dd hh:mm:ss"];
     [NSDate timeInfoWithDate:date];
+    [self.view addSubview:labe];
+    UILabel *lll = insertLab();
+    [self.view addSubview:lll];
 }
+
+UILabel *insertLab() {
+    UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(0, 200, 200, 20)];
+    l.text = @"我是label";
+    l.textColor = [UIColor redColor];
+    return  l;
+}
+
 - (void)config
 {
     [self.dataArray setArray: @[@"NSString",

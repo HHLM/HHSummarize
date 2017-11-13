@@ -417,7 +417,6 @@
 				F5F8F2611D4B4DF400006BF5 /* Category */,
 				F5060A951D47695C006DF99C /* UIKit */,
 				CB8296731CEEBC3E0013A120 /* Foundation */,
-				CB8296741CEEBC3E0013A120 /* QuartzCore */,
 				CB8296761CEEBC600013A120 /* Other */,
 				CB82963A1CEEBBB40013A120 /* Supporting Files */,
 			);
@@ -485,13 +484,6 @@
 				F5EC0B6C1DE440BD003DD15B /* NSUserDefaults */,
 			);
 			path = Foundation;
-			sourceTree = "<group>";
-		};
-		CB8296741CEEBC3E0013A120 /* QuartzCore */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = QuartzCore;
 			sourceTree = "<group>";
 		};
 		CB8296761CEEBC600013A120 /* Other */ = {

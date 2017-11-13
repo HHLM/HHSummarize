@@ -60,6 +60,7 @@
     return _myTableView;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES ];
     //    先计算cell的位置,再转化到view中的位置.
     CGRect rectInTableView = [tableView rectForRowAtIndexPath:indexPath];
     NSLog(@"--------%f",rectInTableView.origin.y);
