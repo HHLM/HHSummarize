@@ -15,6 +15,7 @@ typedef NS_ENUM(NSInteger ,HHFileBrowseMode){
     HHCategoryBrowseModel  = 1
 };
 
+
 @interface HHTool : NSObject
 
 /*--------------------文件------------------*/

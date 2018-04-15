@@ -58,7 +58,7 @@
     [self.layer addSublayer:pathLayer];
     
     CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    pathAnimation.duration = 1.0;
+    pathAnimation.duration = 3.0;
     pathAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
     pathAnimation.toValue = [NSNumber numberWithFloat:1.0f];
     [pathLayer addAnimation:pathAnimation forKey:@"strokeEnd"];

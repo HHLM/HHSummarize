@@ -440,7 +440,7 @@
 }
 - (void)config
 {
-    self.dataArray = @[@"UILabel",@"UIButton",@"UIImageView",@"UIFont",@"UIWebView",@"UITableView",@"UICollection",@"ConverRect",@"UIGestureRecognizer"];
+    self.dataArray = @[@"UILabel",@"UIButton",@"UIImageView",@"UIFont",@"UIWebView",@"UITableView",@"UICollection",@"ConverRect",@"UIGestureRecognizer",@"ScrollView"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
