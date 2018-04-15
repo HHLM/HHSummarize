@@ -13,7 +13,7 @@ static CGFloat const HHTopViewHeight = 140;
 @interface HHScrollViewVC ()<UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *myTableView;
 @property (nonatomic, strong) UIScrollView *scrollView;
-@property (nonatomic, strong) UIView *topView;
+@property (nonatomic, strong) UILabel *topView;
 @property (nonatomic, strong) UIImageView *imageView;
 
 @end
@@ -25,6 +25,8 @@ static CGFloat const HHTopViewHeight = 140;
     [self.view addSubview:self.scrollView];
     [self.scrollView addSubview:self.imageView];
     [self.scrollView addSubview:self.topView];
+    
+    
     [self.scrollView addSubview:self.myTableView];
     [self.myTableView reloadData];
     self.myTableView.height = self.myTableView.contentSize.height;
@@ -37,15 +39,19 @@ static CGFloat const HHTopViewHeight = 140;
         _imageView.image = [UIImage imageNamed:@"0.jpg"];
     }return _imageView;
 }
-- (UIView *)topView {
+- (UILabel *)topView {
     if (!_topView) {
-        _topView = [[UIView alloc] initWithFrame:CGRectMake(0, HHTopViewHeight, self.view.width, 60)];
+        _topView = [[UILabel alloc] initWithFrame:CGRectMake(0, HHTopViewHeight, self.view.width, 60)];
+        _topView.text = @"我是悬停的工具条";
+        _topView.textAlignment = NSTextAlignmentCenter;
+        _topView.font = [UIFont systemFontOfSize:32];
         _topView.backgroundColor = [UIColor greenColor];
     }return _topView;
 }
 - (UIScrollView *)scrollView {
     if (!_scrollView) {
         _scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
+        _scrollView.height = self.view.height - 64;
         _scrollView.backgroundColor = [UIColor blueColor];
         _scrollView.contentSize = CGSizeMake(0, 1000);
         _scrollView.delegate = self;
@@ -63,6 +69,9 @@ static CGFloat const HHTopViewHeight = 140;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+    if (tableView.tag == 100) {
+        return 2;
+    }
     return 3;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -80,7 +89,7 @@ static CGFloat const HHTopViewHeight = 140;
     if (!cell)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
-        cell.textLabel.text = @"小小的身体大大的梦想";
+        cell.textLabel.text = tableView.tag - 100?@"我是一只小小鸟": @"小小的身体大大的梦想";
     }
     return cell;
 }
@@ -90,21 +99,28 @@ static CGFloat const HHTopViewHeight = 140;
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    CGFloat positonY = scrollView.contentOffset.y;
-    if (positonY >= HHTopViewHeight) {
-        self.topView.y = 0;
-        [self.view addSubview:self.topView];
-    }else {
-        self.topView.y = HHTopViewHeight;
-        [self.scrollView addSubview:self.topView];
+    if (scrollView == self.scrollView) {
+        CGFloat positonY = scrollView.contentOffset.y;
+        if (positonY >= HHTopViewHeight) {
+            self.topView.y = 0;
+            [self.view addSubview:self.topView];
+        }else {
+            self.topView.y = HHTopViewHeight;
+            [self.scrollView addSubview:self.topView];
+        }
+        
+        CGFloat scale = 1 -(positonY / 80);
+        scale = scale > 1 ? scale : 1;
+        self.imageView.transform = CGAffineTransformMakeScale(scale, scale);
+        
+        //为了让imageView 相对于scrollview的y坐标的位置不变动
+        self.imageView.y = positonY;
+        
+        NSLog(@"%f",positonY);
     }
-    
-    CGFloat scale = 1 -(positonY / 80);
-    scale = scale > 1 ? scale : 1;
-    self.imageView.transform = CGAffineTransformMakeScale(scale, scale);
-    
-    NSLog(@"%f",positonY);
-    
-    
+}
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+   
 }
 @end
