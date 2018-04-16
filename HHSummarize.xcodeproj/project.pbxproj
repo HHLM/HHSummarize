@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0476F718208255EE00B45F29 /* HHScrollViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476F717208255EE00B45F29 /* HHScrollViewVC.m */; };
 		CB82963C1CEEBBB40013A120 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB82963B1CEEBBB40013A120 /* main.m */; };
 		CB82963F1CEEBBB40013A120 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB82963E1CEEBBB40013A120 /* AppDelegate.m */; };
 		CB8296421CEEBBB40013A120 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8296411CEEBBB40013A120 /* ViewController.m */; };
@@ -145,6 +146,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0476F716208255EE00B45F29 /* HHScrollViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHScrollViewVC.h; sourceTree = "<group>"; };
+		0476F717208255EE00B45F29 /* HHScrollViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHScrollViewVC.m; sourceTree = "<group>"; };
 		CB8296371CEEBBB40013A120 /* HHSummarize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHSummarize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB82963B1CEEBBB40013A120 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB82963D1CEEBBB40013A120 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -387,6 +390,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0476F715208251DC00B45F29 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				0476F716208255EE00B45F29 /* HHScrollViewVC.h */,
+				0476F717208255EE00B45F29 /* HHScrollViewVC.m */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
 		CB82962E1CEEBBB40013A120 = {
 			isa = PBXGroup;
 			children = (
@@ -504,9 +516,10 @@
 			isa = PBXGroup;
 			children = (
 				F5204D811D4B399F00284071 /* UIkit结构图.jpg */,
+				F5880FFA1DD55FC000275C13 /* HHCustomView */,
+				0476F715208251DC00B45F29 /* UIScrollView */,
 				F5644ED21E013D07004CDF12 /* UICollectionView */,
 				F5819F8C1DF8F15100D8E8DC /* UIGestureRecognizer */,
-				F5880FFA1DD55FC000275C13 /* HHCustomView */,
 				F5880FF41DD4085E00275C13 /* OtherVC */,
 				F5D3B22A1D5094F000892518 /* UIFont */,
 				F5060A9D1D47695C006DF99C /* UILabel */,
@@ -1450,6 +1463,7 @@
 				CB82963C1CEEBBB40013A120 /* main.m in Sources */,
 				F5880FF71DD4087900275C13 /* HHConverRectVC.m in Sources */,
 				F58810041DD5C04E00275C13 /* UIScrollView+HiddenTabbar.m in Sources */,
+				0476F718208255EE00B45F29 /* HHScrollViewVC.m in Sources */,
 				F51839EA1D8251F20079A2D5 /* HHCellView.m in Sources */,
 				F5B097E81D4F2282004F1A68 /* HHTimeButton.m in Sources */,
 				F566D04D1F9F2BC30072613F /* UIView+CornerRadius.m in Sources */,

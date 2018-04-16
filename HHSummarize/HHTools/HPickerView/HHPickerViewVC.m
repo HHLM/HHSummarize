@@ -38,12 +38,12 @@
     }return _pickerView;
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self.pickerView showPickerView:HHPickerAddrssType];
+    [self.pickerView showPickerView:HHPickerTimeType];
 }
 - (void)dealloc {
     [self.pickerView removeFromSuperview];
     self.pickerView = nil;
-    NSLog(@"%@",_pickerView);
+    NSLog(@"我消失了~变成了：%@",_pickerView);
 }
 
 @end

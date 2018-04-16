@@ -343,8 +343,8 @@ static const CGFloat kToolBarHeight = 40.f;
     if (!_toolBar) {
         _toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0,  kPickerWidth, kToolBarHeight)];
         if ([[UIDevice currentDevice].systemVersion floatValue] >= 11.0f) {
-            UIBarButtonItem *left = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIButtonTypeCustom target:self action:@selector(hiddenPicker)];
-            UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIButtonTypeCustom target:self action:@selector(selectPicker)];
+            UIBarButtonItem *left = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:@selector(hiddenPicker)];
+            UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:@selector(selectPicker)];
             _toolBar.items = @[left,right];
         }
         
