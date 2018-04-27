@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042FA4112093154100A12712 /* HHBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042FA4102093154100A12712 /* HHBaseTableViewCell.m */; };
 		045929E52090634800D8C2CD /* HHNSArrayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 045929E42090634800D8C2CD /* HHNSArrayVC.m */; };
 		0476F718208255EE00B45F29 /* HHScrollViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476F717208255EE00B45F29 /* HHScrollViewVC.m */; };
 		CB82963C1CEEBBB40013A120 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB82963B1CEEBBB40013A120 /* main.m */; };
@@ -147,6 +148,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042FA40F2093154100A12712 /* HHBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHBaseTableViewCell.h; sourceTree = "<group>"; };
+		042FA4102093154100A12712 /* HHBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHBaseTableViewCell.m; sourceTree = "<group>"; };
 		045929E32090634800D8C2CD /* HHNSArrayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHNSArrayVC.h; sourceTree = "<group>"; };
 		045929E42090634800D8C2CD /* HHNSArrayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHNSArrayVC.m; sourceTree = "<group>"; };
 		0476F716208255EE00B45F29 /* HHScrollViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHScrollViewVC.h; sourceTree = "<group>"; };
@@ -603,6 +606,8 @@
 				F51839E31D8251F20079A2D5 /* HHCell.m */,
 				F51839E41D8251F20079A2D5 /* HHCellView.h */,
 				F51839E51D8251F20079A2D5 /* HHCellView.m */,
+				042FA40F2093154100A12712 /* HHBaseTableViewCell.h */,
+				042FA4102093154100A12712 /* HHBaseTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1460,6 +1465,7 @@
 				F5060AB11D476A20006DF99C /* HHAppDelegate.m in Sources */,
 				F5F8F27D1D4B5A6100006BF5 /* HHUIImageViewVC.m in Sources */,
 				F5EA82E31D810DBD00847DC6 /* HHUITableViewVC.m in Sources */,
+				042FA4112093154100A12712 /* HHBaseTableViewCell.m in Sources */,
 				F5204D971D4B412A00284071 /* MyAttributedStringBuilder.m in Sources */,
 				F5C55A9D1D4D09D7006A7EA7 /* NSObject+EXT.m in Sources */,
 				F5EA82DC1D810BA200847DC6 /* HHUIWebViewVC.m in Sources */,
