@@ -26,7 +26,7 @@
     self.navigationItem.title = @"Foundation界面";
     [self config];
     
-    
+
     //{} 执行域 （） 执行
     
     UILabel *labe = ({
@@ -35,7 +35,6 @@
         l.textColor = [UIColor greenColor];
         l;
     });
-    
     
     
     [self.view addSubview:self.myTableView];
