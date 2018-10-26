@@ -8,10 +8,14 @@
 
 #import "HHPhotoView.h"
 
+
+
 @implementation HHPhotoView
 {
     NSMutableArray *photos;
+    
 }
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -45,7 +49,8 @@
 }
 - (void)creatUI:(NSArray *)array
 {
-    NSInteger N = 4;
+    
+    NSInteger N = 5;
     CGFloat leftX = 15;
     CGFloat SCREEN_WIDT = [UIScreen mainScreen].bounds.size.width;
     CGFloat WID = (SCREEN_WIDT - (N+1)*leftX)/N;
@@ -60,6 +65,9 @@
         CGFloat y = i/N *width;
         if (i == array.count)
         {
+            if (array.count == 10) {
+                return;
+            }
             UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(x + leftX, y, WID+10, WID+10)];
             UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
             [btn setFrame:CGRectMake(0, 10, WID, WID)];
@@ -67,6 +75,7 @@
             [btn addTarget:self action:@selector(addImages) forControlEvents:UIControlEventTouchUpInside];
             [bgView addSubview:btn];
             [self addSubview:bgView];
+            self.height = bgView.bottom + 15;
         }
         else
         {
@@ -87,8 +96,10 @@
                     action:@selector(deleteImage:)
           forControlEvents:UIControlEventTouchUpInside];
             [bgView addSubview:btn];
+            self.height = bgView.bottom + 15;
             
         }
+        
     }
 }
 
