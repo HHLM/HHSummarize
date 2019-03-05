@@ -9,7 +9,20 @@
 #import "HHTextView.h"
 
 @implementation HHTextView
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if(self)
+    {
+        elf.font = [UIFont systemFontOfSize:16];
+        // 设置默认颜色
+        self.placeholderColor = [UIColor grayColor];
+        
+        // 使用通知监听文字改变
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChange:) name:UITextViewTextDidChangeNotification object:self];
+    }
+    return self;
 
+}
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
@@ -23,6 +36,21 @@
     }
     return self;
 }
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.font = [UIFont systemFontOfSize:16];
+        // 设置默认颜色
+        self.placeholderColor = [UIColor grayColor];
+        
+        // 使用通知监听文字改变
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChange:) name:UITextViewTextDidChangeNotification object:self];
+    }
+    return self;
+}
+
 
 - (void)textDidChange:(NSNotification *)noteInfo
 {
