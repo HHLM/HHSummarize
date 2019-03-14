@@ -13,7 +13,7 @@
     self = [super initWithCoder:aDecoder];
     if(self)
     {
-        elf.font = [UIFont systemFontOfSize:16];
+        self.font = [UIFont systemFontOfSize:16];
         // 设置默认颜色
         self.placeholderColor = [UIColor grayColor];
         
