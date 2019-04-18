@@ -224,7 +224,9 @@ static const CGFloat kToolBarHeight = 40.f;
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     
+    [self.pickerView.subviews objectAtIndex:1].backgroundColor = [UIColor redColor];
     
+    [self.pickerView.subviews objectAtIndex:2].backgroundColor = [UIColor redColor];
     if (_pickerType == HHPickerAddrssType)
     {
         if (component == 0) {

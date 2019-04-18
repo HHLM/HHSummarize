@@ -38,7 +38,7 @@
     }return _pickerView;
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self.pickerView showPickerView:HHPickerTimeType];
+    [self.pickerView showPickerView:HHPickerAddrssType];
 }
 - (void)dealloc {
     [self.pickerView removeFromSuperview];
