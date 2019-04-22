@@ -10,12 +10,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HHSummarize/HHTools/HPickerView/HHCustomPickerView.m"
-            timestampString = "577279404.531908"
+            timestampString = "577348322.568855"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "304"
             endingLineNumber = "304"
             landmarkName = "-pickerView:viewForRow:forComponent:reusingView:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HHSummarize/UIKit/HHCirculateView/HHCirculateView.m"
+            timestampString = "577620755.4242539"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "-setTextAliment:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

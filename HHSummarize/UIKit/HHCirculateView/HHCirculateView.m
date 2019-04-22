@@ -99,7 +99,7 @@
     CGSize size = [_pageControl sizeForNumberOfPages:self.images.count]; // 获取到pageControl的大小
     if (_textAliment == HHTextAlignmentRight)
     {
-        [_pageControl setFrame:CGRectMake(20, 0, size.width,CGRectGetHeight(_showView.frame))];
+        [_pageControl setFrame:CGRectMake(20, 0, 200,CGRectGetHeight(_showView.frame))];
         [_textLable setFrame:CGRectMake(CGRectGetMaxX(_pageControl.frame) + 20, 5, KWIDTH - (CGRectGetMaxX(_pageControl.frame)+30), 20)];
         _textLable.textAlignment = NSTextAlignmentRight;
     }
@@ -385,6 +385,9 @@
 - (UIScrollView *)mySrollerView {
     if (!_mySrollerView) {
         _mySrollerView = [[UIScrollView alloc] initWithFrame:self.bounds];
+        [_mySrollerView setFrame:CGRectMake(20, 0, self.width - 40, self.height)];
+        _mySrollerView.clipsToBounds = NO;
+        
         _mySrollerView.bounces = NO;
         _mySrollerView.pagingEnabled = YES;
         _mySrollerView.showsHorizontalScrollIndicator = NO;
@@ -397,7 +400,7 @@
 {
     if (!_pageControl)
     {
-        _pageControl = [[HHPageController alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.frame)-120, 5, 100, 20)];
+        _pageControl = [[HHPageController alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.frame)-220, 5, 200, 20)];
         _pageControl.backgroundColor = [UIColor clearColor];
         _pageControl.alpha = 0.4;
         
