@@ -19,6 +19,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    UIView *layerView = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    layerView.layer.shadowColor = [UIColor redColor].CGColor;
+    // 设置阴影偏移量
+    layerView.layer.shadowOffset = CGSizeMake(0,0);
+    // 设置阴影透明度
+    layerView.layer.shadowOpacity = 1;
+    // 设置阴影半径
+    layerView.layer.shadowRadius = 8;
+    layerView.clipsToBounds = NO;
+    layerView.layer.cornerRadius = 10;
+    layerView.layer.masksToBounds = NO;
+    layerView.layer.borderColor = [UIColor redColor].CGColor;
+    //贝塞尔曲线添加
+    //layerView.layer.shadowPath = bezierPath.CGPath;
+    [self.view addSubview:layerView];
+
+    
+    
     // Do any additional setup after loading the view.
     UILabel *lable = [[UILabel alloc] initWithFrame:CGRectMake(10, 20, 100, 40)];
     lable.text = @"HHLM";
