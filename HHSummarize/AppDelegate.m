@@ -20,6 +20,7 @@
     // Override point for customization after application launch.
     [self registerLocalNotification:30];
     [self performSelector:@selector(showWindow) withObject:self afterDelay:0.1];
+//    [self showWindow];
     return YES;
 }
 - (void)showWindow

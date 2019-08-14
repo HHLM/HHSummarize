@@ -28,6 +28,7 @@
         //初始化背景视图
         
         _backgroundView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
+//        _backgroundView.layer.zPosition = 1;
         
         _backgroundView.layer.cornerRadius = _backgroundView.frame.size.width / 2;
         
