@@ -41,9 +41,9 @@
         [array addObject:str];
     }
     seach = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 40)];
-    Display = [[UISearchDisplayController alloc]initWithSearchBar:seach contentsController:self];
-    Display.searchResultsDataSource =self;
-    Display.searchResultsDelegate = self;
+//    Display = [[UISearchDisplayController alloc]initWithSearchBar:seach contentsController:self];
+//    Display.searchResultsDataSource =self;
+//    Display.searchResultsDelegate = self;
     
     arr = [[NSMutableArray alloc]init];
     mytableview = [[UITableView alloc ] initWithFrame:CGRectMake(0, 0, HWIDTH, HHEIGHT - 64)];
@@ -137,8 +137,7 @@
     }
     return array.count;
 }
--(BOOL)tableView:(UITableView *)tableView canPerformAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender
-{
+-(BOOL)tableView:(UITableView *)tableView canPerformAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
     return YES;
 }
 //允许长按
