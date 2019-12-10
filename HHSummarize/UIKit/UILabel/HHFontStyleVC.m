@@ -129,9 +129,12 @@
         case 8:
         {
             NSTextAttachment *attach = [[NSTextAttachment alloc] initWithData:nil ofType:nil];
-            attach.image = [UIImage imageNamed:@"test"];
-            builder = [[MyAttributedStringBuilder alloc] initWithString:@"文字\uFFFC混合排列"];
+            attach.image = [UIImage imageNamed:@"icon"];
+            builder = [[MyAttributedStringBuilder alloc] initWithString:@"\uFFFC混合排列"];
             builder.allRange.attachment = attach;
+            [builder lastNRange:4].backgroundColor = [UIColor blueColor];
+            //builder.allRange.backgroundColor = [UIColor blueColor];
+//            [builder includeString:@"\uFFFC" all:NO].baselineOffset = (18-cell.textLabel.size.height)/2;
         }
             break;
         case 9:
@@ -161,6 +164,7 @@
     }
     
     cell.textLabel.attributedText = builder.commit;
+    cell.textLabel.font = [UIFont systemFontOfSize:16];
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

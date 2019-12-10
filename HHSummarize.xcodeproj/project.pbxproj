@@ -10,6 +10,7 @@
 		042FA4112093154100A12712 /* HHBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042FA4102093154100A12712 /* HHBaseTableViewCell.m */; };
 		045929E52090634800D8C2CD /* HHNSArrayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 045929E42090634800D8C2CD /* HHNSArrayVC.m */; };
 		0476F718208255EE00B45F29 /* HHScrollViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476F717208255EE00B45F29 /* HHScrollViewVC.m */; };
+		94D67DFE239A64C400E2E771 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D67DFD239A64C400E2E771 /* icon@2x.png */; };
 		CB82963C1CEEBBB40013A120 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB82963B1CEEBBB40013A120 /* main.m */; };
 		CB82963F1CEEBBB40013A120 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB82963E1CEEBBB40013A120 /* AppDelegate.m */; };
 		CB8296421CEEBBB40013A120 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8296411CEEBBB40013A120 /* ViewController.m */; };
@@ -154,6 +155,7 @@
 		045929E42090634800D8C2CD /* HHNSArrayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHNSArrayVC.m; sourceTree = "<group>"; };
 		0476F716208255EE00B45F29 /* HHScrollViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHScrollViewVC.h; sourceTree = "<group>"; };
 		0476F717208255EE00B45F29 /* HHScrollViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHScrollViewVC.m; sourceTree = "<group>"; };
+		94D67DFD239A64C400E2E771 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		CB8296371CEEBBB40013A120 /* HHSummarize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHSummarize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB82963B1CEEBBB40013A120 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB82963D1CEEBBB40013A120 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -542,6 +544,7 @@
 		F5060A9D1D47695C006DF99C /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
+				94D67DFD239A64C400E2E771 /* icon@2x.png */,
 				F5204D981D4B418100284071 /* test@2x.png */,
 				F5D9E4B91D48912B00248EC0 /* HHUILabelVC.h */,
 				F5D9E4BA1D48912B00248EC0 /* HHUILabelVC.m */,
@@ -1345,6 +1348,7 @@
 				F5EA82E01D810BA200847DC6 /* test.html in Resources */,
 				F51839FF1D82521D0079A2D5 /* 5.jpg in Resources */,
 				F5D3B2311D5096E500892518 /* STSONG.TTF in Resources */,
+				94D67DFE239A64C400E2E771 /* icon@2x.png in Resources */,
 				F5F8F2731D4B594000006BF5 /* HHUIButtonVC.xib in Resources */,
 				F586D0461EEA407E004FC0C7 /* btn_upload@3x.png in Resources */,
 				F586D0451EEA407E004FC0C7 /* btn_upload@2x.png in Resources */,
