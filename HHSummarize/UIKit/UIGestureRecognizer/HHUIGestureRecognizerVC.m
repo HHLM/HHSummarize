@@ -175,7 +175,7 @@
     
     self.panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognize:)];//初始化平移手势识别器(Pan)
     self.panGestureRecognizer.delegate = self;
-    [self.touchView addGestureRecognizer:self.panGestureRecognizer];
+    [self.view addGestureRecognizer:self.panGestureRecognizer];
     // Do any additional setup after loading the view, typically from a nib.
     UITapGestureRecognizer * ges = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(click:)];;
     

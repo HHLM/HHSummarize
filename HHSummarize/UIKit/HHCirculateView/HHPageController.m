@@ -18,23 +18,28 @@
     {
         UIImageView* subview = [self.subviews objectAtIndex:subviewIndex];
         CGSize size;
-        size.height = 8;
-        size.width = 8;
+        size.height = 5;
+        size.width = 15;
         [subview setFrame:CGRectMake(subview.frame.origin.x,
                                      subview.frame.origin.x,
                                      size.width,
                                      size.height)];
-        subview.layer.cornerRadius = size.width/2;;
+        subview.layer.cornerRadius = size.height/2;;
         subview.clipsToBounds = YES;
         
 
         if (subviewIndex == page)
         {
             [subview setBackgroundColor:[UIColor redColor]];
+            subview.width = 15;
         }
         else
         {
             [subview setBackgroundColor:[UIColor greenColor]];
+            subview.width = 5;
+            if (subviewIndex > page) {
+                subview.x = subview.x + 10;
+            }
         }
         
     }

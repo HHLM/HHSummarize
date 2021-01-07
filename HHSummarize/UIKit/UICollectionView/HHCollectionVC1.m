@@ -36,19 +36,21 @@ static CGFloat const ADHeigth = 200;
 #pragma mark -- UICollectionViewDelegate
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
+    return 3;
 }
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return _dataArray.count;
 }
-- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath;
-{
+
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     HHCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"HHCollectionCell" forIndexPath:indexPath];
     [cell sizeToFit];
     HHCollectionModel *model = _dataArray[indexPath.row];
     cell.imgView.image = [UIImage imageNamed:model.imgName];
     return cell;
 }
+
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:

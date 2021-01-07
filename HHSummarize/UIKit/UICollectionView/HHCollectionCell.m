@@ -11,8 +11,7 @@
 
 @implementation HHCollectionCell
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
+- (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         [self addSubview:self.imgView];
@@ -28,6 +27,7 @@
     }
     return _imgView;
 }
+
 - (UILabel *)titleLab {
     if (!_titleLab) {
         _titleLab = [[UILabel alloc] initWithFrame:CGRectMake(0, self.height - 20, self.width, 20)];

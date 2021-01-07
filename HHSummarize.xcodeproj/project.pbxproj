@@ -10,6 +10,9 @@
 		042FA4112093154100A12712 /* HHBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042FA4102093154100A12712 /* HHBaseTableViewCell.m */; };
 		045929E52090634800D8C2CD /* HHNSArrayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 045929E42090634800D8C2CD /* HHNSArrayVC.m */; };
 		0476F718208255EE00B45F29 /* HHScrollViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476F717208255EE00B45F29 /* HHScrollViewVC.m */; };
+		4BECBAE524ECD9D300385CF0 /* home_pictagbg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BECBAE324ECD9D200385CF0 /* home_pictagbg1.png */; };
+		4BECBAE624ECD9D300385CF0 /* home_pictagbg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BECBAE424ECD9D200385CF0 /* home_pictagbg2.png */; };
+		4BECBAE924ECE5A300385CF0 /* HHPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BECBAE724ECE5A300385CF0 /* HHPageControl.m */; };
 		94D67DFE239A64C400E2E771 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D67DFD239A64C400E2E771 /* icon@2x.png */; };
 		CB82963C1CEEBBB40013A120 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB82963B1CEEBBB40013A120 /* main.m */; };
 		CB82963F1CEEBBB40013A120 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB82963E1CEEBBB40013A120 /* AppDelegate.m */; };
@@ -155,6 +158,10 @@
 		045929E42090634800D8C2CD /* HHNSArrayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHNSArrayVC.m; sourceTree = "<group>"; };
 		0476F716208255EE00B45F29 /* HHScrollViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHScrollViewVC.h; sourceTree = "<group>"; };
 		0476F717208255EE00B45F29 /* HHScrollViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHScrollViewVC.m; sourceTree = "<group>"; };
+		4BECBAE324ECD9D200385CF0 /* home_pictagbg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_pictagbg1.png; sourceTree = "<group>"; };
+		4BECBAE424ECD9D200385CF0 /* home_pictagbg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_pictagbg2.png; sourceTree = "<group>"; };
+		4BECBAE724ECE5A300385CF0 /* HHPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHPageControl.m; sourceTree = "<group>"; };
+		4BECBAE824ECE5A300385CF0 /* HHPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHPageControl.h; sourceTree = "<group>"; };
 		94D67DFD239A64C400E2E771 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		CB8296371CEEBBB40013A120 /* HHSummarize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHSummarize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB82963B1CEEBBB40013A120 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -405,6 +412,13 @@
 				0476F717208255EE00B45F29 /* HHScrollViewVC.m */,
 			);
 			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		4B80064A25A70F54005135B3 /* HHMansory(自动布局) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "HHMansory(自动布局)";
 			sourceTree = "<group>";
 		};
 		CB82962E1CEEBBB40013A120 = {
@@ -714,6 +728,7 @@
 		F5644EEB1E013D53004CDF12 /* HHTools */ = {
 			isa = PBXGroup;
 			children = (
+				4B80064A25A70F54005135B3 /* HHMansory(自动布局) */,
 				F5A9653B1F7BF838004B205A /* HHChartsView(折线图) */,
 				F50FCB011F32D064002C23E1 /* HHTTSView(语音播报) */,
 				F523872E1EFCF4C9002925FF /* HPickerView（地址选择器） */,
@@ -906,6 +921,10 @@
 		F5B5888B1EC4460A004CE707 /* HHCirculateView(轮播图) */ = {
 			isa = PBXGroup;
 			children = (
+				4BECBAE824ECE5A300385CF0 /* HHPageControl.h */,
+				4BECBAE724ECE5A300385CF0 /* HHPageControl.m */,
+				4BECBAE324ECD9D200385CF0 /* home_pictagbg1.png */,
+				4BECBAE424ECD9D200385CF0 /* home_pictagbg2.png */,
 				F5B588921EC54FF0004CE707 /* HHPageController.h */,
 				F5B588931EC54FF0004CE707 /* HHPageController.m */,
 				F5B5888C1EC4462C004CE707 /* HHCirculateView.h */,
@@ -1297,7 +1316,7 @@
 				TargetAttributes = {
 					CB8296361CEEBBB40013A120 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 2V5VW5864D;
+						DevelopmentTeam = 97KYXS6G9B;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -1347,6 +1366,7 @@
 				F5183A001D82521D0079A2D5 /* 6.jpg in Resources */,
 				F5EA82E01D810BA200847DC6 /* test.html in Resources */,
 				F51839FF1D82521D0079A2D5 /* 5.jpg in Resources */,
+				4BECBAE524ECD9D300385CF0 /* home_pictagbg1.png in Resources */,
 				F5D3B2311D5096E500892518 /* STSONG.TTF in Resources */,
 				94D67DFE239A64C400E2E771 /* icon@2x.png in Resources */,
 				F5F8F2731D4B594000006BF5 /* HHUIButtonVC.xib in Resources */,
@@ -1355,6 +1375,7 @@
 				CB82964A1CEEBBB40013A120 /* LaunchScreen.storyboard in Resources */,
 				F51839FC1D82521D0079A2D5 /* 2.jpg in Resources */,
 				F51839FE1D82521D0079A2D5 /* 4.jpg in Resources */,
+				4BECBAE624ECD9D300385CF0 /* home_pictagbg2.png in Resources */,
 				F5F8F27E1D4B5A6100006BF5 /* HHUIImageViewVC.xib in Resources */,
 				F51839F81D82521D0079A2D5 /* 0.jpg in Resources */,
 				F5183A011D82521D0079A2D5 /* 7.jpg in Resources */,
@@ -1480,6 +1501,7 @@
 				CB82963C1CEEBBB40013A120 /* main.m in Sources */,
 				F5880FF71DD4087900275C13 /* HHConverRectVC.m in Sources */,
 				F58810041DD5C04E00275C13 /* UIScrollView+HiddenTabbar.m in Sources */,
+				4BECBAE924ECE5A300385CF0 /* HHPageControl.m in Sources */,
 				0476F718208255EE00B45F29 /* HHScrollViewVC.m in Sources */,
 				F51839EA1D8251F20079A2D5 /* HHCellView.m in Sources */,
 				F5B097E81D4F2282004F1A68 /* HHTimeButton.m in Sources */,
@@ -1632,13 +1654,13 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2V5VW5864D;
+				DEVELOPMENT_TEAM = 97KYXS6G9B;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HHSummarize/PrefixHeader.pch";
 				INFOPLIST_FILE = HHSummarize/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hishake.HHSummarize;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.HHSummarize.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -1651,8 +1673,8 @@
 				CODE_SIGN_ENTITLEMENTS = HHSummarize/HHSummarize.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2V5VW5864D;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HHSummarize/PrefixHeader.pch";
 				INFOPLIST_FILE = HHSummarize/Info.plist;
